@@ -1,0 +1,104 @@
+.why {
+    display: flex;
+}
+
+.container-why {
+    width: $containerWidth;
+    @include flexColumn;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 75px;
+    position: relative;
+
+    &::before {
+        @include pseudoAbsolut;
+        background: url("./../../../img/why__bag.png") center center no-repeat;
+        top: 190px;
+        left: 0;
+        width: 191px;
+        height: 314px;
+    }
+
+    &::after {
+        @include pseudoAbsolut;
+        background: url("./../../../img/why__berry.png") center center no-repeat;
+        top: 445px;
+        left: 0;
+        width: 161px;
+        height: 315px;
+
+    }
+}
+
+.why__title {
+    @include titleBlack;
+    margin-bottom: 23px;
+}
+
+.why__txt {
+    @include textContent;
+    margin-bottom: 57px;
+}
+
+.why__list {
+    @include flexRow;
+    z-index: 2;
+    width: 945px;
+    justify-content: space-between;
+
+    .why__items {
+        display: flex;
+        position: relative;
+
+
+        &::after {
+            @include pseudoAbsolut;
+            background: url("./../../../img/why__after.png") center center no-repeat;
+            width: 67px;
+            height: 21px;
+            right: -62px;
+            top: 52px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
+
+
+.why__link {
+    @include flexColumn;
+    align-items: center;
+}
+
+.why__icon {
+    display: flex;
+    width: 70px;
+    height: 69px;
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    @include juCoCtrAlItCtr;
+    border-radius: 50%; 
+    margin-bottom: 35px;
+
+    .why__img {
+        width: 70px;
+        height: 69px;
+    }
+}
+
+.why__denotation {
+    font-family: 'alegreya_sans_extraboldRg';
+    font-size: 27px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.why__info {
+    @include textContent;
+    font-weight: 300;
+    text-align: center;
+    width: 276px;
+}

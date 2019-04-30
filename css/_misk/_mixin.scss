@@ -1,0 +1,101 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin ContentCenterCenter {
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin itemsCenterCenter {
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin juCoCtrAlItCtr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin navLink {
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+@mixin number {
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+@mixin title {
+
+    font-family: "Alegreya Sans";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+@mixin txt400White {
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+
+@mixin btn {
+    width: 156px;
+    height: 58px;
+    background-color: #0f5a47;
+    color: $colorWhiteText;
+    font-family: "alegreya_sans_extraboldRg";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    z-index: 2;
+    &:hover {
+        background-color: $white;
+        color:  #0f5a47;
+    }
+}
+
+
+@mixin titleBlack {
+    color: #0d0d0d;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin textContent {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin pseudoAbsolut{
+    content: "";
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
