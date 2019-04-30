@@ -1,20 +1,18 @@
-.header {
+.welcome {
     display: flex;
     justify-content: center;
     position: relative;
     min-height: 650px;
     width: 100%;
+    height: 100vh;
+    background-color: #61c4d9;
+    padding-top: 100px;
+
 
 }
 
-.container-header {
-    @include flexColumn;
-    position: relative;
-    background-color: #61c4d9;
-
-    padding-left: 72px;
-    padding-right: 42px;
-
+.container-welcome {
+ 
 
     &::after {
         content: "";
@@ -29,7 +27,7 @@
 
     &::before {
         content: "";
-        background: url("../img/iz.png");
+        background: url("../img/iz.png") center center no-repeat;
         position: absolute;
         top: -2px;
         right: 1px;
@@ -37,14 +35,16 @@
         width: 512px;
         height: 648px;
     }
+
+
+
 }
 
-.header__top {
+.header {
     @include flexRow;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 21px;
     margin-bottom: 100px;
 
     &::before {
@@ -79,7 +79,7 @@
     line-height: 21px;
 }
 
-.navigation {
+.welcome__navigation {
     display: flex;
 
     .navigation__list {
@@ -108,13 +108,13 @@
     }
 }
 
-.header__title {
+.welcome__title {
     @include title;
     color: $colorWhiteText;
     position: relative;
 }
 
-.sidebar {
+.welcome__sidebar {
     @include flexColumn;
     position: absolute;
     left: 1050px;
@@ -153,18 +153,18 @@
     }
 }
 
-.header__text {
+.welcome__text {
     @include txt400White;
     font-size: 21px;
     margin-bottom: 32px;
 }
 
-.header__btn {
+.welcome__btn {
     @include btn;
     margin-bottom: 72px;
 }
 
-.header__info {
+.welcome__info {
     @include flexRow;
     z-index: 3;
 

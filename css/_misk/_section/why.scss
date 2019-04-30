@@ -1,19 +1,22 @@
 .why {
     display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    justify-content: center;
+   align-items: center;
+
+
 }
 
-.container-why {
-    width: $containerWidth;
-    @include flexColumn;
-    margin: 0 auto;
-    align-items: center;
-    padding-top: 75px;
-    position: relative;
 
+.container-why {
+    position: relative;
+    justify-content: center;
     &::before {
         @include pseudoAbsolut;
-        background: url("./../../../img/why__bag.png") center center no-repeat;
-        top: 190px;
+        background: url("../img/why__bag.png") center center no-repeat;
+        top: 113px;
         left: 0;
         width: 191px;
         height: 314px;
@@ -21,8 +24,8 @@
 
     &::after {
         @include pseudoAbsolut;
-        background: url("./../../../img/why__berry.png") center center no-repeat;
-        top: 445px;
+        background: url("../img/why__berry.png") center center no-repeat;
+        top: 374px;
         left: 0;
         width: 161px;
         height: 315px;
@@ -30,14 +33,20 @@
     }
 }
 
+
+
 .why__title {
     @include titleBlack;
     margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
 }
 
 .why__txt {
     @include textContent;
     margin-bottom: 57px;
+    display: flex;
+    justify-content: center;
 }
 
 .why__list {
@@ -80,7 +89,7 @@
     height: 125px;
     background-color: #f2f5f4;
     @include juCoCtrAlItCtr;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin-bottom: 35px;
 
     .why__img {
