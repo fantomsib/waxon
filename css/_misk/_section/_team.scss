@@ -1,0 +1,117 @@
+.team {
+    display: flex;
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container-team {
+    display: flex;
+
+    &::before {
+        @include pseudoAbsolut;
+        background: url("../img/team_bagr.png") center center no-repeat;
+        display: flex;
+        width: 196px;
+        height: 578px;
+        top: -413px;
+        right: 0;
+    }
+
+    &::after {
+        @include pseudoAbsolut;
+        background: url("../img/bars_berry.png") center center no-repeat;
+        display: flex;
+        width: 135px;
+        height: 112px;
+        top: -253px;
+        right: 0;
+    }
+}
+
+
+
+.team__title {
+    @include titleBlack;
+    margin-bottom: 68px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.team__list {
+    @include flexRow;
+    justify-content: space-around;
+    height: 405px;
+
+
+    .team__items-alla {
+        @extend %teamIcon;
+    }
+
+    .team__items-mila {
+        @extend %teamIcon;
+    }
+}
+
+.team__items {
+    @include flexColumn;
+    align-items: center;
+
+    .team__photo {
+        width: 224px;
+        height: 289px;
+        margin-bottom: 25px;
+    }
+}
+
+.team__name {
+    @include textName;
+    display: flex;
+    align-items: center;
+
+
+    &::after {
+        content: "";
+        display: flex;
+        background: url("../img/Polygon.png") center center no-repeat;
+        width: 9px;
+        height: 7px;
+        margin-left: 5px;
+    }
+
+}
+
+.team__name-motrsov {
+    margin-bottom: 13px;
+
+}
+
+.team__name-motrsov::after {
+    content: "";
+    display: flex;
+    background: url("../img/Polygon_top.png") center center no-repeat;
+    width: 9px;
+    height: 7px;
+    margin-left: 5px;
+}
+
+.team__prof {
+    @include profTxt;
+    margin-bottom: 6px;
+    display: flex;
+}
+
+.team__descrip {
+    display: flex;
+    width: 224px;
+    @include textContent;
+    font-weight: 300;
+    text-align: center;
+
+
+}

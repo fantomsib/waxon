@@ -1,0 +1,120 @@
+.bars {
+    display: flex;
+    background-color: #f8faf9;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bars__slider__left {
+    position: absolute;
+    left: 40px;
+} 
+.bars__slider__right {
+    position: absolute;
+    right: 40px;
+}
+
+
+.bars__elips {
+
+    position: relative;
+    @include flexColumn;
+
+    .elips__gris {
+        @extend %absolut;
+        top: 66px;
+        left: -10px;
+    }
+
+    .elips__bleu {
+        z-index: 2;
+    }
+
+    &::after {
+        @include pseudoAbsolut;
+        background: url("../img/bars.png") center center no-repeat;
+        top: -75px;
+        left: -6px;
+        width: 363px;
+        height: 383px;
+        z-index: 3;
+    }
+
+    &::before {
+        @include pseudoAbsolut;
+        background: url("../img/bars_leaves.png") center center no-repeat;
+        top: 0px;
+        left: -57px;
+        width: 462px;
+        height: 326px;
+
+    }
+}
+
+.bar__info {
+    @include flexColumn;
+}
+
+.bars__title {
+    @include titleBlack;
+    font-size: 36px;
+    margin-bottom: 41px;
+    width: 353px;
+    display: flex;
+}
+
+.bars__composition {
+    @include textName;
+    font-size: 24px;
+    margin-bottom: 33px;
+}
+
+.bars__description {
+    @include textContent;
+    margin-bottom: 51px;
+    width: 338px;
+    display: flex;
+}
+
+.bars__energy {
+    @include flexRow;
+    margin-bottom: 35px;
+
+    .energy__items {
+        @include flexColumn;
+        margin-right: 55px;
+    }
+
+    .energy__title {
+        margin-bottom: 9px;
+        @include txt333;
+    }
+
+    .energy__info {
+        @include txt333;
+        font-weight: 700;
+    }
+}
+
+.bars__price {
+    @include flexRow;
+
+    .bars__price__rub {
+        @include titleBlack;
+        font-weight: 300;
+        margin-right: 31px;
+    }
+
+    .bars__price__btn {
+        @include btn;
+    }
+}

@@ -380,6 +380,20 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+.bars__elips .elips__gris {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0; }
+
+.team__list .team__items-alla, .team__list .team__items-mila {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
 html,
 body {
   width: 100%;
@@ -462,31 +476,33 @@ h6 {
   width: 100%;
   height: 100vh;
   background-color: #61c4d9;
-  padding-top: 100px; }
+  /*padding-top: 100px;*/ }
 
-.container-welcome::after {
-  content: "";
-  background: url("../img/barres.png");
-  position: absolute;
-  top: 55px;
-  right: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 503px;
-  height: 523px; }
-
-.container-welcome::before {
-  content: "";
-  background: url("../img/iz.png") center center no-repeat;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 512px;
-  height: 648px; }
+.container-welcome {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .container-welcome::after {
+    content: "";
+    background: url("../img/barres.png");
+    position: absolute;
+    top: 218px;
+    right: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 503px;
+    height: 523px; }
+  .container-welcome::before {
+    content: "";
+    background: url("../img/iz.png") center center no-repeat;
+    position: absolute;
+    top: 125px;
+    right: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 512px;
+    height: 648px; }
 
 .header {
   display: -webkit-box;
@@ -508,7 +524,7 @@ h6 {
     content: "";
     background: url("../img/berry.png");
     position: absolute;
-    top: 406px;
+    top: 659px;
     left: 550px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -519,7 +535,7 @@ h6 {
     content: "";
     background: url("../img/list.png");
     position: absolute;
-    top: 353px;
+    top: 594px;
     right: -28px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -599,8 +615,8 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  left: 1050px;
-  top: 114px;
+  left: 1070px;
+  top: 386px;
   z-index: 3; }
   .welcome__sidebar .sidebar__items {
     margin-bottom: 16px; }
@@ -741,7 +757,7 @@ h6 {
     margin: 0;
     position: absolute;
     background: url("../img/why__berry.png") center center no-repeat;
-    top: 374px;
+    top: 497px;
     left: 0;
     width: 161px;
     height: 315px; }
@@ -855,3 +871,338 @@ h6 {
   font-weight: 300;
   text-align: center;
   width: 276px; }
+
+.bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8faf9;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.container-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.bars__slider__left {
+  position: absolute;
+  left: 40px; }
+
+.bars__slider__right {
+  position: absolute;
+  right: 40px; }
+
+.bars__elips {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .bars__elips .elips__gris {
+    top: 66px;
+    left: -10px; }
+  .bars__elips .elips__bleu {
+    z-index: 2; }
+  .bars__elips::after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: url("../img/bars.png") center center no-repeat;
+    top: -75px;
+    left: -6px;
+    width: 363px;
+    height: 383px;
+    z-index: 3; }
+  .bars__elips::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: url("../img/bars_leaves.png") center center no-repeat;
+    top: 0px;
+    left: -57px;
+    width: 462px;
+    height: 326px; }
+
+.bar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.bars__title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 41px;
+  width: 353px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bars__composition {
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 33px; }
+
+.bars__description {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 51px;
+  width: 338px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bars__energy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 35px; }
+  .bars__energy .energy__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 55px; }
+  .bars__energy .energy__title {
+    margin-bottom: 9px;
+    color: #333333;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400; }
+  .bars__energy .energy__info {
+    color: #333333;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: 700; }
+
+.bars__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .bars__price .bars__price__rub {
+    color: #0d0d0d;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 31px; }
+  .bars__price .bars__price__btn {
+    width: 156px;
+    height: 58px;
+    background-color: #0f5a47;
+    color: #ffffff;
+    font-family: "alegreya_sans_extraboldRg";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 35px;
+    z-index: 2; }
+    .bars__price .bars__price__btn:hover {
+      background-color: #ffffff;
+      color: #0f5a47; }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.container-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container-team::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: url("../img/team_bagr.png") center center no-repeat;
+    display: flex;
+    width: 196px;
+    height: 578px;
+    top: -413px;
+    right: 0; }
+  .container-team::after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: url("../img/bars_berry.png") center center no-repeat;
+    display: flex;
+    width: 135px;
+    height: 112px;
+    top: -253px;
+    right: 0; }
+
+.team__title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 68px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 405px; }
+
+.team__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .team__items .team__photo {
+    width: 224px;
+    height: 289px;
+    margin-bottom: 25px; }
+
+.team__name {
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .team__name::after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../img/Polygon.png") center center no-repeat;
+    width: 9px;
+    height: 7px;
+    margin-left: 5px; }
+
+.team__name-motrsov {
+  margin-bottom: 13px; }
+
+.team__name-motrsov::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/Polygon_top.png") center center no-repeat;
+  width: 9px;
+  height: 7px;
+  margin-left: 5px; }
+
+.team__prof {
+  color: #281e1e;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__descrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 224px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: 300;
+  text-align: center; }

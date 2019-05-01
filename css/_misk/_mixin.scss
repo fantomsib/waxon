@@ -70,9 +70,10 @@
     align-items: center;
     border-radius: 35px;
     z-index: 2;
+
     &:hover {
         background-color: $white;
-        color:  #0f5a47;
+        color: #0f5a47;
     }
 }
 
@@ -92,10 +93,45 @@
     font-weight: 400;
 }
 
-@mixin pseudoAbsolut{
+@mixin pseudoAbsolut {
     content: "";
     display: flex;
     padding: 0;
     margin: 0;
     position: absolute;
+}
+
+%absolut {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin textName {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 21px;
+    font-weight: 500;
+
+}
+
+@mixin txt333 {
+    color: #333333;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin profTxt {
+    color: #281e1e;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+%teamIcon {
+    align-self: flex-end;
 }
