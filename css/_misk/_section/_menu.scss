@@ -5,7 +5,17 @@
     justify-content: center;
     background: url("../img/menu_bag.jpg") center center no-repeat;
     background-size: cover;
+    position: relative;
 
+    &::after {
+        @include pseudoAbsolut;
+        background: url("../img/menu_berry.png") center center no-repeat;
+        display: flex;
+        width: 104px;
+        height: 114px;
+        top: -70px;
+        left: 18px;
+    }
 }
 
 .container-menu {
@@ -15,15 +25,7 @@
     padding-left: 0;
     padding-right: 0;
 
-    &::after {
-        @include pseudoAbsolut;
-        background: url("../img/menu_berry.png") center center no-repeat;
-        display: flex;
-        width: 104px;
-        height: 114px;
-        top: -68px;
-        left: 0;
-    }
+
 }
 
 .munu__title {
@@ -63,6 +65,7 @@
 .menu__link {
     position: relative;
     display: flex;
+
 }
 
 .menu__descrip {

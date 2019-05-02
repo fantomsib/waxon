@@ -1,0 +1,116 @@
+.reviews {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+        @include pseudoAbsolut;
+        background: url("../img/reviews__berry2.png") center center no-repeat;
+        bottom: -121px;
+        left: 0px;
+        width: 154px;
+        height: 220px;
+        z-index: 2;
+    }
+
+    &::before {
+        @include pseudoAbsolut;
+        background: url("../img/reviews__bag2.png") center center no-repeat;
+        bottom: -193px;
+        left: 0px;
+        width: 134px;
+        height: 422px;
+        z-index: 2;
+    }
+
+    .reviewes__bag__berry {
+        display: flex;
+        position: absolute;
+        top: 16px;
+        right: 0;
+        width: 173px;
+        height: 99px;
+    }
+}
+
+
+.container-reviews {
+    @include flexColumn;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reviews__title {
+    @include titleBlack;
+    margin-bottom: 59px;
+}
+
+.reviews__comit {
+    @include flexRow;
+    width: 940px;
+    height: 351px;
+    background-color: #f8faf9;
+    align-items: center;
+    padding-left: 45px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+        @include pseudoAbsolut;
+        background: url("../img/reviews__bag.png") center center no-repeat;
+        top: 0;
+        right: 0;
+        width: 127px;
+        height: 167px;
+    }
+
+    .reviews__comit__photo {
+        width: 254px;
+        height: 260px;
+        margin-right: 18px;
+    }
+}
+
+.reviews__comit__text {
+    @include flexColumn;
+
+    .reviews__comit__title {
+        @include textName;
+        font-size: 30px;
+        margin-bottom: 29px;
+    }
+
+    .reviews__comit__descrip {
+        @include textContent;
+        margin-bottom: 32px;
+        width: 433px;
+    }
+
+    .reviews__comit__name {
+        @include textContent;
+        font-weight: 500;
+    }
+}
+
+.reviews__list {
+    @include flexRow;
+
+    .reviews__items {
+        margin-right: 40px;
+
+        &:hover .reviews__icon {
+            border: 8px solid #0f5a47;
+            border-radius: 50%;
+        }
+    }
+
+    .reviews__icon {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        background-color: #0f5a47;
+    }
+}

@@ -1,0 +1,125 @@
+.work {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #f8faf9;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url("../img/work__bag.png") center center no-repeat;
+        @include pseudoAbsolut;
+        width: 242px;
+        height: 264px;
+        bottom: -128px;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+.container-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url("../img/work__list.png") center center no-repeat;
+        @include pseudoAbsolut;
+        width: 72px;
+        height: 135px;
+        bottom: 152px;
+        left: 89px;
+    
+    }
+
+    &::after {
+        content: "";
+        background: url("../img/work__list2.png") center center no-repeat;
+        @include pseudoAbsolut;
+        width: 90px;
+        height: 77px;
+        top: 272px;
+        right: 109px;
+
+    }
+
+
+}
+
+.work__title {
+    @include titleBlack;
+    display: flex;
+    margin-bottom: 69px;
+}
+
+.work__player {
+    width: 660px;
+    height: 405px;
+    @include flexColumn;
+
+
+
+
+    .work__film {
+        position: relative;
+        display: flex;
+        height: 370px;
+        background: url("../img/film.png") center center no-repeat;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            @include pseudoAbsolut;
+            background: url("../img/Play_white.png") center center no-repeat;
+            width: 82px;
+            height: 118px;
+            opacity: 0.9;
+        }
+    }
+}
+
+.work__control {
+    display: flex;
+    position: relative;
+    height: 35px;
+    background-color: #3e3e3e;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 21px;
+
+    .control__list {
+        align-items: center;
+        display: flex;
+    }
+
+    .control__list-play {
+        margin-right: 19px;
+    }
+
+    .control__list-playstatus {
+        margin-right: 45px;
+
+        &::after {
+            @include pseudoAbsolut;
+            background: url("../img/film__point.png") center center no-repeat;
+            width: 13px;
+            height: 13px;
+            margin-left: 73px;
+        }
+    }
+
+    .control__list-volum {
+        margin-right: 19px;
+    }
+
+    .control__list-volumstatus::after {
+        @include pseudoAbsolut;
+        background: url("../img/film__point.png") center center no-repeat;
+        width: 13px;
+        height: 13px;
+        margin-left: 46px;
+    }
+}

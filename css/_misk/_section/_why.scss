@@ -4,19 +4,13 @@
     width: 100%;
     background-color: $white;
     justify-content: center;
-   align-items: center;
-
-
-}
-
-
-.container-why {
+    align-items: center;
     position: relative;
-    justify-content: center;
+
     &::before {
         @include pseudoAbsolut;
         background: url("../img/why__bag.png") center center no-repeat;
-        top: 113px;
+        bottom: 245px;
         left: 0;
         width: 191px;
         height: 314px;
@@ -25,12 +19,22 @@
     &::after {
         @include pseudoAbsolut;
         background: url("../img/why__berry.png") center center no-repeat;
-        top: 497px;
+        bottom: -100px;
         left: 0;
         width: 161px;
         height: 315px;
 
     }
+
+
+}
+
+
+.container-why {
+    position: relative;
+    justify-content: center;
+
+
 }
 
 

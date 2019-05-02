@@ -7,10 +7,28 @@
     height: 100vh;
     background-color: #61c4d9;
 
-    /*padding-top: 100px;*/
+    &::before {
+        content: "";
+        background: url("../img/iz.png") center center no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        width: 512px;
+        height: 648px;
+    }
 
-
-
+    &::after {
+        content: "";
+        background: url("../img/berry.png");
+        position: absolute;
+        bottom: -30px;
+        right: 70px;
+        display: flex;
+        width: 387px;
+        height: 286px;
+        z-index: 3;
+    }
 }
 
 .container-welcome {
@@ -29,14 +47,16 @@
 
     &::before {
         content: "";
-        background: url("../img/iz.png") center center no-repeat;
+        background: url("../img/list.png");
         position: absolute;
-        top: 125px;
-        right: 1px;
+        top: 635px;
+        right: 41px;
         display: flex;
-        width: 512px;
-        height: 648px;
+        width: 1056px;
+        height: 353px;
+        z-index: 3;
     }
+
 
 
 
@@ -50,27 +70,9 @@
     position: relative;
     margin-bottom: 100px;
 
-    &::before {
-        content: "";
-        background: url("../img/berry.png");
-        position: absolute;
-        top: 659px;
-        left: 550px;
-        display: flex;
-        width: 387px;
-        height: 286px;
-    }
 
-    &::after {
-        content: "";
-        background: url("../img/list.png");
-        position: absolute;
-        top: 594px;
-        right: -28px;
-        display: flex;
-        width: 1056px;
-        height: 353px;
-    }
+
+
 }
 
 .header__logo {
@@ -120,8 +122,8 @@
 .welcome__sidebar {
     @include flexColumn;
     position: absolute;
-    left: 1070px;
-    top: 386px;
+    left: 1030px;
+    top: 376px;
     z-index: 3;
 
     .sidebar__items {
@@ -165,6 +167,7 @@
 .welcome__btn {
     @include btn;
     margin-bottom: 72px;
+    z-index: 5;
 }
 
 .welcome__info {

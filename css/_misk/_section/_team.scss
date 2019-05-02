@@ -5,12 +5,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-
-
-}
-
-.container-team {
-    display: flex;
+    position: relative;
 
     &::before {
         @include pseudoAbsolut;
@@ -18,7 +13,7 @@
         display: flex;
         width: 196px;
         height: 578px;
-        top: -413px;
+        top: -241px;
         right: 0;
     }
 
@@ -28,9 +23,16 @@
         display: flex;
         width: 135px;
         height: 112px;
-        top: -253px;
+        top: -67px;
         right: 0;
     }
+
+}
+
+.container-team {
+    display: flex;
+
+
 }
 
 
