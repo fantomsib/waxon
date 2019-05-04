@@ -6,6 +6,7 @@
     background: url("../img/menu_bag.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
+    min-height: 650px;
 
     &::after {
         @include pseudoAbsolut;

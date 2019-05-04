@@ -6,6 +6,7 @@
     width: 100%;
     height: 100vh;
     background-color: #61c4d9;
+    min-height: 650px;
 
     &::before {
         content: "";
@@ -129,7 +130,13 @@
     .sidebar__items {
         margin-bottom: 16px;
 
-
+        &:hover .sidebar__link {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            display: flex;
+        }
     }
 }
 
@@ -145,16 +152,6 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-    }
-
-
-    &:hover {
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        border-radius: 50%;
-        display: flex;
-
     }
 }
 

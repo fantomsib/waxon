@@ -5,6 +5,7 @@
     background: url("../img/map.jpg") center center no-repeat;
     position: relative;
     background-size: cover;
+    min-height: 700px;
 }
 
 .coontainer-map {
@@ -58,17 +59,21 @@
 
 .footer__social {
     @include flexRow;
+    align-items: center;
+    justify-content: center;
 
-    .social {
-        height: 20px;
-        width: 23px;
-        margin-right: 20px;
-        display: flex;
-    }
 
-    @each $social in (vk, fb, inst, twit) {
-        .social_#{$social} {
-            background: url("../img/#{$social}.png") center center no-repeat;
-        }
-    }
+}
+
+.social {
+    display: inline;
+    margin-right: 20px;
+    background: url("/img/icons.svg") center center no-repeat;
+}
+
+
+
+
+.vvk:hover{
+fill: #010101;
 }

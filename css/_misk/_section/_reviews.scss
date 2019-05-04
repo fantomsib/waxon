@@ -4,6 +4,7 @@
     width: 100%;
     justify-content: center;
     position: relative;
+    min-height: 808px;
 
     &::after {
         @include pseudoAbsolut;
