@@ -1782,6 +1782,15 @@ h6 {
   -ms-flex-align: center;
   align-items: center; }
 
+.coontainer-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 .footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1836,8 +1845,7 @@ h6 {
 
 .social {
   display: inline;
-  margin-right: 20px;
-  background: url("../img/icons.svg") center center no-repeat; }
+  margin-right: 20px; }
 
 .vvk:hover {
   fill: #010101; }

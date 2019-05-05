@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.coontainer-map {
+display: flex;
+flex-direction: row;
+}
+
 .footer__row {
     display: flex;
     width: 50%;
@@ -53,7 +58,7 @@
 .social {
     display: inline;
     margin-right: 20px;
-    background: url("../img/icons.svg") center center no-repeat;
+   
 }
 
 .vvk:hover {
