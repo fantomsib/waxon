@@ -12,12 +12,12 @@
 
 .bars__slider__left {
     position: absolute;
-    left: 40px;
+    left: 2.5rem;
 }
 
 .bars__slider__right {
     position: absolute;
-    right: 40px;
+    right: 2.5rem;
 }
 
 .bars__elips {
@@ -28,8 +28,8 @@
     .elips__gris {
         position: absolute;
         display: flex;
-        top: 66px;
-        left: -10px;
+        top: 4.12rem;
+        left: -0.62rem;
         max-width: 100%;
     }
 
@@ -43,10 +43,10 @@
         content: "";
         display: flex;
         background: url("../img/bars.png") center center no-repeat;
-        top: -75px;
-        left: -6px;
-        width: 363px;
-        height: 383px;
+        top: -4.68rem;
+        left: -0.37rem;
+        width: 22.68rem;
+        height: 23.93rem;
         z-index: 3;
     }
 
@@ -55,10 +55,10 @@
         content: "";
         display: flex;
         background: url("../img/bars_leaves.png") center center no-repeat;
-        top: 0px;
-        left: -57px;
-        width: 462px;
-        height: 326px;
+        top: 0;
+        left: -3.56rem;
+        width: 28.87rem;
+        height: 20.37rem;
 
     }
 }
@@ -70,53 +70,53 @@
 
 .bars__title {
     @include titleBlack;
-    font-size: 36px;
-    margin-bottom: 41px;
-    width: 353px;
+    font-size: 2.25rem;
+    margin-bottom: 2.56rem;
+    width: 22rem;
     display: flex;
 }
 
 .bars__composition {
     @include textName;
-    font-size: 24px;
-    margin-bottom: 33px;
+    font-size: 1.5rem;
+    margin-bottom: 2.06rem;
 }
 
 .bars__description {
     @include textContent;
-    margin-bottom: 51px;
-    width: 338px;
+    margin-bottom: 3.18rem;
+    width: 21.12rem;
     display: flex;
 }
 
 .bars__energy {
     display: flex;
-    margin-bottom: 35px;
+    margin-bottom: 2.18rem;
 
     .energy__items {
         display: flex;
         flex-direction: column;
-        margin-right: 55px;
+        margin-right: 3.43rem;
     }
 
     .energy__title {
-        margin-bottom: 9px;
+        margin-bottom: 0.56rem;
         @include txt333;
     }
 
     .energy__info {
         @include txt333;
-        font-weight: 700;
+        font-weight: 43.75rem;
     }
 }
 
 .bars__price {
-  display: flex;
+    display: flex;
 
     .bars__price__rub {
         @include titleBlack;
-        font-weight: 300;
-        margin-right: 31px;
+        font-weight: 18.75rem;
+        margin-right: 1.93rem;
     }
 
     .bars__price__btn {

@@ -1,7 +1,7 @@
 .section-team {
     background-color: $white;
     align-items: center;
-    min-height: 766px;
+    min-height: 47.87rem;
 
     &::before {
         content: "";
@@ -9,9 +9,9 @@
         position: absolute;
         background: url("../img/team_bagr.png") center center no-repeat;
         display: flex;
-        width: 196px;
-        height: 578px;
-        top: -241px;
+        width: 12.25rem;
+        height: 36.12rem;
+        top: -15.06rem;
         right: 0;
     }
 
@@ -21,9 +21,9 @@
         position: absolute;
         background: url("../img/bars_berry.png") center center no-repeat;
         display: flex;
-        width: 135px;
-        height: 112px;
-        top: -67px;
+        width: 8.43rem;
+        height: 7rem;
+        top: -4.18rem;
         right: 0;
     }
 }
@@ -34,7 +34,7 @@
 
 .team__title {
     @include titleBlack;
-    margin-bottom: 68px;
+    margin-bottom: 4.25rem;
     justify-content: center;
     display: flex;
 }
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 405px;
+    height: 25.31rem;
 
 
     .team__items-alla {
@@ -61,9 +61,9 @@
     align-items: center;
 
     .team__photo {
-        width: 224px;
-        height: 289px;
-        margin-bottom: 25px;
+        width: 14rem;
+        height: 18.06rem;
+        margin-bottom: 1.56rem;
         max-width: 100%;
     }
 }
@@ -78,14 +78,14 @@
         content: "";
         display: flex;
         background: url("../img/Polygon.png") center center no-repeat;
-        width: 9px;
-        height: 7px;
-        margin-left: 5px;
+        width: 0.56rem;
+        height: 0.43rem;
+        margin-left: 0.31rem;
     }
 }
 
 .team__name-motrsov {
-    margin-bottom: 13px;
+    margin-bottom: 0.81rem;
 
 }
 
@@ -93,21 +93,21 @@
     content: "";
     display: flex;
     background: url("../img/Polygon_top.png") center center no-repeat;
-    width: 9px;
-    height: 7px;
-    margin-left: 5px;
+    width: 0.56rem;
+    height: 0.43rem;
+    margin-left: 0.31rem;
 }
 
 .team__prof {
     @include profTxt;
-    margin-bottom: 6px;
+    margin-bottom: 0.37rem;
     display: flex;
 }
 
 .team__descrip {
     display: flex;
-    width: 224px;
+    width: 14rem;
     @include textContent;
-    font-weight: 300;
+    font-weight: 18.75rem;
     text-align: center;
 }

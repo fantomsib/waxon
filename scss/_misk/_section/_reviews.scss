@@ -1,15 +1,15 @@
 .section-reviews {
-    min-height: 808px;
+    min-height: 50.5rem;
 
     &::after {
         content: "";
         display: flex;
         position: absolute;
         background: url("../img/reviews__berry2.png") center center no-repeat;
-        bottom: -121px;
+        bottom: -7.56rem;
         left: 0px;
-        width: 154px;
-        height: 220px;
+        width: 9.62rem;
+        height: 13.75rem;
         z-index: 2;
     }
 
@@ -18,20 +18,20 @@
         display: flex;
         position: absolute;
         background: url("../img/reviews__bag2.png") center center no-repeat;
-        bottom: -193px;
+        bottom: -12.06rem;
         left: 0px;
-        width: 134px;
-        height: 422px;
+        width: 8.37rem;
+        height: 26.37rem;
         z-index: 2;
     }
 
     .reviewes__bag__berry {
         display: flex;
         position: absolute;
-        top: 16px;
+        top: 1rem;
         right: 0;
-        width: 173px;
-        height: 99px;
+        width: 10.81rem;
+        height: 6.18rem;
     }
 }
 
@@ -46,18 +46,18 @@
 
 .reviews__title {
     @include titleBlack;
-    margin-bottom: 59px;
+    margin-bottom: 3.68rem;
 }
 
 .reviews__comit {
     display: flex;
-    width: 940px;
-    height: 351px;
+    width: 58.75rem;
+    height: 21.93rem;
     background-color: #f8faf9;
     align-items: center;
-    padding-left: 45px;
+    padding-left: 2.81rem;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 3.12rem;
 
     &::before {
         content: "";
@@ -66,15 +66,15 @@
         background: url("../img/reviews__bag.png") center center no-repeat;
         top: 0;
         right: 0;
-        width: 127px;
-        height: 167px;
+        width: 7.93rem;
+        height: 10.43rem;
     }
 }
 
 .reviews__comit__photo {
-    width: 254px;
-    height: 260px;
-    margin-right: 18px;
+    width: 15.87rem;
+    height: 16.25rem;
+    margin-right: 1.12rem;
     max-width: 100%;
 }
 
@@ -85,19 +85,19 @@
 
 .reviews__comit__title {
     @include textName;
-    font-size: 30px;
-    margin-bottom: 29px;
+    font-size: 1.87rem;
+    margin-bottom: 1.81rem;
 }
 
 .reviews__comit__descrip {
     @include textContent;
-    margin-bottom: 32px;
-    width: 433px;
+    margin-bottom: 2rem;
+    width: 27.06rem;
 }
 
 .reviews__comit__name {
     @include textContent;
-    font-weight: 500;
+    font-weight: 31.25rem;
 }
 
 .reviews__list {
@@ -106,12 +106,12 @@
 }
 
 .reviews__items {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 
     .reviews__icon {
         display: flex;
-        width: 94px;
-        height: 94px;
+        width: 5.87rem;
+        height: 5.87rem;
         border-radius: 50%;
         background-color: #0f5a47;
         max-width: 100%;
@@ -120,7 +120,7 @@
 
 .reviews__items-active,
 .reviews__items:active {
-    border: 8px solid #0f5a47;
+    border: 0.5rem solid #0f5a47;
     border-radius: 50%;
     background-color: #0f5a47;
 }

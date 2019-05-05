@@ -7,10 +7,10 @@
         display: flex;
         position: absolute;
         background: url("../img/why__bag.png") center center no-repeat;
-        bottom: 245px;
+        bottom: 15.31rem;
         left: 0;
-        width: 191px;
-        height: 314px;
+        width: 11.93rem;
+        height: 19.62rem;
     }
 
     &::after {
@@ -18,10 +18,10 @@
         display: flex;
         position: absolute;
         background: url("../img/why__berry.png") center center no-repeat;
-        bottom: -100px;
+        bottom: -6.25rem;
         left: 0;
-        width: 161px;
-        height: 315px;
+        width: 10.06rem;
+        height: 19.68rem;
     }
 }
 
@@ -33,14 +33,14 @@
 
 .why__title {
     @include titleBlack;
-    margin-bottom: 23px;
+    margin-bottom: 1.43rem;
     display: flex;
     justify-content: center;
 }
 
 .why__txt {
     @include textContent;
-    margin-bottom: 57px;
+    margin-bottom: 3.56rem;
     display: flex;
     justify-content: center;
 }
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: row;
     z-index: 2;
-    width: 945px;
+    width: 59.06rem;
     justify-content: space-between;
 }
 
@@ -61,16 +61,16 @@
 
     span {
         font-family: 'alegreya_sans_extraboldRg';
-        font-size: 27px;
+        font-size: 1.68rem;
         color: black;
-        margin-bottom: 25px;
+        margin-bottom: 1.56rem;
     }
 
     p {
         @include textContent;
-        font-weight: 300;
+        font-weight: 18.75rem;
         text-align: center;
-        width: 276px;
+        width: 17.25rem;
     }
 
 
@@ -79,10 +79,10 @@
         display: flex;
         position: absolute;
         background: url("../img/why__after.png") center center no-repeat;
-        width: 67px;
-        height: 21px;
-        right: -62px;
-        top: 52px;
+        width: 4.18rem;
+        height: 1.31rem;
+        right: -3.87rem;
+        top: 3.25rem;
     }
 
     &:last-child::after {
@@ -92,19 +92,19 @@
 
 .why__icon {
     display: flex;
-    width: 70px;
-    height: 69px;
-    width: 125px;
-    height: 125px;
+    width: 4.37rem;
+    height: 4.31rem;
+    width: 7.81rem;
+    height: 7.81rem;
     background-color: #f2f5f4;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 35px;
+    margin-bottom: 2.18rem;
 
     .why__img {
-        width: 70px;
-        height: 69px;
+        width: 4.37rem;
+        height: 4.31rem;
         max-width: 100%;
     }
 }
