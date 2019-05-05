@@ -1,9 +1,4 @@
-.delivery {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
+.section-delivery {
     background: url("../img/delivery__bag.jpg") center center no-repeat;
     background-size: cover;
     min-height: 670px;
@@ -34,7 +29,8 @@
 }
 
 .coontainer-delivery {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -46,20 +42,21 @@
 }
 
 .form {
-    @include flexRow;
+    display: flex;
     width: 950px;
     justify-content: space-between;
 
 }
 
 .form__left {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
     width: 463px;
 
 }
 
 .left__top {
-    @include flexRow;
+    display: flex;
     justify-content: space-between;
 
     .input__top {
@@ -72,7 +69,8 @@
 
 .left__top__name,
 .left__top__phone {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -81,24 +79,22 @@
 }
 
 .form__center {
-    @extend %inputDir;
+    display: flex;
+    flex-direction: column;
 
     .input__center {
         height: $heightInput;
         @include input;
-
     }
-
 }
 
-
-
 .form__bottom {
-    @include flexRow;
+    display: flex;
     justify-content: space-between;
 
     .bottom__items {
-        @include flexColumn;
+        display: flex;
+        flex-direction: column;
         width: 100px;
     }
 
@@ -109,11 +105,13 @@
 }
 
 .form__right {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__right__texterea {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 
     .textarea {
         width: 460px;

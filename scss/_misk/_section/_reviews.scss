@@ -1,13 +1,10 @@
-.reviews {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    position: relative;
+.section-reviews {
     min-height: 808px;
 
     &::after {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/reviews__berry2.png") center center no-repeat;
         bottom: -121px;
         left: 0px;
@@ -17,7 +14,9 @@
     }
 
     &::before {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/reviews__bag2.png") center center no-repeat;
         bottom: -193px;
         left: 0px;
@@ -38,7 +37,8 @@
 
 
 .container-reviews {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -50,7 +50,7 @@
 }
 
 .reviews__comit {
-    @include flexRow;
+    display: flex;
     width: 940px;
     height: 351px;
     background-color: #f8faf9;
@@ -60,58 +60,67 @@
     margin-bottom: 50px;
 
     &::before {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/reviews__bag.png") center center no-repeat;
         top: 0;
         right: 0;
         width: 127px;
         height: 167px;
     }
-
-    .reviews__comit__photo {
-        width: 254px;
-        height: 260px;
-        margin-right: 18px;
-    }
 }
 
-.reviews__comit__text {
-    @include flexColumn;
+.reviews__comit__photo {
+    width: 254px;
+    height: 260px;
+    margin-right: 18px;
+    max-width: 100%;
+}
 
-    .reviews__comit__title {
-        @include textName;
-        font-size: 30px;
-        margin-bottom: 29px;
-    }
+.rewiews__items-text {
+    display: flex;
+    flex-direction: column;
+}
 
-    .reviews__comit__descrip {
-        @include textContent;
-        margin-bottom: 32px;
-        width: 433px;
-    }
+.reviews__comit__title {
+    @include textName;
+    font-size: 30px;
+    margin-bottom: 29px;
+}
 
-    .reviews__comit__name {
-        @include textContent;
-        font-weight: 500;
-    }
+.reviews__comit__descrip {
+    @include textContent;
+    margin-bottom: 32px;
+    width: 433px;
+}
+
+.reviews__comit__name {
+    @include textContent;
+    font-weight: 500;
 }
 
 .reviews__list {
-    @include flexRow;
+    display: flex;
+    align-items: center;
+}
 
-    .reviews__items {
-        margin-right: 40px;
-
-        &:hover .reviews__icon {
-            border: 8px solid #0f5a47;
-            border-radius: 50%;
-        }
-    }
+.reviews__items {
+    margin-right: 40px;
 
     .reviews__icon {
+        display: flex;
         width: 94px;
         height: 94px;
         border-radius: 50%;
         background-color: #0f5a47;
+        max-width: 100%;
     }
+}
+
+.reviews__items-active,
+.reviews__items:active {
+    border: 8px solid #0f5a47;
+    border-radius: 50%;
+    background-color: #0f5a47;
 }

@@ -1,17 +1,3 @@
-.map {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    background: url("../img/map.jpg") center center no-repeat;
-    position: relative;
-    background-size: cover;
-    min-height: 700px;
-}
-
-.coontainer-map {
-    @include flexRow;
-}
-
 .footer {
     display: flex;
     height: 93px;
@@ -30,7 +16,8 @@
 
 /* Левая секция футора*/
 .footer__row-left {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 
     .footer__address {
         color: #010101;
@@ -52,28 +39,23 @@
 
 /*правая секция футора*/
 .footer__row-right {
-    @include flexRow;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .footer__social {
-    @include flexRow;
+    display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .social {
     display: inline;
     margin-right: 20px;
-    background: url("/img/icons.svg") center center no-repeat;
+    background: url("../img/icons.svg") center center no-repeat;
 }
 
-
-
-
-.vvk:hover{
-fill: #010101;
+.vvk:hover {
+    fill: #010101;
 }

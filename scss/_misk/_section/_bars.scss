@@ -1,11 +1,6 @@
-.bars {
-    display: flex;
+.section-bars {
     background-color: #f8faf9;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    min-height: 650px;
 }
 
 .container-bars {
@@ -18,30 +13,35 @@
 .bars__slider__left {
     position: absolute;
     left: 40px;
-} 
+}
+
 .bars__slider__right {
     position: absolute;
     right: 40px;
 }
 
-
 .bars__elips {
-
     position: relative;
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 
     .elips__gris {
-        @extend %absolut;
+        position: absolute;
+        display: flex;
         top: 66px;
         left: -10px;
+        max-width: 100%;
     }
 
     .elips__bleu {
         z-index: 2;
+        max-width: 100%;
     }
 
     &::after {
-        @include pseudoAbsolut;
+        position: absolute;
+        content: "";
+        display: flex;
         background: url("../img/bars.png") center center no-repeat;
         top: -75px;
         left: -6px;
@@ -51,7 +51,9 @@
     }
 
     &::before {
-        @include pseudoAbsolut;
+        position: absolute;
+        content: "";
+        display: flex;
         background: url("../img/bars_leaves.png") center center no-repeat;
         top: 0px;
         left: -57px;
@@ -62,7 +64,8 @@
 }
 
 .bar__info {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
 }
 
 .bars__title {
@@ -87,11 +90,12 @@
 }
 
 .bars__energy {
-    @include flexRow;
+    display: flex;
     margin-bottom: 35px;
 
     .energy__items {
-        @include flexColumn;
+        display: flex;
+        flex-direction: column;
         margin-right: 55px;
     }
 
@@ -107,7 +111,7 @@
 }
 
 .bars__price {
-    @include flexRow;
+  display: flex;
 
     .bars__price__rub {
         @include titleBlack;

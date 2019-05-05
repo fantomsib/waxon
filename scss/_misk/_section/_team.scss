@@ -1,15 +1,12 @@
-.team {
-    display: flex;
+.section-team {
     background-color: $white;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    position: relative;
     min-height: 766px;
 
     &::before {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/team_bagr.png") center center no-repeat;
         display: flex;
         width: 196px;
@@ -19,7 +16,9 @@
     }
 
     &::after {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/bars_berry.png") center center no-repeat;
         display: flex;
         width: 135px;
@@ -27,48 +26,45 @@
         top: -67px;
         right: 0;
     }
-
 }
 
 .container-team {
     display: flex;
-
-
 }
-
-
 
 .team__title {
     @include titleBlack;
     margin-bottom: 68px;
     justify-content: center;
     display: flex;
-
 }
 
 .team__list {
-    @include flexRow;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     height: 405px;
 
 
     .team__items-alla {
-        @extend %teamIcon;
+        align-self: flex-end;
     }
 
     .team__items-mila {
-        @extend %teamIcon;
+        align-self: flex-end;
     }
 }
 
 .team__items {
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
     .team__photo {
         width: 224px;
         height: 289px;
         margin-bottom: 25px;
+        max-width: 100%;
     }
 }
 
@@ -86,7 +82,6 @@
         height: 7px;
         margin-left: 5px;
     }
-
 }
 
 .team__name-motrsov {
@@ -115,6 +110,4 @@
     @include textContent;
     font-weight: 300;
     text-align: center;
-
-
 }

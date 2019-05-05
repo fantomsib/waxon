@@ -1,48 +1,4 @@
-@mixin flexColumn {
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin flexRow {
-    display: flex;
-    flex-direction: row;
-}
-
-@mixin ContentCenterCenter {
-    justify-content: center;
-    align-content: center;
-}
-
-@mixin itemsCenterCenter {
-    justify-items: center;
-    align-items: center;
-}
-
-@mixin juCoCtrAlItCtr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin navLink {
-    color: $colorWhiteText;
-    font-family: "Alegreya Sans";
-    font-size: 18px;
-    font-weight: 400;
-
-}
-
-@mixin number {
-    color: $colorWhiteText;
-    font-family: "Alegreya Sans";
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-
-}
-
 @mixin title {
-
     font-family: "Alegreya Sans";
     font-size: 60px;
     font-weight: 700;
@@ -54,6 +10,20 @@
     color: $colorWhiteText;
     font-family: "Alegreya Sans";
     font-weight: 400;
+}
+
+
+@mixin input {
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.05px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 11px;
+    padding-right: 11px;
+
 }
 
 @mixin btn {
@@ -69,11 +39,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 35px;
-    z-index: 2;
+    overflow: hidden;
+    border: none;
 
     &:hover {
         background-color: $white;
         color: #0f5a47;
+        border-radius: 35px;
+        overflow: hidden;
+        border: none;
     }
 }
 
@@ -91,23 +65,6 @@
     font-family: "Alegreya Sans";
     font-size: 18px;
     font-weight: 400;
-}
-
-@mixin pseudoAbsolut {
-    content: "";
-    display: flex;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-}
-
-%absolut {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
 }
 
 @mixin textName {
@@ -132,14 +89,8 @@
     font-weight: 400;
 }
 
-%teamIcon {
-    align-self: flex-end;
-}
 
-%inputDir {
-    @include flexColumn;
 
-}
 
 @mixin inputTxt {
     color: #0f5a47;
@@ -147,17 +98,4 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30.05px;
-}
-
-@mixin input {
-    color: #000000;
-    font-family: "Alegreya Sans";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30.05px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 11px;
-    padding-right: 11px;
-    
 }

@@ -3,7 +3,10 @@
 @import "./_misk/var";
 @import "./_misk/mixin";
 @import "./_misk/_config";
-@import "./_misk/_section/_welcome";
+
+@import "../scss/_misk/_section/welcome";
+
+@import "./_misk/_section/_header";
 @import "./_misk/_section/why";
 @import "./_misk/_section/_bars";
 @import "./_misk/_section/_team";
@@ -12,3 +15,4 @@
 @import  "./_misk/_section/_work";
 @import  "./_misk/_section/_delivery";
 @import "./_misk/_section/_map";
+@import "./_misk/_section/_footer";

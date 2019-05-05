@@ -1,15 +1,11 @@
-.why {
-    display: flex;
-    height: 100vh;
-    width: 100%;
+.section-why {
     background-color: $white;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    min-height: 650px;
 
     &::before {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/why__bag.png") center center no-repeat;
         bottom: 245px;
         left: 0;
@@ -18,27 +14,22 @@
     }
 
     &::after {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/why__berry.png") center center no-repeat;
         bottom: -100px;
         left: 0;
         width: 161px;
         height: 315px;
-
     }
-
-
 }
 
 
 .container-why {
     position: relative;
     justify-content: center;
-
-
 }
-
-
 
 .why__title {
     @include titleBlack;
@@ -55,35 +46,48 @@
 }
 
 .why__list {
-    @include flexRow;
+    display: flex;
+    flex-direction: row;
     z-index: 2;
     width: 945px;
     justify-content: space-between;
-
-    .why__items {
-        display: flex;
-        position: relative;
-
-
-        &::after {
-            @include pseudoAbsolut;
-            background: url("./../../../img/why__after.png") center center no-repeat;
-            width: 67px;
-            height: 21px;
-            right: -62px;
-            top: 52px;
-        }
-
-        &:last-child::after {
-            display: none;
-        }
-    }
 }
 
-
-.why__link {
-    @include flexColumn;
+.why__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     align-items: center;
+
+    span {
+        font-family: 'alegreya_sans_extraboldRg';
+        font-size: 27px;
+        color: black;
+        margin-bottom: 25px;
+    }
+
+    p {
+        @include textContent;
+        font-weight: 300;
+        text-align: center;
+        width: 276px;
+    }
+
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__after.png") center center no-repeat;
+        width: 67px;
+        height: 21px;
+        right: -62px;
+        top: 52px;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
 }
 
 .why__icon {
@@ -93,26 +97,14 @@
     width: 125px;
     height: 125px;
     background-color: #f2f5f4;
-    @include juCoCtrAlItCtr;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     margin-bottom: 35px;
 
     .why__img {
         width: 70px;
         height: 69px;
+        max-width: 100%;
     }
-}
-
-.why__denotation {
-    font-family: 'alegreya_sans_extraboldRg';
-    font-size: 27px;
-    color: black;
-    margin-bottom: 25px;
-}
-
-.why__info {
-    @include textContent;
-    font-weight: 300;
-    text-align: center;
-    width: 276px;
 }

@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.header__logo {
+    color: $colorWhiteText;
+    font-size: 24px;
+    display: flex;
+    font-family: 'alegreya_sans_lightregular';
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+    width: 639px;
+    justify-content: space-between;
+
+}
+
+.header__link {
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__items:hover .header__link {
+    opacity: 0.55;
+
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        background: url("../img/header__ph.png") center center no-repeat;
+        display: flex;
+        width: 12px;
+        height: 11px;
+        margin-right: 6px;
+    }
+
+    &:hover {
+        opacity: 0.55;
+    }
+}

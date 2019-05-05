@@ -1,16 +1,12 @@
-.work {
-    height: 100vh;
-    width: 100%;
-    display: flex;
+.section-work {
     background-color: #f8faf9;
-    justify-content: center;
-    position: relative;
     min-height: 727px;
 
     &::before {
         content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/work__bag.png") center center no-repeat;
-        @include pseudoAbsolut;
         width: 242px;
         height: 264px;
         bottom: -128px;
@@ -27,27 +23,25 @@
 
     &::before {
         content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/work__list.png") center center no-repeat;
-        @include pseudoAbsolut;
         width: 72px;
         height: 135px;
         bottom: 152px;
         left: 89px;
-    
     }
 
     &::after {
         content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/work__list2.png") center center no-repeat;
-        @include pseudoAbsolut;
         width: 90px;
         height: 77px;
         top: 272px;
         right: 109px;
-
     }
-
-
 }
 
 .work__title {
@@ -59,26 +53,26 @@
 .work__player {
     width: 660px;
     height: 405px;
-    @include flexColumn;
+    display: flex;
+    flex-direction: column;
+}
 
+.work__film {
+    position: relative;
+    display: flex;
+    height: 370px;
+    background: url("../img/film.png") center center no-repeat;
+    justify-content: center;
+    align-items: center;
 
-
-
-    .work__film {
-        position: relative;
+    &::after {
+        content: "";
         display: flex;
-        height: 370px;
-        background: url("../img/film.png") center center no-repeat;
-        justify-content: center;
-        align-items: center;
-
-        &::after {
-            @include pseudoAbsolut;
-            background: url("../img/Play_white.png") center center no-repeat;
-            width: 82px;
-            height: 118px;
-            opacity: 0.9;
-        }
+        position: absolute;
+        background: url("../img/Play_white.png") center center no-repeat;
+        width: 82px;
+        height: 118px;
+        opacity: 0.9;
     }
 }
 
@@ -104,7 +98,9 @@
         margin-right: 45px;
 
         &::after {
-            @include pseudoAbsolut;
+            content: "";
+            display: flex;
+            position: absolute;
             background: url("../img/film__point.png") center center no-repeat;
             width: 13px;
             height: 13px;
@@ -117,10 +113,16 @@
     }
 
     .control__list-volumstatus::after {
-        @include pseudoAbsolut;
+        content: "";
+        display: flex;
+        position: absolute;
         background: url("../img/film__point.png") center center no-repeat;
         width: 13px;
         height: 13px;
         margin-left: 46px;
     }
+}
+
+.control__icon {
+    max-width: 100%;
 }
