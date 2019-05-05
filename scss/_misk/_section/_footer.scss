@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    height: 93px;
+    height: 5.8125rem;
     background-color: #ffffff;
     position: absolute;
     bottom: 0;
@@ -27,16 +27,16 @@ flex-direction: row;
     .footer__address {
         color: #010101;
         font-family: "Alegreya Sans";
-        font-size: 21px;
+        font-size: 1.3125rem;
         font-weight: 400;
-        line-height: 23.82px;
+        line-height: 1.4888rem;
     }
 
     .footer__number {
         font-family: "Alegreya Sans";
-        font-size: 21px;
+        font-size: 1.3125rem;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.875rem;
         text-transform: uppercase;
         color: #0f5a47;
     }
@@ -57,7 +57,7 @@ flex-direction: row;
 
 .social {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.25rem;
    
 }
 

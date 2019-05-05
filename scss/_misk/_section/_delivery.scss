@@ -1,7 +1,7 @@
 .section-delivery {
     background: url("../img/delivery__bag.jpg") center center no-repeat;
     background-size: cover;
-    min-height: 670px;
+    min-height: 41.875rem;
 
     &::before {
         content: "";
@@ -10,8 +10,8 @@
         bottom: 0;
         right: 0;
         display: flex;
-        width: 135px;
-        height: 188px;
+        width: 8.4375rem;
+        height: 11.75rem;
     }
 
     &::after {
@@ -21,8 +21,8 @@
         bottom: 0;
         left: 0;
         display: flex;
-        width: 63px;
-        height: 58px;
+        width: 3.9375rem;
+        height: 3.625rem;
 
 
     }
@@ -38,12 +38,12 @@
 .delivery__title {
     @include titleBlack;
     color: #0f5a47;
-    margin-bottom: 55px;
+    margin-bottom: 3.4375rem;
 }
 
 .form {
     display: flex;
-    width: 950px;
+    width: 59.375rem;
     justify-content: space-between;
 
 }
@@ -51,7 +51,7 @@
 .form__left {
     display: flex;
     flex-direction: column;
-    width: 463px;
+    width: 28.9375rem;
 
 }
 
@@ -60,7 +60,7 @@
     justify-content: space-between;
 
     .input__top {
-        width: 220px;
+        width: 13.75rem;
         height: $heightInput;
         background-color: #ffffff;
         @include input;
@@ -95,7 +95,7 @@
     .bottom__items {
         display: flex;
         flex-direction: column;
-        width: 100px;
+        width: 6.25rem;
     }
 
     .input__bottom {
@@ -114,8 +114,8 @@
     flex-direction: column;
 
     .textarea {
-        width: 460px;
-        height: 180px;
+        width: 28.75rem;
+        height: 11.25rem;
         background-color: #ffffff;
         resize: none;
         @include input;

@@ -1,8 +1,8 @@
 @mixin title {
     font-family: "Alegreya Sans";
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 3.75rem;
     text-transform: uppercase;
 }
 
@@ -16,36 +16,36 @@
 @mixin input {
     color: #000000;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 30.05px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 11px;
-    padding-right: 11px;
+    line-height: 1.8781rem;
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+    padding-left: 0.6875rem;
+    padding-right: 0.6875rem;
 
 }
 
 @mixin btn {
-    width: 156px;
-    height: 58px;
+    width: 9.75rem;
+    height: 3.625rem;
     background-color: #0f5a47;
     color: $colorWhiteText;
     font-family: "alegreya_sans_extraboldRg";
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 400;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 35px;
+    border-radius: 2.1875rem;
     overflow: hidden;
     border: none;
 
     &:hover {
         background-color: $white;
         color: #0f5a47;
-        border-radius: 35px;
+        border-radius: 2.1875rem;
         overflow: hidden;
         border: none;
     }
@@ -55,7 +55,7 @@
 @mixin titleBlack {
     color: #0d0d0d;
     font-family: "Alegreya Sans";
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -63,14 +63,14 @@
 @mixin textContent {
     color: #666666;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
 @mixin textName {
     color: #323232;
     font-family: "Alegreya Sans";
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 500;
 
 }
@@ -78,14 +78,14 @@
 @mixin txt333 {
     color: #333333;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
 @mixin profTxt {
     color: #281e1e;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -95,7 +95,7 @@
 @mixin inputTxt {
     color: #0f5a47;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 30.05px;
+    line-height: 1.8781rem;
 }

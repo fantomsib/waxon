@@ -8,10 +8,10 @@
         content: "";
         display: flex;
         background: url("../img/menu_berry.png") center center no-repeat;
-        width: 104px;
-        height: 114px;
-        top: -70px;
-        left: 18px;
+        width: 6.5rem;
+        height: 7.125rem;
+        top: -4.375rem;
+        left: 1.125rem;
     }
 }
 
@@ -35,12 +35,12 @@
         &::after {
             content: "";
             display: flex;
-            width: 630px;
+            width: 39.375rem;
             height: 100vh;
             background-color: #000000;
             opacity: 0.75;
             position: absolute;
-            left: 100px;
+            left: 6.25rem;
         }
     }
 
@@ -65,12 +65,12 @@
     position: absolute;
     display: flex;
     white-space: nowrap;
-    top: 807px;
-    left: 29px;
+    top: 50.4375rem;
+    left: 1.8125rem;
     transform: rotate(-90deg);
     color: #ffffff;
     font-family: "Alegreya Sans";
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 500;
-    width: 41px;
+    width: 2.5625rem;
 }
