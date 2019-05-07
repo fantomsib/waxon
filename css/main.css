@@ -555,9 +555,9 @@ h6 {
   height: 1rem;
   border-radius: 50%; }
 
-.welcome--section {
+.welcome {
   background-color: #61c4d9; }
-  .welcome--section::before {
+  .welcome::before {
     content: "";
     background: url("../img/iz.png") center center no-repeat;
     position: absolute;
@@ -569,7 +569,7 @@ h6 {
     width: 32rem;
     height: 40.5rem;
     max-width: 100%; }
-  .welcome--section::after {
+  .welcome::after {
     content: "";
     background: url("../img/berry.png");
     position: absolute;
@@ -781,12 +781,12 @@ h6 {
   .header__phone:hover {
     opacity: 0.55; }
 
-.why--section {
+.why {
   background-color: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .why--section::before {
+  .why::before {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -798,7 +798,7 @@ h6 {
     width: 11.93rem;
     height: 19.62rem;
     max-width: 100%; }
-  .why--section::after {
+  .why::after {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -907,7 +907,7 @@ h6 {
     height: 4.31rem;
     max-width: 100%; }
 
-.bars--section {
+.bars {
   background-color: #f8faf9;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1081,13 +1081,13 @@ h6 {
       overflow: hidden;
       border: none; }
 
-.team--section {
+.team {
   background-color: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   min-height: 47.87rem; }
-  .team--section::before {
+  .team::before {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1100,7 +1100,7 @@ h6 {
     top: -15.06rem;
     right: 0;
     max-width: 100%; }
-  .team--section::after {
+  .team::after {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1213,10 +1213,10 @@ h6 {
   font-weight: 18.75rem;
   text-align: center; }
 
-.menu--section {
+.menu {
   background: url("../img/menu_bag.jpg") center center no-repeat;
   background-size: cover; }
-  .menu--section::after {
+  .menu::after {
     position: absolute;
     content: "";
     display: -webkit-box;
@@ -1290,9 +1290,9 @@ h6 {
   font-weight: 500;
   width: 2.5625rem; }
 
-.reviews--section {
+.reviews {
   min-height: 50.5rem; }
-  .reviews--section::after {
+  .reviews::after {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1305,7 +1305,7 @@ h6 {
     height: 13.75rem;
     z-index: 2;
     max-width: 100%; }
-  .reviews--section::before {
+  .reviews::before {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1318,7 +1318,7 @@ h6 {
     height: 26.37rem;
     z-index: 2;
     max-width: 100%; }
-  .reviews--section .reviewes__bag {
+  .reviews .reviewes__bag {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1436,10 +1436,10 @@ h6 {
   border-radius: 50%;
   background-color: #0f5a47; }
 
-.work--section {
+.work {
   background-color: #f8faf9;
   min-height: 727px; }
-  .work--section::before {
+  .work::before {
     content: "";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1573,11 +1573,11 @@ h6 {
 .control__icon {
   max-width: 100%; }
 
-.delivery--section {
+.delivery {
   background: url("../img/delivery__bag.jpg") center center no-repeat;
   background-size: cover;
   min-height: 41.875rem; }
-  .delivery--section::before {
+  .delivery::before {
     content: "";
     background: url("../img/delivery__bag.png") center center no-repeat;
     position: absolute;
@@ -1588,7 +1588,7 @@ h6 {
     display: flex;
     width: 8.4375rem;
     height: 11.75rem; }
-  .delivery--section::after {
+  .delivery::after {
     content: "";
     background: url("../img/delivery__bag2.png") center center no-repeat;
     position: absolute;
@@ -1756,7 +1756,7 @@ h6 {
     padding-left: 0.6875rem;
     padding-right: 0.6875rem; }
 
-.map--section {
+.map {
   background: url("../img/map.jpg") center center no-repeat;
   background-size: cover;
   min-height: 43.75rem; }
