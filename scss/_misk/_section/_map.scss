@@ -1,9 +1,10 @@
-.section-map {
+.map--section {
     background: url("../img/map.jpg") center center no-repeat;
     background-size: cover;
     min-height: 43.75rem;
 }
 
-.coontainer-map {
+.map--coontainer {
  display: flex;
+ flex-direction: row;
 }

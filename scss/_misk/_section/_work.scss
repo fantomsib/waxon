@@ -1,4 +1,4 @@
-.section-work {
+.work--section {
     background-color: #f8faf9;
     min-height: 727px;
 
@@ -7,15 +7,15 @@
         display: flex;
         position: absolute;
         background: url("../img/work__bag.png") center center no-repeat;
-        width: 242px;
-        height: 264px;
-        bottom: -128px;
+        width: 15.125rem;
+        height: 16.5rem;
+        bottom: -8rem;
         right: 0;
         z-index: 2;
     }
 }
 
-.container-work {
+.work--container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +26,10 @@
         display: flex;
         position: absolute;
         background: url("../img/work__list.png") center center no-repeat;
-        width: 72px;
-        height: 135px;
-        bottom: 152px;
-        left: 89px;
+        width: 4.5rem;
+        height: 8.4375rem;
+        bottom: 9.5rem;
+        left: 5.5625rem;
     }
 
     &::after {
@@ -37,22 +37,20 @@
         display: flex;
         position: absolute;
         background: url("../img/work__list2.png") center center no-repeat;
-        width: 90px;
-        height: 77px;
-        top: 272px;
-        right: 109px;
+        width: 5.625rem;
+        height: 4.8125rem;
+        top: 17rem;
+        right: 6.8125rem;
     }
 }
 
-.work__title {
-    @include titleBlack;
-    display: flex;
-    margin-bottom: 69px;
+.work--title {
+    margin-bottom: 4.3125rem;
 }
 
 .work__player {
-    width: 660px;
-    height: 405px;
+    width: 41.25rem;
+    height: 25.3125rem;
     display: flex;
     flex-direction: column;
 }
@@ -60,7 +58,7 @@
 .work__film {
     position: relative;
     display: flex;
-    height: 370px;
+    height: 23.125rem;
     background: url("../img/film.png") center center no-repeat;
     justify-content: center;
     align-items: center;
@@ -70,8 +68,8 @@
         display: flex;
         position: absolute;
         background: url("../img/Play_white.png") center center no-repeat;
-        width: 82px;
-        height: 118px;
+        width: 5.125rem;
+        height: 7.375rem;
         opacity: 0.9;
     }
 }
@@ -79,11 +77,11 @@
 .work__control {
     display: flex;
     position: relative;
-    height: 35px;
+    height: 2.1875rem;
     background-color: #3e3e3e;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 21px;
+    padding-left: 1.25rem;
+    padding-right: 1.3125rem;
 
     .control__list {
         align-items: center;
@@ -91,7 +89,7 @@
     }
 
     .control__list-play {
-        margin-right: 19px;
+        margin-right: 1.1875rem;
     }
 
     .control__list-playstatus {
@@ -102,14 +100,14 @@
             display: flex;
             position: absolute;
             background: url("../img/film__point.png") center center no-repeat;
-            width: 13px;
-            height: 13px;
-            margin-left: 73px;
+            width: 0.8125rem;
+            height: 0.8125rem;
+            margin-left: 4.5625rem;
         }
     }
 
     .control__list-volum {
-        margin-right: 19px;
+        margin-right: 1.1875rem;
     }
 
     .control__list-volumstatus::after {
@@ -117,9 +115,9 @@
         display: flex;
         position: absolute;
         background: url("../img/film__point.png") center center no-repeat;
-        width: 13px;
-        height: 13px;
-        margin-left: 46px;
+        width: 0.8125rem;
+        height: 0.8125rem;
+        margin-left: 2.875rem;
     }
 }
 

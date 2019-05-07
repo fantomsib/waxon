@@ -8,11 +8,13 @@
 
 .header__logo {
     color: $colorWhiteText;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     font-family: 'alegreya_sans_lightregular';
     font-weight: bold;
-    line-height: 21px;
+    line-height: 1.3125rem;
+    width: 3.3125rem;
+    height: 2.375rem;
 }
 
 .header__navigation {
@@ -21,7 +23,7 @@
 
 .header__list {
     display: flex;
-    width: 639px;
+    width: 39.9375rem;
     justify-content: space-between;
 
 }

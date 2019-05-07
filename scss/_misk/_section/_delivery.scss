@@ -1,4 +1,4 @@
-.section-delivery {
+.delivery--section {
     background: url("../img/delivery__bag.jpg") center center no-repeat;
     background-size: cover;
     min-height: 41.875rem;
@@ -28,15 +28,14 @@
     }
 }
 
-.coontainer-delivery {
+.delivery--coontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.delivery__title {
-    @include titleBlack;
+.delivery--title {
     color: #0f5a47;
     margin-bottom: 3.4375rem;
 }
@@ -75,7 +74,11 @@
 
 
 .input__text {
-    @include inputTxt;
+    color: #0f5a47;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8781rem;
 }
 
 .form__center {

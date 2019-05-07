@@ -1,4 +1,4 @@
-.section-team {
+.team--section {
     background-color: $white;
     align-items: center;
     min-height: 47.87rem;
@@ -13,6 +13,7 @@
         height: 36.12rem;
         top: -15.06rem;
         right: 0;
+        max-width: 100%;
     }
 
     &::after {
@@ -25,18 +26,16 @@
         height: 7rem;
         top: -4.18rem;
         right: 0;
+        max-width: 100%;
     }
 }
 
-.container-team {
+.team--container {
     display: flex;
 }
 
-.team__title {
-    @include titleBlack;
+.team--title {
     margin-bottom: 4.25rem;
-    justify-content: center;
-    display: flex;
 }
 
 .team__list {
@@ -69,7 +68,10 @@
 }
 
 .team__name {
-    @include textName;
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
 
@@ -99,7 +101,10 @@
 }
 
 .team__prof {
-    @include profTxt;
+    color: #281e1e;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
     margin-bottom: 0.37rem;
     display: flex;
 }
@@ -107,7 +112,10 @@
 .team__descrip {
     display: flex;
     width: 14rem;
-    @include textContent;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
     font-weight: 18.75rem;
     text-align: center;
 }

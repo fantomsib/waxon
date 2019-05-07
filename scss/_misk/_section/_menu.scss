@@ -1,4 +1,4 @@
-.section-menu {
+.menu--section {
     background: url("../img/menu_bag.jpg") center center no-repeat;
     background-size: cover;
 
@@ -12,18 +12,17 @@
         height: 7.125rem;
         top: -4.375rem;
         left: 1.125rem;
+        max-width: 100%;
     }
 }
 
-.container-menu {
+.menu--container {
     display: flex;
     flex-direction: row;
 }
 
-.munu__title {
-    @include titleBlack;
+.menu--title {
     color: $white;
-    display: flex;
 }
 
 .menu__list {

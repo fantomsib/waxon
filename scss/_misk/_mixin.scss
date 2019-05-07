@@ -1,18 +1,3 @@
-@mixin title {
-    font-family: "Alegreya Sans";
-    font-size: 3.75rem;
-    font-weight: 700;
-    line-height: 3.75rem;
-    text-transform: uppercase;
-}
-
-@mixin txt400White {
-    color: $colorWhiteText;
-    font-family: "Alegreya Sans";
-    font-weight: 400;
-}
-
-
 @mixin input {
     color: #000000;
     font-family: "Alegreya Sans";
@@ -23,7 +8,6 @@
     padding-bottom: 1.375rem;
     padding-left: 0.6875rem;
     padding-right: 0.6875rem;
-
 }
 
 @mixin btn {
@@ -49,53 +33,4 @@
         overflow: hidden;
         border: none;
     }
-}
-
-
-@mixin titleBlack {
-    color: #0d0d0d;
-    font-family: "Alegreya Sans";
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-@mixin textContent {
-    color: #666666;
-    font-family: "Alegreya Sans";
-    font-size: 1.125rem;
-    font-weight: 400;
-}
-
-@mixin textName {
-    color: #323232;
-    font-family: "Alegreya Sans";
-    font-size: 1.3125rem;
-    font-weight: 500;
-
-}
-
-@mixin txt333 {
-    color: #333333;
-    font-family: "Alegreya Sans";
-    font-size: 1.125rem;
-    font-weight: 400;
-}
-
-@mixin profTxt {
-    color: #281e1e;
-    font-family: "Alegreya Sans";
-    font-size: 1.125rem;
-    font-weight: 400;
-}
-
-
-
-
-@mixin inputTxt {
-    color: #0f5a47;
-    font-family: "Alegreya Sans";
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.8781rem;
 }

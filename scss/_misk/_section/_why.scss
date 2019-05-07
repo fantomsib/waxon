@@ -1,4 +1,4 @@
-.section-why {
+.why--section {
     background-color: $white;
     align-items: center;
 
@@ -11,6 +11,7 @@
         left: 0;
         width: 11.93rem;
         height: 19.62rem;
+        max-width: 100%;
     }
 
     &::after {
@@ -22,27 +23,28 @@
         left: 0;
         width: 10.06rem;
         height: 19.68rem;
+        max-width: 100%;
     }
 }
 
 
-.container-why {
+.why--container {
     position: relative;
     justify-content: center;
 }
 
-.why__title {
-    @include titleBlack;
-    margin-bottom: 1.43rem;
-    display: flex;
-    justify-content: center;
+.why--title {
+    margin-bottom: 1.4375rem;
 }
 
 .why__txt {
-    @include textContent;
+    font-family: "Alegreya Sans";
     margin-bottom: 3.56rem;
     display: flex;
-    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 25.375rem;
+
 }
 
 .why__list {
@@ -67,7 +69,10 @@
     }
 
     p {
-        @include textContent;
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
         font-weight: 18.75rem;
         text-align: center;
         width: 17.25rem;
@@ -83,6 +88,7 @@
         height: 1.31rem;
         right: -3.87rem;
         top: 3.25rem;
+        max-width: 100%;
     }
 
     &:last-child::after {

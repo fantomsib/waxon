@@ -1,4 +1,4 @@
-.section-welcome {
+.welcome--section {
     background-color: #61c4d9;
 
     &::before {
@@ -10,6 +10,7 @@
         display: flex;
         width: 32rem;
         height: 40.5rem;
+        max-width: 100%;
     }
 
     &::after {
@@ -22,10 +23,11 @@
         width: 24.18rem;
         height: 17.87rem;
         z-index: 3;
+        max-width: 100%;
     }
 }
 
-.container-welcome {
+.welcome--container {
     padding-top: 1.5rem;
 
     &::before {
@@ -38,10 +40,11 @@
         width: 66rem;
         height: 22rem;
         z-index: 3;
+        max-width: 100%;
     }
 }
 
-.welcome__content {
+.content {
     display: flex;
     justify-content: space-between;
     height: 34.3rem;
@@ -50,93 +53,56 @@
 
 }
 
-.welcome__content__left {
+.content__left {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
 }
 
-.welcome__content__right {
+.content__right {
     display: flex;
 }
 
-.welcome__barre {
+.content__barre {
     width: 31.43rem;
     height: 32.68rem;
     display: flex;
+    max-width: 100%;
 }
 
 
-.welcome__title {
-    @include title;
+.content--title {
+    font-size: 3.75rem;
     color: $colorWhiteText;
     position: relative;
     margin-bottom: 1.37rem;
-}
-
-.welcome__sidebar {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 62.93rem;
-    top: 18.75rem;
-    z-index: 3;
-}
-
-.sidebar__items {
-    margin-bottom: 1rem;
-    justify-content: center;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    width: 25.25rem;
 }
 
 
 
-.sidebar__items-active,
-.sidebar__items:active {
-    width: 1rem;
-    height: 1rem;
-    border: solid 0.06rem #ffffff;
-    border-radius: 50%;
-
-
-}
-
-.sidebar__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &::after {
-        content: "";
-        display: flex;
-        background-color: $white;
-        width: 0.37rem;
-        height: 0.37rem;
-        border-radius: 50%;
-    }
-}
-
-.welcome__text {
-    @include txt400White;
+.content__text {
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
     font-size: 1.31rem;
     margin-bottom: 2rem;
+
 }
 
-.welcome__btn {
+.content__btn {
     @include btn;
     margin-bottom: 4.5rem;
     z-index: 5;
 }
 
-.welcome__list {
+.content__list {
     display: flex;
     z-index: 3;
+    margin-top: auto;
 
-    .welcome__items {
+    .content__items {
         display: flex;
         margin-right: 2.87rem;
 
@@ -145,17 +111,22 @@
         }
     }
 
-    .welcome__icon {
+    .contetn__icon {
         margin-right: 0.5rem;
         width: 3.1rem;
         height: 2.62rem;
         max-width: 100%;
+        text-align: center;
     }
 
-    .welcome__txt {
+    .content__txt {
         display: flex;
-        @include txt400White;
+        color: $colorWhiteText;
+        font-family: "Alegreya Sans";
+        font-weight: 400;
         font-size: 1rem;
+        width: 5.25rem;
+        height: 3.25rem;
     }
 
 }

@@ -1,4 +1,4 @@
-.section-reviews {
+.reviews--section {
     min-height: 50.5rem;
 
     &::after {
@@ -11,6 +11,7 @@
         width: 9.62rem;
         height: 13.75rem;
         z-index: 2;
+        max-width: 100%;
     }
 
     &::before {
@@ -23,9 +24,10 @@
         width: 8.37rem;
         height: 26.37rem;
         z-index: 2;
+        max-width: 100%;
     }
 
-    .reviewes__bag__berry {
+    .reviewes__bag {
         display: flex;
         position: absolute;
         top: 1rem;
@@ -36,7 +38,7 @@
 }
 
 
-.container-reviews {
+.reviews--container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,12 +46,11 @@
 }
 
 
-.reviews__title {
-    @include titleBlack;
+.reviews--title {
     margin-bottom: 3.68rem;
 }
 
-.reviews__comit {
+.reviews__commit {
     display: flex;
     width: 58.75rem;
     height: 21.93rem;
@@ -68,35 +69,45 @@
         right: 0;
         width: 7.93rem;
         height: 10.43rem;
+        max-width: 100%;
     }
 }
 
-.reviews__comit__photo {
+.commit__photo {
     width: 15.87rem;
     height: 16.25rem;
     margin-right: 1.12rem;
     max-width: 100%;
 }
 
-.rewiews__items-text {
+.commit__items-text {
     display: flex;
     flex-direction: column;
 }
 
-.reviews__comit__title {
-    @include textName;
+.comit__title {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 500;
     font-size: 1.87rem;
     margin-bottom: 1.81rem;
 }
 
-.reviews__comit__descrip {
-    @include textContent;
+.comit__descrip {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
     margin-bottom: 2rem;
     width: 27.06rem;
 }
 
-.reviews__comit__name {
-    @include textContent;
+.comit__name {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
     font-weight: 31.25rem;
 }
 
