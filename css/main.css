@@ -820,7 +820,8 @@ h6 {
     left: 0;
     width: 10.06rem;
     height: 19.68rem;
-    max-width: 100%; }
+    max-width: 100%;
+    z-index: 3; }
 
 .why--container {
   position: relative;
