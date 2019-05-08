@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-bottom: 100px;
 }
 
 .header__logo {
@@ -15,29 +14,6 @@
     line-height: 1.3125rem;
     width: 3.3125rem;
     height: 2.375rem;
-}
-
-.header__navigation {
-    display: flex;
-}
-
-.header__list {
-    display: flex;
-    width: 39.9375rem;
-    justify-content: space-between;
-
-}
-
-.header__link {
-    color: $colorWhiteText;
-    font-family: "Alegreya Sans";
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.header__items:hover .header__link {
-    opacity: 0.55;
-
 }
 
 .header__phone {

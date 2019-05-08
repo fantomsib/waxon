@@ -1,5 +1,10 @@
 html,
 body {
+    height: 100%;
+
+}
+
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -8,7 +13,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
     line-height: 1.42;
+    position: relative;
 }
+
+
 
 *,
 *:before,
@@ -68,30 +76,32 @@ h6 {
 
 .container {
     display: flex;
-    margin: 0;
-    display: flex;
+    margin: 0 auto;
     flex-direction: column;
     position: relative;
-    width: 68.75rem;
-    padding-left: 4.5rem;
-    padding-right: 2.62rem;
+    width: 940px;
+    height: 100%;
+    justify-content: center;
+    /*padding-left: 4.5rem;
+    padding-right: 2.62rem;*/
 
 }
 
 .wrapper {
-    flex: 1 0 auto;
+
     width: 100%;
     min-height: 100%;
     position: relative;
+    overflow: hidden;
+    min-width: 940px + 20px;
 }
 
 .section {
     display: flex;
-    justify-content: center;
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 40.62rem;
+    min-height: 650px;
 }
 
 
