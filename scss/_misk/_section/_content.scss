@@ -52,25 +52,26 @@
     &:last-child {
         margin-right: 0;
     }
+}
 
-    .contetn__icon {
-        margin-right: 0.5rem;
-        width: 3.1rem;
-        height: 2.62rem;
-        max-width: 100%;
-        text-align: center;
-    }
+.content__icon {
+    display: flex;
+    margin-right: 10px;
+}
 
-    .content__txt {
-        display: flex;
-        color: $colorWhiteText;
-        font-family: "Alegreya Sans";
-        font-weight: 400;
-        font-size: 1rem;
-        width: 5.25rem;
-        height: 3.25rem;
-    }
 
+
+
+
+
+.content__txt {
+    display: flex;
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    font-size: 1rem;
+    width: 5.25rem;
+    height: 3.25rem;
 }
 
 .content__right {
