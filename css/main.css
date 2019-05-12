@@ -381,81 +381,59 @@ template {
   font-weight: normal;
   font-style: normal; }
 
-.smile__0 {
+.why__image {
+  width: 66px;
+  height: 69px;
   fill: #f2f5f4;
   stroke: #000000;
   stroke-width: 0.75;
   stroke-miterlimit: 10; }
 
-.smile__1 {
-  fill: #f2f5f4;
-  stroke: #f2f5f4;
-  stroke-width: 0; }
-
-.smile__2 {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 0.75;
-  stroke-miterlimit: 10; }
-
-.icon-list {
-  fill: none;
+.content__icons {
   stroke: #b0f7ff;
   stroke-width: 0.5;
   stroke-miterlimit: 10;
+  fill: #61c4d9; }
+
+.content__icons-list {
+  fill: none;
   width: 44px;
   height: 41px;
-  margin-right: 10px; }
+  margin-right: 7px; }
 
-.truck__icon {
-  stroke: #b0f7ff;
-  stroke-width: 0.5;
-  stroke-miterlimit: 10;
-  fill: #61c4d9;
+.content__icons-truck {
   width: 50px;
   height: 40px;
-  margin-right: 10px; }
+  margin-right: 12px; }
 
-.meter__icon {
-  stroke: #b0f7ff;
-  stroke-width: 0.5;
-  stroke-miterlimit: 10;
-  fill: #61c4d9;
+.content__icons-meter {
   width: 42px;
   height: 42px;
-  margin-right: 10px; }
+  margin-right: 9px; }
 
-.why__men {
-  width: 66px;
-  height: 69px;
-  fill: #f2f5f4;
-  stroke: #000000;
-  stroke-width: 0.75;
-  stroke-miterlimit: 10; }
+.social__icon {
+  fill: #b2b2b2;
+  stroke: #b2b2b2; }
+  .social__icon:hover {
+    fill: #000000; }
 
-.why__smile {
-  width: 66px;
-  height: 69px;
-  fill: #f2f5f4;
-  stroke: #000000;
-  stroke-width: 0.75;
-  stroke-miterlimit: 10; }
-
-.why__biceps {
-  width: 66px;
-  height: 69px;
-  fill: #f2f5f4;
-  stroke: #000000;
-  stroke-width: 0.75;
-  stroke-miterlimit: 10; }
-
-.vk__icon {
+.social__icon-vk {
   width: 23px;
-  height: 13px;
-  fill: #000000;
-  stroke: #000000;
-  stroke-width: 0.75;
-  stroke-miterlimit: 10; }
+  height: 13px; }
+
+.social__icon-fb {
+  width: 20px;
+  height: 20px; }
+
+.social__icon-inst {
+  width: 20px;
+  height: 20px; }
+
+.social__icon-twit {
+  width: 20px;
+  height: 16px;
+  fill: #b2b2b2;
+  stroke: #b2b2b2; }
 
 html,
 body {
@@ -737,13 +715,17 @@ h6 {
   text-transform: uppercase; }
   .header__phone::before {
     content: "";
-    background: url("../img/header__ph.png") center center no-repeat;
+    background: url("../sprite/sprite.svg");
+    background-position: 0px 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 12px;
-    height: 11px;
-    margin-right: 6px; }
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    fill: black;
+    stroke: black;
+    stroke-width: 1; }
   .header__phone:hover {
     opacity: 0.55; }
 
@@ -1909,13 +1891,17 @@ h6 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .footer__row-left .footer__address {
     color: #010101;
     font-family: "Alegreya Sans";
     font-size: 1.3125rem;
     font-weight: 400;
-    line-height: 1.4888rem; }
+    line-height: 1.4888rem;
+    margin-bottom: 4px; }
   .footer__row-left .footer__number {
     font-family: "Alegreya Sans";
     font-size: 1.3125rem;

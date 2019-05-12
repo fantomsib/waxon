@@ -11,10 +11,13 @@
 @import "./_misk/mixin";
 
 //svg why
-@import "./svg/svg-why";
+@import "./_svg/svg-why";
 
 //svg content
-@import "./svg/svg-content";
+@import "./_svg/svg-content";
+
+//svg footer
+@import "./_svg/svg-footer";
 
 //основные настройки , общие
 @import "./_misk/_config";

@@ -63,7 +63,7 @@
                 </div>
                 <ul class="content__list">
                     <li class="content__items">
-                        <svg class="icon-list">
+                        <svg class="content__icons content__icons-list">
                             <use xlink:href="./sprite/sprite.svg#list"></use>
                         </svg>
                         <p class="content__txt">
@@ -73,7 +73,7 @@
                         </p>
                     </li>
                     <li class="content__items">
-                        <svg class="truck__icon">
+                        <svg class="content__icons content__icons-truck">
                             <use xlink:href="./sprite/sprite.svg#truk"></use>
                         </svg>
                         <p class="content__txt">
@@ -83,7 +83,7 @@
                         </p>
                     </li>
                     <li class="content__items">
-                        <svg class="meter__icon">
+                        <svg class="content__icons content__icons-meter">
                             <use xlink:href="./sprite/sprite.svg#meter"></use>
                         </svg>
                         <p class="content__txt">
@@ -104,7 +104,7 @@
                 <ul class="why__list">
                     <li class="why__items">
                         <div class="why__icon">
-                            <svg class="why__men">
+                            <svg class="why__image why__image-men ">
                                 <use xlink:href="./sprite/sprite.svg#men"></use>
                             </svg>
                         </div>
@@ -117,7 +117,7 @@
                     </li>
                     <li class="why__items">
                         <div class="why__icon">
-                            <svg class="why__smile">
+                            <svg class="why__image why__image-smile">
                                 <use xlink:href="./sprite/sprite.svg#smile"></use>
                             </svg>
                         </div>
@@ -130,7 +130,7 @@
                     </li>
                     <li class="why__items">
                         <div class="why__icon">
-                            <svg class="why__biceps">
+                            <svg class="why__image why__image-biceps">
                                 <use xlink:href="./sprite/sprite.svg#biceps"></use>
                             </svg>
                         </div>
@@ -376,38 +376,26 @@
                     </div>
                     <div class="footer__row footer__row-right">
                         <div class="footer__social">
-
-
                             <a href="#" class="social social_vk">
-                                <svg class="vk__icon">
+                                <svg class="social__icon social__icon-vk">
                                     <use xlink:href="./sprite/sprite.svg#vk"></use>
                                 </svg>
                             </a>
-
-
                             <a href="#" class="social social_fb">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" id="fb-1" y="0">
-                                    <image width="20" height="20"
-                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBQMUFx8V9WHdAAAAmUlEQVQoz9XQzwoBYRiF8R8j5X+iXIeytLWwcsG2LmAWUhYuQEw2U0JkYQoxn9k6q1Pv0zmdt2Sq57eSciGMXrkQhkruZW0jFWmbhMDYMnNRKPFiBaoa6iHw4Iaa2fP+fcwJtF5jQqtL4dULxyzxYI6+4XdwL83c2Rad39UPNfOqx652YnSNnomfYB/n7IuDYqvf9B9gUohL7vPYGlwxAoryAAAAAElFTkSuQmCC"
-                                        opacity=".36" /></svg>
+                                <svg class="social__icon social__icon-fb">
+                                    <use xlink:href="./sprite/sprite.svg#fb"></use>
+                                </svg>
                             </a>
-
-
                             <a href="#" class="social social_inst">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" id="inst" y="20">
-                                    <image width="20" height="20"
-                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBQMTNwLmOD8jAAAA+klEQVQoz43TTUtCQRQG4OdeTUEhCjSCXJTlH2gTuOx/u2hpi3ZuKomEBE2IAkVv6bSw/ObWrGYOD4c5LzORA5eK0tfQXeT6TwbDbCr7MMCxgmI2tc+TThBRJU6FYblN71ixF1HaBWc6eoIjp2KlOdqGM00D8KqrvnqxGGMNDSM8/zB408ZEQ8PXHAYjEwX01vr3kTcNIyF96rB6+IVTY5TXYBmfknXIC84cLs77ztENYXPqRxV5dW19lFVlJe6340k0XcmrqS0qt8a7cnx348KJPBJdD0u2GfhES0tOZLIZQRYZsdlKLVknUSxm/nAT05Q8M3KG0X+/wjdoEknLxx0U0AAAAABJRU5ErkJggg=="
-                                        opacity=".3" /></svg>
+                                <svg class="social__icon social__icon-inst">
+                                    <use xlink:href="./sprite/sprite.svg#inst"></use>
+                                </svg>
                             </a>
-
-
                             <a href="#" class="social social_twit">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" id="twit" y="40">
-                                    <image width="20" height="16"
-                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAQAAAC8EZeQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBQMTNxlsXfbPAAAA80lEQVQoz33RMUtCYRjF8Z/eqwlSmoOiBS3WGBQRtPbdGxoCo0EInEKysJQ0LQ1vg16ra3qm87zPfzjPe1LImkiq4kjBzLOmkbJJStqlG70/2L6TpZ9i7CqQd2jPyGC5SrsQLKdAYCiX9oXAqXPbi1VRJhFk4D70oWcXFRWvHvXlkoGjO0JZLceyoKRkVVMIhc5ENmk8Dz7Sk9oIvsxBGj43gp0YHGp4W4sNdGOQvJ21YDNafCf0bSn+iz1Erbn5OaOgrpbAuq6j2dyGC7zgQDWBtd2axUOoqi6/UtpYU/v3QwoZNWVFWWkz7/o6nuIS4i6+AQ1QPfljQ7QgAAAAAElFTkSuQmCC"
-                                        opacity=".3" /></svg>
+                                <svg class="social__icon social__icon-twit">
+                                    <use xlink:href="./sprite/sprite.svg#twit"></use>
+                                </svg>
                             </a>
-
                         </div>
                     </div>
                 </div>

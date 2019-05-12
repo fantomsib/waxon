@@ -27,14 +27,22 @@
 
     &::before {
         content: "";
-        background: url("../img/header__ph.png") center center no-repeat;
+        background: url("../sprite/sprite.svg");
+        background-position: 0px 11px;
         display: flex;
-        width: 12px;
-        height: 11px;
+        width: 30px;
+        height: 30px;
         margin-right: 6px;
+        fill: black;
+        stroke: black;
+        stroke-width: 1;
+       
+    
+  
     }
 
     &:hover {
         opacity: 0.55;
     }
+
 }
