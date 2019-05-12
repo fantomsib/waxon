@@ -191,7 +191,7 @@
 .chekbox__input-carre {
     &:checked+.box-carre {
         &::after {
-            background: url("/img/gal.png");
+            background: url("../img/gal.png");
             width: 11px;
             height: 9px;
         }
