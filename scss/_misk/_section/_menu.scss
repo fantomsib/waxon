@@ -1,9 +1,9 @@
 .menu {
     background: url("../img/menu-bag.jpg") center center no-repeat;
     background-size: cover;
-    
-
-    &::before {
+   
+ 
+&::before {
         position: absolute;
         content: "";
         display: flex;

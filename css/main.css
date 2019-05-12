@@ -1024,7 +1024,8 @@ h6 {
 
 .bars__slider__left {
   position: absolute;
-  left: 0.5rem; }
+  left: 0.5rem;
+  z-index: 5; }
 
 .bars__slider__right {
   position: absolute;
@@ -1408,11 +1409,11 @@ h6 {
 
 .menu__items-active,
 .menu__items:active .menu__block {
-  width: 630px;
   height: 100vh;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s; }
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 630px; }
 
 .menu__link {
   position: relative;
@@ -1421,7 +1422,7 @@ h6 {
   display: flex;
   width: 100px;
   height: 100vh;
-  z-index: 3; }
+  z-index: 2; }
   .menu__link::after {
     position: absolute;
     content: "";
@@ -1437,20 +1438,17 @@ h6 {
 
 .menu__link-active {
   background: url("../img/menu__coco.jpg") center center no-repeat;
-  background-size: cover;
-  width: 100px;
-  height: 100vh; }
+  background-size: cover; }
 
 .menu__link-2 {
-  background: url("../img/menu__orang.jpg") center center no-repeat no-repeat;
+  background: url("../img/menu__orang.jpg") center center no-repeat;
   background-size: cover; }
 
 .menu__link-3 {
-  background: url("../img/menu__berry.jpg") center center no-repeat no-repeat;
+  background: url("../img/menu__berry.jpg") center center no-repeat;
   background-size: cover; }
 
 .menu__block {
-  width: 630px;
   height: 100vh;
   background-color: #000000;
   opacity: 0.75;
@@ -1461,7 +1459,7 @@ h6 {
   display: flex; }
 
 .menu__block-active {
-  width: 630px; }
+  width: 530px; }
 
 .menu__text {
   display: -webkit-box;
