@@ -28,10 +28,11 @@
     &::before {
         content: "";
         background: url("../sprite/sprite.svg");
-        background-position: 0px 11px;
+        background-position: 20px 11px 30px 20px;
+        background-repeat: no-repeat;
+      
         display: flex;
-        width: 30px;
-        height: 30px;
+     
         margin-right: 6px;
         fill: black;
         stroke: black;
