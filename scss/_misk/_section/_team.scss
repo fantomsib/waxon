@@ -1,4 +1,4 @@
-.team{
+.team {
     background-color: $white;
     align-items: center;
     min-height: 47.87rem;
@@ -32,39 +32,54 @@
 
 .team--container {
     display: flex;
+    position: relative;
+    align-items: center;
 }
 
 .team--title {
-    margin-bottom: 4.25rem;
+    display: flex;
+    position: absolute;
+    top: 100px;
+   
 }
 
 .team__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 25.31rem;
+    //height: 25.31rem;
+    position: absolute;
+    z-index: 3;
+}
 
+.team__items-alla {
+    align-self: flex-end;
+}
 
-    .team__items-alla {
-        align-self: flex-end;
-    }
+.team__items-mila {
+    align-self: flex-end;
+}
 
-    .team__items-mila {
-        align-self: flex-end;
-    }
+.team__items-active {
+    align-self: flex-start;
+}
+
+.team__items-boris {
+    align-self: flex-start;
 }
 
 .team__items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
-    .team__photo {
-        width: 14rem;
-        height: 18.06rem;
-        margin-bottom: 1.56rem;
-        max-width: 100%;
-    }
+.team__photo {
+    width: 14rem;
+    height: 18.06rem;
+    margin-bottom: 1.56rem;
+    max-width: 100%;
 }
 
 .team__name {
@@ -74,6 +89,7 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+    margin-bottom: 6px;
 
 
     &::after {
@@ -110,6 +126,8 @@
 }
 
 .team__descrip {
+    height: 0;
+    overflow: hidden;
     display: flex;
     width: 14rem;
     color: #666666;
@@ -118,4 +136,29 @@
     font-weight: 400;
     font-weight: 18.75rem;
     text-align: center;
+}
+
+
+.team__items:active .team__name {
+
+    &::after {
+        content: "";
+        display: flex;
+        background: url("../img/Polygon_top.png") center center no-repeat;
+        width: 0.56rem;
+        height: 0.43rem;
+        margin-left: 0.31rem;
+    }
+}
+
+
+.team__items:active .team__descrip {
+    height: 80px;
+    transition: 0.4s;
+    width: 14rem;
+}
+
+.team__descrip-active {
+    height: 80px;
+
 }

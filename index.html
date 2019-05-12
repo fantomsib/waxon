@@ -42,7 +42,9 @@
                             </li>
                         </ul>
                     </nav>
-
+                    <svg class="header__tel">
+                        <use xlink:href="./sprite/sprite.svg#phone"></use>
+                    </svg>
                     <a href="#" class="header__phone">8 800 903 90 90</a>
                 </header>
                 <div class="content">
@@ -189,35 +191,50 @@
             <div class="container team--container">
                 <h1 class="title team--title">Команда</h1>
                 <ul class="team__list">
-                    <li class="team__items">
+                    <li class="team__items team__items-boris">
                         <img src="./img/team_boris.jpg" alt="" class="team__photo">
-                        <a href="" class="team__link">
-                            <span class="team__name">Борис Федорович</span>
-                        </a>
+
+                        <span class="team__name">Борис Федорович</span>
+
+
+                        <div class="team__descrip">
+                            С радостью поможет подобрать
+                            батончики и оформить заказ.
+                        </div>
                     </li>
                     <li class="team__items team__items-alla">
                         <img src="./img/team_alla.jpg" alt="" class="team__photo">
-                        <a href="" class="team__link">
-                            <span class="team__name">Алла Иванова</span>
-                        </a>
-                    </li>
-                    <li class="team__items">
-                        <img src="./img/team_cyrill.jpg" alt="" class="team__photo">
-                        <a href="" class="team__link">
-                            <span class="team__name team__name-motrsov ">Кирилл Матросов</span>
-                        </a>
-                        <spna class="team__prof">Оператор</spna>
-                        <span class="team__descrip">
+
+                        <span class="team__name">Алла Иванова</span>
+
+
+                        <div class="team__descrip">
                             С радостью поможет подобрать
                             батончики и оформить заказ.
-                        </span>
+                        </div>
+                    </li>
+                    <li class="team__items team__items-active">
+                        <img src="./img/team_cyrill.jpg" alt="" class="team__photo">
+
+                        <span class="team__name team__name-motrsov ">Кирилл Матросов</span>
+
+                        <spna class="team__prof">Оператор</spna>
+                        <div class="team__descrip team__descrip-active ">
+                            С радостью поможет подобрать
+                            батончики и оформить заказ.
+                        </div>
                     </li>
                     <li class="team__items team__items-mila">
                         <img src="./img/team_mila.jpg" alt="" class="team__photo">
-                        <a href="" class="team__link">
-                            <span class="team__name">Мила Рыжкова
-                        </a>
-                        </span>
+
+                        <span class="team__name">Мила Рыжкова </span>
+
+
+                        <div class="team__descrip">
+                            С радостью поможет подобрать
+                            батончики и оформить заказ.
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -271,25 +288,8 @@
                         </p>
                     </div>
                 </li>
-
             </ul>
-
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section class="section reviews">
             <img src="./img/reviews__berry.png" alt="" class="reviewes__bag">
             <div class="container reviews--container">
@@ -390,88 +390,100 @@
                         </div>
                     </div>
                     <div class="form__right">
-                        <div class="form__right__texterea">
+                        <div class="right__texterea">
                             <span class="input__text">Комментарий</span>
-                            <textarea name="text" class="textarea" id="comit" cols="30" rows="10"></textarea>
+                            <textarea name="text" class="textarea" id="commit" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="form__right__radio">
-                            <div class="right__radio">
-                                <span class="input__text">Потребуется сдача</span>
-
-                            </div>
+                        <div class="right__checkbox">
+                            <label class="checkbox checkbox-1">
+                                <input class="chekbox__input" id="money" type="checkbox" name="change">
+                                <span class="box"></span>
+                                <span class="input__text"> Потребуется сдача</span>
+                            </label>
+                            <label class="checkbox">
+                                <input class="chekbox__input" id="carte" type="checkbox" name="change">
+                                <span class="box"></span>
+                                <span class="input__text">Оплата по карте</span>
+                            </label>
                         </div>
+                        <label class="checkbox">
+                            <input class="chekbox__input chekbox__input-carre" id="carte" type="checkbox" name="change">
+                            <span class="box box-carre"></span>
+                            <span class="input__text">Не перезванивать</span>
+                        </label>
                     </div>
-                </form>
             </div>
-        </section>
-        <section class="section map">
-            <footer class="footer">
-                <div class="container map--coontainer">
-                    <div class="footer__row footer__row-left">
-                        <a href="" class="footer__address">
-                            Москва, ул.Новый Арбат, д.31/12
+            </form>
+    </div>
+    </section>
+    <section class="section map">
+        <footer class="footer">
+            <div class="container map--coontainer">
+                <div class="footer__row footer__row-left">
+                    <a href="" class="footer__address">
+                        Москва, ул.Новый Арбат, д.31/12
+                    </a>
+                    <a href="" class="footer__number">
+                        8 800 903 90 90
+                    </a>
+                </div>
+                <div class="footer__row footer__row-right">
+                    <div class="footer__social">
+                        <a href="#" class="social social_vk">
+                            <svg class="social__icon social__icon-vk">
+                                <use xlink:href="./sprite/sprite.svg#vk"></use>
+                            </svg>
                         </a>
-                        <a href="" class="footer__number">
-                            8 800 903 90 90
+                        <a href="#" class="social social_fb">
+                            <svg class="social__icon social__icon-fb">
+                                <use xlink:href="./sprite/sprite.svg#fb"></use>
+                            </svg>
                         </a>
-                    </div>
-                    <div class="footer__row footer__row-right">
-                        <div class="footer__social">
-                            <a href="#" class="social social_vk">
-                                <svg class="social__icon social__icon-vk">
-                                    <use xlink:href="./sprite/sprite.svg#vk"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social social_fb">
-                                <svg class="social__icon social__icon-fb">
-                                    <use xlink:href="./sprite/sprite.svg#fb"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social social_inst">
-                                <svg class="social__icon social__icon-inst">
-                                    <use xlink:href="./sprite/sprite.svg#inst"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="social social_twit">
-                                <svg class="social__icon social__icon-twit">
-                                    <use xlink:href="./sprite/sprite.svg#twit"></use>
-                                </svg>
-                            </a>
-                        </div>
+                        <a href="#" class="social social_inst">
+                            <svg class="social__icon social__icon-inst">
+                                <use xlink:href="./sprite/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social social_twit">
+                            <svg class="social__icon social__icon-twit">
+                                <use xlink:href="./sprite/sprite.svg#twit"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
-        </section>
-        <ul class="sidebar">
-            <li class="sidebar__items sidebar__items-active">
-                <a href="" class="sidebar__link sidebar__link-active"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__items">
-                <a href="" class="sidebar__link"></a>
-            </li>
-        </ul>
+    </section>
+    <ul class="sidebar">
+        <li class="sidebar__items sidebar__items-active">
+            <a href="" class="sidebar__link sidebar__link-active"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+        <li class="sidebar__items">
+            <a href="" class="sidebar__link"></a>
+        </li>
+    </ul>
     </div>
 
 </body>

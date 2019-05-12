@@ -1,4 +1,4 @@
-.delivery{
+.delivery {
     background: url("../img/delivery__bag.jpg") center center no-repeat;
     background-size: cover;
     min-height: 41.875rem;
@@ -7,7 +7,7 @@
         content: "";
         background: url("../img/delivery__bag.png") center center no-repeat;
         position: absolute;
-        bottom: 0;
+        bottom: 108px;
         right: 0;
         display: flex;
         width: 8.4375rem;
@@ -16,10 +16,10 @@
 
     &::after {
         content: "";
-        background: url("../img/delivery__bag2.png") center center no-repeat;
+        background: url("../img/berry__deliv.png") center center no-repeat;
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 57px;
+        left: 12px;
         display: flex;
         width: 3.9375rem;
         height: 3.625rem;
@@ -57,6 +57,7 @@
 .left__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 
     .input__top {
         width: 13.75rem;
@@ -84,6 +85,7 @@
 .form__center {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     .input__center {
         height: $heightInput;
@@ -112,9 +114,10 @@
     flex-direction: column;
 }
 
-.form__right__texterea {
+.right__texterea {
     display: flex;
     flex-direction: column;
+    margin-bottom: 26px;
 
     .textarea {
         width: 28.75rem;
@@ -122,5 +125,75 @@
         background-color: #ffffff;
         resize: none;
         @include input;
+    }
+}
+
+.right__checkbox {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 23px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.chekbox__input {
+    display: none;
+    align-items: center;
+
+    &:checked+.box {
+        &::after {
+            background-color: #0f5a47;
+            border-radius: 50%;
+        }
+    }
+}
+
+.box {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 26px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+    }
+}
+
+.box-carre {
+    border-radius: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        right: 8px;
+        bottom: 6px;
+    }
+}
+
+.chekbox__input-carre {
+    &:checked+.box-carre {
+        &::after {
+            background: url("/img/gal.png");
+            width: 11px;
+            height: 9px;
+        }
     }
 }

@@ -30,20 +30,23 @@
         background: url("../sprite/sprite.svg");
         background-position: 20px 11px 30px 20px;
         background-repeat: no-repeat;
-      
         display: flex;
-     
         margin-right: 6px;
         fill: black;
         stroke: black;
         stroke-width: 1;
-       
-    
-  
     }
 
     &:hover {
         opacity: 0.55;
     }
+}
 
+.header__tel {
+    width: 12px;
+    height: 11px;
+    fill: #ffffff;
+    &:hover {
+      opacity: 0.55;
+    }
 }
