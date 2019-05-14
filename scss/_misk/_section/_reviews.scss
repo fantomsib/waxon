@@ -73,14 +73,21 @@
     }
 }
 
+.commit__items {
+    display: flex;
+}
+
+.commit__personne {
+    margin-right: 1.12rem;
+}
+
 .commit__photo {
     width: 15.87rem;
     height: 16.25rem;
-    margin-right: 1.12rem;
     max-width: 100%;
 }
 
-.commit__items-text {
+.commit__text {
     display: flex;
     flex-direction: column;
 }
@@ -111,6 +118,12 @@
     font-weight: 400;
     font-weight: 31.25rem;
 }
+
+.reviews__commit-3, .reviews__commit-2 {
+    display: none;
+    overflow: hidden;
+}
+
 
 .reviews__list {
     display: flex;

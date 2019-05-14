@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 114.93rem;
-    top: 340px;
+    right: 59px;
+    top: 361px;
     z-index: 10;
-   
+
 }
 
 .sidebar__items {
@@ -15,11 +15,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
 
 .sidebar__link {
     display: flex;
@@ -38,7 +33,7 @@
         height: 0.37rem;
         border-radius: 50%;
         position: absolute;
-  
+
     }
 
     &::before {
@@ -56,8 +51,7 @@
 
 }
 
-.sidebar__items-active
-.sidebar__link::before,
+.sidebar__items-active .sidebar__link::before,
 .sidebar__link:hover::before {
 
 

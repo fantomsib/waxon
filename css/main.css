@@ -553,8 +553,8 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  left: 114.93rem;
-  top: 340px;
+  right: 59px;
+  top: 361px;
   z-index: 10; }
 
 .sidebar__items {
@@ -608,8 +608,7 @@ h6 {
     -o-transition: 0.4s;
     transition: 0.4s; }
 
-.sidebar__items-active
-.sidebar__link::before,
+.sidebar__items-active .sidebar__link::before,
 .sidebar__link:hover::before {
   width: 1rem;
   height: 1rem;
@@ -1583,13 +1582,20 @@ h6 {
     height: 10.43rem;
     max-width: 100%; }
 
+.commit__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.commit__personne {
+  margin-right: 1.12rem; }
+
 .commit__photo {
   width: 15.87rem;
   height: 16.25rem;
-  margin-right: 1.12rem;
   max-width: 100%; }
 
-.commit__items-text {
+.commit__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1621,6 +1627,10 @@ h6 {
   font-size: 1.125rem;
   font-weight: 400;
   font-weight: 31.25rem; }
+
+.reviews__commit-3, .reviews__commit-2 {
+  display: none;
+  overflow: hidden; }
 
 .reviews__list {
   display: -webkit-box;
