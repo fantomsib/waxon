@@ -553,8 +553,8 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
-  right: 59px;
-  top: 361px;
+  right: 4.5%;
+  top: 36%;
   z-index: 10; }
 
 .sidebar__items {
@@ -633,8 +633,8 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 32rem;
-    height: 40.5rem;
+    width: 512px;
+    height: 648px;
     max-width: 100%; }
   .welcome::after {
     content: "";
@@ -645,8 +645,8 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 24.18rem;
-    height: 17.87rem;
+    width: 387px;
+    height: 286px;
     z-index: 3;
     max-width: 100%; }
 
@@ -1628,7 +1628,7 @@ h6 {
   font-weight: 400;
   font-weight: 31.25rem; }
 
-.reviews__commit-3, .reviews__commit-2 {
+.commit__items-2, .commit__items-3 {
   display: none;
   overflow: hidden; }
 
@@ -2141,3 +2141,77 @@ h6 {
 
 .vvk:hover {
   fill: #010101; }
+
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 1025px; }
+  .welcome--container {
+    width: 771px;
+    padding-left: 0;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-left: 26px;
+    margin-left: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .welcome {
+    background-color: #61c4d9; }
+    .welcome::before {
+      content: "";
+      right: 0;
+      height: 635px;
+      top: 0;
+      left: 238px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 32rem;
+      height: 40.5rem;
+      max-width: 100%; }
+    .welcome::after {
+      content: "";
+      background: url("../img/berry__786-welcome.png");
+      position: absolute;
+      top: 218px;
+      left: 208px;
+      right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 388px;
+      height: 272.92px;
+      z-index: 3; }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .content__barre {
+    width: 403px;
+    height: 419px;
+    margin-bottom: 47px; }
+  .content__left {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .content--title,
+  .content__text {
+    text-align: center; }
+  .header {
+    width: 100%; }
+  .nav,
+  .header__phone {
+    display: none; } }
