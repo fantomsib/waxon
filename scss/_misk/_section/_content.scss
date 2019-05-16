@@ -16,7 +16,7 @@
     font-size: 3.75rem;
     color: $colorWhiteText;
     position: relative;
-    margin-bottom: 1.37rem;
+    margin-bottom: 21.92px;
     width: 25.25rem;
     line-height: 1;
     display: flex;
@@ -64,7 +64,7 @@
     color: $colorWhiteText;
     font-family: "Alegreya Sans";
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.3125rem;
     width: 5.25rem;
     height: 3.25rem;
 }
@@ -76,6 +76,8 @@
 .content__barre {
     width: 31.43rem;
     height: 32.68rem;
-    display: flex;
+
     max-width: 100%;
+    display: flex;
 }
+

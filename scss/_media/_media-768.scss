@@ -1,16 +1,21 @@
 @media screen and (max-width: 768px) {
     .wrapper {
         flex-wrap: wrap;
+        max-width: 768px;
+   
     }
+
     html {
         font-size: 16px;
     }
-    .section {
-        min-height: 64.0625rem;
+
+    .sidebar {
+        display: none;
     }
 
+
     .container {
-        width: 48.1875rem;
+        width: 771px;
         padding-left: 0;
         padding-right: 1.5625rem;
         padding-top: 1.875rem;
@@ -18,17 +23,28 @@
         margin-left: 0;
         align-items: center;
         width: 0 auto;
+        overflow: hidden;
+        margin-right: 0;
+    }
+
+    .welcome--container {
+        padding-bottom: 54px;
+
+        padding-top: 25px;
     }
 
     .welcome {
         background-color: #61c4d9;
+        min-height: 1025px;
+        height: 100vh;
+
 
         &::before {
             content: "";
             right: 0;
             height: 39.6875rem;
-            top: 0;
-            left: 14.875rem;
+            top: -12px;
+            left: 257px;
             display: flex;
             width: 32rem;
             height: 40.5rem;
@@ -37,16 +53,11 @@
 
         &::after {
             content: "";
-
+            background: url("../img/berry__786-welcome.png") no-repeat;
             position: absolute;
-            top: 13.625rem;
-            left: 13rem;
-            right: 0;
-            display: flex;
-           // width: 388px;
-           // height: 272.92px;
-            z-index: 3;
-
+            top: 226px;
+            left: 199px;
+            width: 388px;
         }
     }
 
@@ -58,12 +69,46 @@
         justify-content: center;
     }
 
+    .content--title {
+        margin-bottom: 6px;
+    }
+
+    .content__list {
+      justify-content: space-between;
+      padding-left: 25px;
+   
+
+    }
+
+
+
+    .content__txt {
+        font-size: 16px;
+        width: 100px;
+       
+    }
+    .content__txt-long {
+        width: 130px;
+    }
+
+    .content__text {
+        margin-bottom: 28px;
+    }
+
     .content__barre {
-        margin-bottom: 2.9375rem;
+
+        width: 403px;
+        height: 419px;
+
+    }
+
+    .content__right {
+        margin-bottom: 54px;
     }
 
     .content__left {
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .content--title,
@@ -73,11 +118,22 @@
 
     .header {
         width: 100%;
+        align-items: center;
     }
 
     .nav,
     .header__phone {
         display: none;
+    }
+
+    .welcome__bag {
+        background: url("../img/list-welcome-768.png") no-repeat center center;
+        top: 195px;
+        left: -53px;
+    }
+
+    .hamburger__icon {
+        display: flex;
     }
 
 }

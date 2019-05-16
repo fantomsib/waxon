@@ -33,27 +33,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*&::before {
-        content: "";
-        background: url("../img/list.png");
-        position: absolute;
-        top: 36.68rem;
-        right: 1.3rem;
-        display: flex;
-        width: 1056px;
-        height: 353px;
-        z-index: 3;
-     
-    }*/
 }
 
 .welcome__bag {
     background: url("../img/list.png") center center no-repeat;
     position: absolute;
-
-    top: -18.8125rem;
-    right: -3.8125rem;
-
+    bottom: -3.1875rem;
+    right: -2.8125rem;
     display: flex;
     width: 66rem;
     height: 22.0625rem;

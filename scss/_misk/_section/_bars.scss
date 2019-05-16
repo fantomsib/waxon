@@ -38,6 +38,8 @@
     .elips__bleu {
         z-index: 2;
         max-width: 100%;
+        width: 380px;
+        height: 309px;
     }
 
     &::after {
@@ -135,6 +137,7 @@
         text-transform: uppercase;
         font-weight: 18.75rem;
         margin-right: 1.93rem;
+        display: flex;
     }
 
     .bars__price__btn {

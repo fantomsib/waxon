@@ -1,0 +1,86 @@
+@media screen and (max-width: 768px) {
+    .bars {
+        min-height: 887px;
+
+    }
+
+    .bars--container {
+        flex-direction: column;
+
+
+    }
+
+    .bars--title,
+    .bars__description {
+        text-align: center;
+
+    }
+
+    .bars__description {
+        text-align: center;
+        width: 375px;
+    }
+
+    .bars__info {
+        justify-items: center;
+    }
+
+
+    .bars__composition {
+        text-align: center;
+    }
+
+    .bars__energy {
+        justify-content: center;
+    }
+
+    .bars__price {
+        justify-content: center;
+    }
+
+    .bars__elips {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
+        .elips__gris {
+
+            top: 55.92px;
+            left: -1.92px;
+            max-width: 100%;
+            position: absolute;
+            width: 314px;
+            height: 201px;
+
+        }
+
+        .elips__bleu {
+            width: 305px;
+            height: 247px;
+        }
+
+        &::after {
+            background: url("../img/bars-768.png") center center no-repeat;
+            top: -98.88px;
+            left: -12.92px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: flex;
+            background: url("../img/bars_leaves.png") center center no-repeat;
+            top: 0;
+            left: -3.56rem;
+            width: 28.87rem;
+            height: 20.37rem;
+
+            z-index: 4;
+        }
+    }
+
+
+
+
+}
