@@ -7,7 +7,7 @@
         content: "";
         background: url("../img/delivery__bag.png") center center no-repeat;
         position: absolute;
-        bottom: 108px;
+        bottom: 6.75rem;
         right: 0;
         display: flex;
         width: 8.4375rem;
@@ -18,8 +18,8 @@
         content: "";
         background: url("../img/berry__deliv.png") center center no-repeat;
         position: absolute;
-        bottom: 57px;
-        left: 12px;
+        bottom: 3.5625rem;
+        left: 0.75rem;
         display: flex;
         width: 3.9375rem;
         height: 3.625rem;
@@ -57,7 +57,7 @@
 .left__top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     .input__top {
         width: 13.75rem;
@@ -85,7 +85,7 @@
 .form__center {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     .input__center {
         height: $heightInput;
@@ -117,7 +117,7 @@
 .right__texterea {
     display: flex;
     flex-direction: column;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 
     .textarea {
         width: 28.75rem;
@@ -130,14 +130,14 @@
 
 .right__checkbox {
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .checkbox {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-right: 23px;
+    margin-right: 1.4375rem;
 
     &:last-child {
         margin-right: 0;
@@ -159,19 +159,19 @@
 .box {
     display: block;
     position: relative;
-    width: 25px;
-    height: 26px;
+    width: 1.5625rem;
+    height: 1.625rem;
     background-color: #ffffff;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     border-radius: 50%;
 
     &::after {
         content: "";
         position: absolute;
-        top: 6px;
-        left: 6px;
-        right: 6px;
-        bottom: 6px;
+        top: 0.375rem;
+        left: 0.375rem;
+        right: 0.375rem;
+        bottom: 0.375rem;
     }
 }
 
@@ -181,10 +181,10 @@
     &::after {
         content: "";
         position: absolute;
-        top: 9px;
-        left: 8px;
-        right: 8px;
-        bottom: 6px;
+        top: 0.5625rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.375rem;
     }
 }
 
@@ -192,8 +192,8 @@
     &:checked+.box-carre {
         &::after {
             background: url("../img/gal.png");
-            width: 11px;
-            height: 9px;
+            width: 0.6875rem;
+            height: 0.5625rem;
         }
     }
 }

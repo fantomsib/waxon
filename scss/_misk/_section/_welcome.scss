@@ -29,7 +29,7 @@
 
 .welcome--container {
     padding-top: 1.5rem;
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,10 +50,10 @@
 .welcome__bag {
     background: url("../img/list.png") center center no-repeat;
     position: absolute;
-    top: -301px;
-    right: -61px;
+    top: -18.8125rem;
+    right: -3.8125rem;
     display: flex;
-    width: 1056px;
-    height: 353px;
+    width: 66rem;
+    height: 22.0625rem;
     z-index: 3;
 }

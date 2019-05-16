@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .team__photo {
@@ -153,12 +153,12 @@
 
 
 .team__items:active .team__descrip {
-    height: 80px;
+    height: 5rem;
     transition: 0.4s;
     width: 14rem;
 }
 
 .team__descrip-active {
-    height: 80px;
+    height: 5rem;
 
 }
