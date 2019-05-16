@@ -2139,7 +2139,7 @@ h6 {
   .wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    min-width: 780px;
+    min-width: 768px;
     overflow: hidden; }
   html {
     font-size: 16px; }
@@ -2147,13 +2147,10 @@ h6 {
     display: none; }
   .container {
     width: 770px;
-    padding-right: 32px;
-    padding-top: 30px;
-    padding-left: 18px;
-    overflow-x: hidden;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    padding-right: 26px;
+    padding-top: 25px;
+    padding-left: 25px;
+    overflow-x: hidden; }
   .welcome--container {
     padding-bottom: 54px;
     padding-top: 25px; }
