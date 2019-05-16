@@ -679,7 +679,7 @@ h6 {
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
   position: absolute;
-  top: -301px;
+  bottom: -52px;
   right: -61px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2143,6 +2143,9 @@ h6 {
   fill: #010101; }
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .section {
     min-height: 1025px; }
   .welcome--container {
@@ -2154,7 +2157,8 @@ h6 {
     margin-left: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    width: 0 auto; }
   .welcome {
     background-color: #61c4d9; }
     .welcome::before {
@@ -2171,7 +2175,6 @@ h6 {
       max-width: 100%; }
     .welcome::after {
       content: "";
-      background: url("../img/berry__786-welcome.png");
       position: absolute;
       top: 218px;
       left: 208px;
@@ -2179,8 +2182,6 @@ h6 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 388px;
-      height: 272.92px;
       z-index: 3; }
   .content {
     display: -webkit-box;
@@ -2200,8 +2201,6 @@ h6 {
     -ms-flex-pack: center;
     justify-content: center; }
   .content__barre {
-    width: 403px;
-    height: 419px;
     margin-bottom: 47px; }
   .content__left {
     -webkit-box-align: center;

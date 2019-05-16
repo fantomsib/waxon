@@ -1,6 +1,6 @@
 .welcome {
     background-color: #61c4d9;
- 
+
     &::before {
         content: "";
         background: url("../img/iz.png") center center no-repeat;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  /*&::before {
+    /*&::before {
         content: "";
         background: url("../img/list.png");
         position: absolute;
@@ -50,7 +50,7 @@
 .welcome__bag {
     background: url("../img/list.png") center center no-repeat;
     position: absolute;
-    top: -301px;
+    bottom: -52px;
     right: -61px;
     display: flex;
     width: 1056px;
