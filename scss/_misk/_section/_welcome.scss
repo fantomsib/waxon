@@ -8,9 +8,23 @@
         bottom: 0;
         right: 0;
         display: flex;
-        width: 512px;
-        height: 648px;
+        width: 32rem;
+        height: 40.5rem;
         max-width: 100%;
+
+     
+
+        @include tablets {
+            content: "";
+            right: 0;
+            height: 39.6875rem;
+            top: -12px;
+            left: 257px;
+            display: flex;
+            width: 32rem;
+            height: 40.5rem;
+            max-width: 100%;
+        }
     }
 
     &::after {
@@ -20,10 +34,19 @@
         bottom: -1.87rem;
         right: 6.12rem;
         display: flex;
-        width: 387px;
-        height: 286px;
+        width: 24.1875rem;
+        height: 17.875rem;
         z-index: 3;
         max-width: 100%;
+
+        @include tablets {
+            content: "";
+            background: url("../img/berry__786-welcome.png") no-repeat;
+            position: absolute;
+            top: 226px;
+            left: 199px;
+            width: 388px;
+        }
     }
 }
 
@@ -44,4 +67,10 @@
     width: 66rem;
     height: 22.0625rem;
     z-index: 3;
+
+    @include tablets {
+        background: url("../img/list-welcome-768.png") no-repeat center center;
+        top: 195px;
+        left: -53px;
+    }
 }

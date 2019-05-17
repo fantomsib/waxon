@@ -1,4 +1,4 @@
-.why{
+.why {
     background-color: $white;
     align-items: center;
 
@@ -26,7 +26,21 @@
         max-width: 100%;
         z-index: 3;
     }
+
+    @include tablets {
+        justify-content: center;
+
+        &::before {
+            top: 13.1875rem;
+        }
+
+        &::after {
+            bottom: -1.4375rem;
+        }
+    }
+
 }
+
 
 
 .why--container {
@@ -35,16 +49,21 @@
 }
 
 .why--title {
-    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+
 }
 
 .why__txt {
     font-family: "Alegreya Sans";
-    margin-bottom: 56.96px;
+    margin-bottom: 3.56rem;
     display: flex;
     align-self: center;
     text-align: center;
     width: 25.375rem;
+
+    @include tablets {
+        margin-bottom: 2.5625rem;
+    }
 
 }
 
@@ -52,8 +71,11 @@
     display: flex;
     flex-direction: row;
     z-index: 2;
-    /*width: 944.96px;*/
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .why__items {
@@ -61,14 +83,20 @@
     flex-direction: column;
     position: relative;
     align-items: center;
-  
- 
+
+    @include tablets {
+        margin-bottom: 2.125rem;
+    }
 
     span {
         font-family: 'alegreya_sans_extraboldRg';
         font-size: 1.68rem;
         color: black;
         margin-bottom: 1.56rem;
+
+        @include tablets {
+            margin-bottom: 0.9rem;
+        }
     }
 
     p {
@@ -92,6 +120,10 @@
         right: -3.87rem;
         top: 3.25rem;
         max-width: 100%;
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &:last-child::after {
@@ -104,14 +136,17 @@
     width: 7.8125rem;
     height: 7.8125rem;
     background-color: #f2f5f4;
-    
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 34.88px;
+    margin-bottom: 2.18rem;
+
+    @include tablets {
+        margin-bottom: 1.4925rem;
+    }
 
     .why__img {
-       
+
         max-width: 100%;
     }
 }

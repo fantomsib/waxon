@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirk-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <link rel="stylesheet" href="./css/main.css">
     <title>CHOCCO</title>
 </head>
@@ -69,10 +69,10 @@
                         <button type="button" class="content__btn">ЗАКАЗАТЬ</button>
                     </div>
                     <div class="content__right">
-
-                        <img class="content__barre" src="./img/barres.png"
-                            srcset="./img/barres.png 900w, ./img/barss-768.png 800w" alt="">
-
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/bars-welcome-768.png"  > 
+                            <img class="content__barre" src="./img/barres.png">
+                        </picture>
                     </div>
                 </div>
                 <ul class=" content__list">
@@ -314,9 +314,10 @@
                 <ul class="reviews__commit">
                     <li class="commit__items">
                         <div class="commit__personne">
-                            <img src="./img/reviews__photo.jpg" alt="" class="commit__photo"
-                            srcset="/img/rewievs-768-photo.png 800w"
-                            >
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./img/rewievs-768-photo.png">
+                                <img src="./img/reviews-woomen-active.png" alt="" class="commit__photo">
+                            </picture>
                         </div>
                         <div class="commit__text">
                             <span class="comit__title">Лучший перекус</span>
@@ -372,7 +373,7 @@
                             <img src="./img/reviews__icon-1.png" alt="" class="reviews__icon">
                         </a>
                     </li>
-                    <li class="reviews__items">
+                    <li class="reviews__items reviews__items-768">
                         <a href="#" class="reviews__link">
                             <img src="./img/reviews__icon-2.png" alt="" class="reviews__icon">
                         </a>

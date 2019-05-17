@@ -1,12 +1,16 @@
 .nav__list {
     display: flex;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__items {
     margin-right: 1.8125rem;
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: 0rem;
     }
 }
 

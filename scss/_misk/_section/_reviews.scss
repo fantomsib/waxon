@@ -7,7 +7,7 @@
         position: absolute;
         background: url("../img/reviews__berry2.png") center center no-repeat;
         bottom: -7.56rem;
-        left: 0px;
+        left: 0rem;
         width: 9.62rem;
         height: 13.75rem;
         z-index: 2;
@@ -20,7 +20,7 @@
         position: absolute;
         background: url("../img/reviews__bag2.png") center center no-repeat;
         bottom: -12.06rem;
-        left: 0px;
+        left: 0rem;
         width: 8.37rem;
         height: 26.37rem;
         z-index: 2;
@@ -71,20 +71,41 @@
         height: 10.43rem;
         max-width: 100%;
     }
+
+    @include tablets {
+        width: 28.75rem;
+        height: 37.5rem;
+        padding: 0;
+    }
 }
 
 .commit__items {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .commit__personne {
     margin-right: 1.12rem;
+
+    @include tablets {
+        margin: 0;
+    }
 }
 
 .commit__photo {
     width: 15.87rem;
     height: 16.25rem;
     max-width: 100%;
+
+    @include tablets {
+        width: 12.75rem;
+        height: 13.0625rem;
+    }
 }
 
 .commit__text {
@@ -119,7 +140,8 @@
     font-weight: 31.25rem;
 }
 
-.commit__items-2, .commit__items-3 {
+.commit__items-2,
+.commit__items-3 {
     display: none;
     overflow: hidden;
 }
@@ -148,4 +170,19 @@
     border: 0.5rem solid #0f5a47;
     border-radius: 50%;
     background-color: #0f5a47;
+
+    @include tablets {
+        border: 0;
+
+    }
+}
+
+.reviews__items-768,
+.reviews__items:active {
+    @include tablets {
+
+        border: 0.5rem solid #0f5a47;
+        border-radius: 50%;
+        background-color: #0f5a47;
+    }
 }
