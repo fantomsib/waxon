@@ -2,6 +2,12 @@
     background-color: $white;
     align-items: center;
 
+    @include tablets {
+        // min-height: 75rem;
+        overflow: hidden;
+        height: 100%;
+    }
+
     &::before {
         content: "";
         display: flex;
@@ -46,10 +52,21 @@
 .why--container {
     position: relative;
     justify-content: center;
+
+
+    @include tablets {
+        padding: 5% 22%;
+      
+
+    }
 }
 
 .why--title {
     margin-bottom: 1.4375rem;
+
+    @include tablets {
+        margin-bottom: 0;
+    }
 
 }
 
@@ -62,7 +79,7 @@
     width: 25.375rem;
 
     @include tablets {
-        margin-bottom: 2.5625rem;
+        margin-bottom: 1.875rem;
     }
 
 }

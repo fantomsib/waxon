@@ -513,11 +513,11 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 59.375rem;
-  height: 100%;
   width: 95%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 .wrapper {
   width: 100%;
@@ -623,6 +623,11 @@ h6 {
 
 .welcome {
   background-color: #61c4d9; }
+  @media screen and (max-width: 768px) {
+    .welcome {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   .welcome::before {
     content: "";
     background: url("../img/iz.png") center center no-repeat;
@@ -682,7 +687,8 @@ h6 {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 2% 2%; }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
@@ -966,6 +972,10 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .why {
+      overflow: hidden;
+      height: 100%; } }
   .why::before {
     content: "";
     display: -webkit-box;
@@ -1006,9 +1016,15 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .why--container {
+      padding: 5% 22%; } }
 
 .why--title {
   margin-bottom: 1.4375rem; }
+  @media screen and (max-width: 768px) {
+    .why--title {
+      margin-bottom: 0; } }
 
 .why__txt {
   font-family: "Alegreya Sans";
@@ -1022,7 +1038,7 @@ h6 {
   width: 25.375rem; }
   @media screen and (max-width: 768px) {
     .why__txt {
-      margin-bottom: 2.5625rem; } }
+      margin-bottom: 1.875rem; } }
 
 .why__list {
   display: -webkit-box;
@@ -1365,8 +1381,7 @@ h6 {
   background-color: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  min-height: 47.87rem; }
+  align-items: center; }
   .team::before {
     content: "";
     display: -webkit-box;
@@ -1401,7 +1416,8 @@ h6 {
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
 
 .team--title {
   display: -webkit-box;
@@ -1419,23 +1435,48 @@ h6 {
   -ms-flex-direction: row;
   flex-direction: row;
   position: absolute;
-  z-index: 3; }
+  z-index: 3;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .team__list {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .team__items-alla {
   -ms-flex-item-align: end;
   align-self: flex-end; }
+  @media screen and (max-width: 768px) {
+    .team__items-alla {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .team__items-mila {
   -ms-flex-item-align: end;
   align-self: flex-end; }
+  @media screen and (max-width: 768px) {
+    .team__items-mila {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .team__items-active {
   -ms-flex-item-align: start;
   align-self: flex-start; }
+  @media screen and (max-width: 768px) {
+    .team__items-active {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .team__items-boris {
   -ms-flex-item-align: start;
   align-self: flex-start; }
+  @media screen and (max-width: 768px) {
+    .team__items-boris {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .team__items {
   display: -webkit-box;
@@ -1450,6 +1491,12 @@ h6 {
   align-items: center;
   cursor: pointer;
   margin-right: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .team__items {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+      margin-right: 0; } }
 
 .team__photo {
   width: 14rem;
@@ -1491,6 +1538,9 @@ h6 {
   width: 0.56rem;
   height: 0.43rem;
   margin-left: 0.31rem; }
+  @media screen and (max-width: 768px) {
+    .team__name-motrsov::after {
+      background: url("../img/Polygon.png") center center no-repeat; } }
 
 .team__prof {
   color: #281e1e;
@@ -1514,7 +1564,11 @@ h6 {
   font-size: 1.125rem;
   font-weight: 400;
   font-weight: 18.75rem;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .team__items:active .team__name::after {
   content: "";
@@ -1535,6 +1589,9 @@ h6 {
 
 .team__descrip-active {
   height: 5rem; }
+  @media screen and (max-width: 768px) {
+    .team__descrip-active {
+      height: 0; } }
 
 .menu {
   background: url("../img/menu-bag.jpg") center center no-repeat;
@@ -1677,43 +1734,49 @@ h6 {
   width: 2.5625rem;
   z-index: 2; }
 
-.reviews {
-  min-height: 50.5rem; }
-  .reviews::after {
-    content: "";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    background: url("../img/reviews__berry2.png") center center no-repeat;
-    bottom: -7.56rem;
-    left: 0rem;
-    width: 9.62rem;
-    height: 13.75rem;
-    z-index: 2;
-    max-width: 100%; }
-  .reviews::before {
-    content: "";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    background: url("../img/reviews__bag2.png") center center no-repeat;
-    bottom: -12.06rem;
-    left: 0rem;
-    width: 8.37rem;
-    height: 26.37rem;
-    z-index: 2;
-    max-width: 100%; }
-  .reviews .reviewes__bag {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    width: 10.81rem;
-    height: 6.18rem; }
+.reviews::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background: url("../img/reviews__berry2.png") center center no-repeat;
+  bottom: -7.56rem;
+  left: 0rem;
+  width: 9.62rem;
+  height: 13.75rem;
+  z-index: 2;
+  max-width: 100%; }
+  @media screen and (max-width: 768px) {
+    .reviews::after {
+      background: url("../img/rewievs-768-berry.png") center center no-repeat;
+      left: -2rem; } }
+
+.reviews::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background: url("../img/reviews__bag2.png") center center no-repeat;
+  bottom: -12.06rem;
+  left: 0rem;
+  width: 8.37rem;
+  height: 26.37rem;
+  z-index: 2;
+  max-width: 100%; }
+  @media screen and (max-width: 768px) {
+    .reviews::before {
+      background: url("../img/rewievs-768-bag.png") center center no-repeat;
+      left: -2rem; } }
+
+.reviews .reviewes__bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 0; }
 
 .reviews--container {
   display: -webkit-box;

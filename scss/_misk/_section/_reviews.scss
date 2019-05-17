@@ -1,5 +1,5 @@
 .reviews {
-    min-height: 50.5rem;
+
 
     &::after {
         content: "";
@@ -12,6 +12,11 @@
         height: 13.75rem;
         z-index: 2;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/rewievs-768-berry.png") center center no-repeat;
+            left: -2rem;
+        }
     }
 
     &::before {
@@ -25,6 +30,12 @@
         height: 26.37rem;
         z-index: 2;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/rewievs-768-bag.png") center center no-repeat;
+            left: -2rem;
+        }
+
     }
 
     .reviewes__bag {
@@ -32,9 +43,11 @@
         position: absolute;
         top: 1rem;
         right: 0;
-        width: 10.81rem;
-        height: 6.18rem;
+        // width: 10.81rem;
+        // height: 6.18rem;
     }
+
+
 }
 
 
@@ -43,6 +56,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
 }
 
 

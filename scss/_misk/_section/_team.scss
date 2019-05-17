@@ -1,7 +1,7 @@
 .team {
     background-color: $white;
     align-items: center;
-    min-height: 47.87rem;
+
 
     &::before {
         content: "";
@@ -34,37 +34,65 @@
     display: flex;
     position: relative;
     align-items: center;
+    height: 100%;
+
+    @include tablets {}
 }
 
 .team--title {
     display: flex;
     position: absolute;
     top: 6.25rem;
-   
+
 }
 
 .team__list {
     display: flex;
     flex-direction: row;
-    //height: 25.31rem;
+    // height: 25.31rem;
     position: absolute;
     z-index: 3;
+    width: 100%;
+
+    @include tablets {
+        flex-wrap: wrap;
+
+
+    }
 }
 
 .team__items-alla {
     align-self: flex-end;
+
+    @include tablets {
+        align-self: center;
+    }
 }
 
 .team__items-mila {
     align-self: flex-end;
+
+    @include tablets {
+        align-self: center;
+    }
 }
 
 .team__items-active {
+
     align-self: flex-start;
+
+    @include tablets {
+        align-self: center;
+    }
 }
+
 
 .team__items-boris {
     align-self: flex-start;
+
+    @include tablets {
+        align-self: center;
+    }
 }
 
 .team__items {
@@ -73,6 +101,11 @@
     align-items: center;
     cursor: pointer;
     margin-right: 1.25rem;
+
+    @include tablets {
+        flex: 2;
+        margin-right: 0;
+    }
 }
 
 .team__photo {
@@ -114,6 +147,10 @@
     width: 0.56rem;
     height: 0.43rem;
     margin-left: 0.31rem;
+
+    @include tablets {
+        background: url("../img/Polygon.png") center center no-repeat;
+    }
 }
 
 .team__prof {
@@ -136,6 +173,7 @@
     font-weight: 400;
     font-weight: 18.75rem;
     text-align: center;
+    flex-direction: column;
 }
 
 
@@ -148,6 +186,8 @@
         width: 0.56rem;
         height: 0.43rem;
         margin-left: 0.31rem;
+
+
     }
 }
 
@@ -156,9 +196,16 @@
     height: 5rem;
     transition: 0.4s;
     width: 14rem;
+
+
 }
 
 .team__descrip-active {
     height: 5rem;
+
+    @include tablets {
+        height: 0;
+  
+    }
 
 }
