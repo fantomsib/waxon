@@ -6,7 +6,8 @@
 
     .bars--container {
         flex-direction: column;
-
+        padding-top: 129px;
+        padding-bottom: 69px;
 
     }
 
@@ -42,6 +43,13 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
+
+        &::before {
+            background: url("../img/bars-768-list.png") center center no-repeat;
+            top: -13px;
+            left: -95px;
+        }
 
 
         .elips__gris {
@@ -66,21 +74,30 @@
             left: -12.92px;
         }
 
-        &::before {
-            position: absolute;
-            content: "";
-            display: flex;
-            background: url("../img/bars_leaves.png") center center no-repeat;
-            top: 0;
-            left: -3.56rem;
-            width: 28.87rem;
-            height: 20.37rem;
-
-            z-index: 4;
-        }
     }
 
+    .bars--title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 
+    .bars__composition {
+        margin-bottom: 26px;
+    }
 
+    .bars__description {
+        margin-bottom: 10px;
+    }
+
+    .bars__slider__left {
+        top: 235px;
+        left: -45px;
+
+    }
+
+    .bars__slider__right {
+        top: 235px;
+        right: -41px;
+    }
 
 }

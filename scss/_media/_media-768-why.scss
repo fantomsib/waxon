@@ -5,41 +5,47 @@
         &::before {
             top: 211px;
         }
+        &::after {
+            bottom: -23px;
+        }
     }
 
     .why--container {
         justify-content: flex-start;
         padding-top: 51px;
+
     }
 
-    .why--title {
-        margin-bottom: -1px;
-    }
 
-    .why__list {
-        flex-direction: column;
-    }
 
-    .why__items::after {
-        display: none;
-    }
+.why--title {
+    margin-bottom: -1px;
+}
 
-    .why__txt {
-        margin-bottom: 41px;
-    }
+.why__list {
+    flex-direction: column;
+}
 
-    .why__items {
-        margin-bottom: 34px;
-    }
+.why__items::after {
+    display: none;
+}
 
-    .why__icon {
-        margin-bottom: 23.88px;
-    }
+.why__txt {
+    margin-bottom: 41px;
+}
 
-    .why__items {
+.why__items {
+    margin-bottom: 34px;
+}
 
-        span {
-            margin-bottom: 0.9rem;
-        }
+.why__icon {
+    margin-bottom: 23.88px;
+}
+
+.why__items {
+
+    span {
+        margin-bottom: 0.9rem;
     }
+}
 }

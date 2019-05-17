@@ -1,19 +1,13 @@
 @media screen and (max-width: 768px) {
     .section {
-        overflow: hidden;
-     
+    
+
     }
 
 
     .wrapper {
         flex-wrap: wrap;
-        min-width: 760+8px;
-        overflow: hidden;
-     
-    }
-
-    html {
-        font-size: 16px;
+        min-width: 0;
     }
 
     .sidebar {
@@ -22,27 +16,22 @@
 
 
     .container {
-        width: 770px;
-
-        padding-right: 26px;
+        width: auto;
+        max-width: 771px;
+        //padding-right: 25px;
         padding-top: 25px;
-        padding-left: 25px;
-        overflow-x: hidden;
-     
-
-
-
+      //  padding-left: 26px;
+    
     }
 
     .welcome--container {
         padding-bottom: 54px;
-
         padding-top: 25px;
     }
 
     .welcome {
         background-color: #61c4d9;
-        min-height: 1025px;
+        min-height: 64.0625rem;
 
 
 
