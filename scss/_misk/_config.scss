@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.42;
@@ -89,19 +89,13 @@ h6 {
     flex-direction: column;
     max-width: 58.75rem;
     width: 95%;
-
-
-
-
-
 }
 
 .wrapper {
+    position: relative;
     width: 100%;
     min-height: 100%;
-    position: relative;
     overflow: hidden;
- 
 }
 
 .section {
