@@ -14,7 +14,7 @@
 
     @include phones {
         padding: 0 0;
-     justify-content: flex-end;
+        justify-content: flex-end;
     }
 }
 
@@ -30,6 +30,10 @@
         align-items: center;
         margin-bottom: 0.625rem;
         width: 100%;
+    }
+
+    @include phones {
+        padding: 0 24%;
     }
 }
 
@@ -70,9 +74,8 @@
 .content__btn {
     @include btn;
     z-index: 5;
-    @include phones {
 
-    }
+    @include phones {}
 
 }
 
@@ -89,7 +92,7 @@
     }
 
     @include phones {
-        padding-bottom: 100px;
+
         justify-content: space-around;
     }
 }
@@ -100,16 +103,14 @@
     //margin-right: 2.87rem;
     width: 23%;
 
-    &:last-child {
-        margin-right: 0;
-    }
-
     @include tablets {
         margin-right: 0;
         // flex-wrap: wrap;
     }
 
-    @include phones {}
+    @include phones {
+        width: 33%;
+    }
 }
 
 .content__icon {
@@ -147,9 +148,11 @@
     @include tablets {
         margin-bottom: 3.375rem;
     }
+
     @include phones {
         width: 100%;
-      
+        justify-content: center;
+        margin-bottom: 12.375rem;
     }
 }
 
@@ -159,7 +162,8 @@
     max-width: 100%;
     display: flex;
 
-    @include phones  {
-       
+    @include phones {
+    width: 360px;
+     height: 382px;
     }
 }
