@@ -14,6 +14,12 @@
         top: -15.06rem;
         right: 0;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/teem-after-768.png") center center no-repeat;
+            top: -23.06rem;
+            right: -0.9375rem;
+        }
     }
 
     &::after {
@@ -27,6 +33,12 @@
         top: -4.18rem;
         right: 0;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/teeem-beefor-768.png") center center no-repeat;
+            top: -4.18rem;
+            right: -1.8125rem;
+        }
     }
 }
 
@@ -53,37 +65,41 @@
     position: absolute;
     z-index: 3;
     width: 100%;
+    flex-wrap: wrap;
 
     @include tablets {
-        flex-wrap: wrap;
-
-
+      
     }
+
+    @include phones {}
 }
 
 .team__items-alla {
     align-self: flex-end;
 
     @include tablets {
-        align-self: center;
+        align-self: flex-start;
+        margin-bottom: 2.25rem;
     }
+
 }
 
 .team__items-mila {
     align-self: flex-end;
 
     @include tablets {
-        align-self: center;
+        align-self: flex-start;
+
     }
+
 }
 
 .team__items-active {
 
     align-self: flex-start;
 
-    @include tablets {
-        align-self: center;
-    }
+    @include tablets {}
+
 }
 
 
@@ -91,20 +107,22 @@
     align-self: flex-start;
 
     @include tablets {
-        align-self: center;
+        margin-bottom: 2.25rem;
     }
+
 }
 
 .team__items {
     display: flex;
+    flex: 4;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    margin-right: 1.25rem;
+
 
     @include tablets {
         flex: 2;
-        margin-right: 0;
+
     }
 }
 
@@ -113,6 +131,7 @@
     height: 18.06rem;
     margin-bottom: 1.56rem;
     max-width: 100%;
+
 }
 
 .team__name {
@@ -174,6 +193,7 @@
     font-weight: 18.75rem;
     text-align: center;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -205,7 +225,15 @@
 
     @include tablets {
         height: 0;
-  
+
+    }
+
+}
+
+.team__descrip-alla {
+    @include tablets {
+        height: 5rem;
+
     }
 
 }

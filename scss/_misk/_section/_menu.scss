@@ -25,6 +25,9 @@
         top: -4.375rem;
         left: 1.125rem;
         max-width: 100%;
+        @include tablets {
+            background: url("../img/menu-berry-768.png") center center no-repeat;
+        }
     }
 }
 

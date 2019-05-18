@@ -3,8 +3,6 @@
     align-items: center;
 
     @include tablets {
-        // min-height: 75rem;
-        overflow: hidden;
         height: 100%;
     }
 
@@ -30,7 +28,7 @@
         width: 10.06rem;
         height: 19.68rem;
         max-width: 100%;
-        z-index: 3;
+        z-index: 5;
     }
 
     @include tablets {
@@ -55,8 +53,8 @@
 
 
     @include tablets {
-        padding: 5% 22%;
-      
+        padding: 22%;
+
 
     }
 }

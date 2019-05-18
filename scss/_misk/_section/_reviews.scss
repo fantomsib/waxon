@@ -63,6 +63,9 @@
 
 .reviews--title {
     margin-bottom: 3.68rem;
+    @include phones {
+        font-size: 2.5rem;
+    }
 }
 
 .reviews__commit {
@@ -92,6 +95,10 @@
         height: 37.5rem;
         padding: 0;
     }
+
+   @include phones {
+       width: 100%;
+   } 
 }
 
 .commit__items {
@@ -169,6 +176,10 @@
 
 .reviews__items {
     margin-right: 2.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     .reviews__icon {
         display: flex;

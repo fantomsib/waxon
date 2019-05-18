@@ -1,7 +1,8 @@
 .welcome {
     background-color: #61c4d9;
+
     @include tablets {
-      justify-content: center;
+        justify-content: center;
     }
 
     &::before {
@@ -59,8 +60,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2% 2% ;
- 
+    padding: 2% 2%;
+
 }
 
 .welcome__bag {
