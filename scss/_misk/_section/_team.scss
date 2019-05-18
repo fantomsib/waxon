@@ -64,14 +64,17 @@
     flex-direction: row;
     z-index: 3;
     width: 100%;
-    flex-wrap: wrap;
+
 
     @include tablets {
-      
+       // padding: 0 10%;
+       flex-direction: column;
+
+
     }
 
     @include phones {
-   flex: 2;
+        padding: 0;
     }
 }
 
@@ -119,19 +122,25 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-
+    
 
     @include tablets {
         flex: 2;
-
     }
 }
 
 .team__photo {
     width: 14rem;
+
     height: 18.06rem;
     margin-bottom: 1.56rem;
     max-width: 100%;
+
+    @include tablets {
+        width: 11.875rem;
+
+        height: 15.625rem;
+    }
 
 }
 

@@ -61,10 +61,7 @@
     position: relative;
     justify-content: center;
 
-
-    @include tablets {
-      
-    }
+    @include tablets {}
 }
 
 .why--title {
