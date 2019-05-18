@@ -974,6 +974,15 @@ h6 {
   @media screen and (max-width: 768px) {
     .why {
       height: 100%; } }
+  @media screen and (max-width: 768px) {
+    .why {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .why::before {
+        top: 13.1875rem; }
+      .why::after {
+        bottom: -1.4375rem; } }
   .why::before {
     content: "";
     display: -webkit-box;
@@ -999,15 +1008,11 @@ h6 {
     height: 19.68rem;
     max-width: 100%;
     z-index: 5; }
-  @media screen and (max-width: 768px) {
-    .why {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .why::before {
-        top: 13.1875rem; }
+    @media screen and (max-width: 480px) {
       .why::after {
-        bottom: -1.4375rem; } }
+        background: url("../img/why-bars-480.png") center center no-repeat;
+        bottom: -103px;
+        left: 0; } }
 
 .why--container {
   position: relative;
@@ -1016,7 +1021,7 @@ h6 {
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .why--container {
-      padding: 22%; } }
+      padding: 7%; } }
 
 .why--title {
   margin-bottom: 1.4375rem; }

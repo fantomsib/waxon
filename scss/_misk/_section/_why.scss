@@ -6,6 +6,18 @@
         height: 100%;
     }
 
+    @include tablets {
+        justify-content: center;
+
+        &::before {
+            top: 13.1875rem;
+        }
+
+        &::after {
+            bottom: -1.4375rem;
+        }
+    }
+
     &::before {
         content: "";
         display: flex;
@@ -29,19 +41,17 @@
         height: 19.68rem;
         max-width: 100%;
         z-index: 5;
-    }
 
-    @include tablets {
-        justify-content: center;
-
-        &::before {
-            top: 13.1875rem;
-        }
-
-        &::after {
-            bottom: -1.4375rem;
+        @include phones {
+            background: url("../img/why-bars-480.png") center center no-repeat;
+            bottom: -103px;
+            left: 0;
         }
     }
+
+
+
+
 
 }
 
@@ -53,9 +63,7 @@
 
 
     @include tablets {
-        padding: 22%;
-
-
+        padding: 7%;
     }
 }
 
