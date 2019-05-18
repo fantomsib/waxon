@@ -842,7 +842,10 @@ h6 {
       padding: 0 0;
       -webkit-box-pack: end;
       -ms-flex-pack: end;
-      justify-content: flex-end; } }
+      justify-content: flex-end;
+      -webkit-box-flex: 0;
+      -ms-flex: 0;
+      flex: 0; } }
 
 .content__left {
   display: -webkit-box;
@@ -987,7 +990,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 12.375rem; } }
+      margin-bottom: 10.375rem; } }
 
 .content__barre {
   max-width: 100%;
@@ -996,8 +999,8 @@ h6 {
   display: flex; }
   @media screen and (max-width: 30rem) {
     .content__barre {
-      width: 360px;
-      height: 382px; } }
+      width: 260px;
+      height: 280px; } }
 
 .why {
   background-color: #ffffff;

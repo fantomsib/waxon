@@ -15,6 +15,7 @@
     @include phones {
         padding: 0 0;
         justify-content: flex-end;
+        flex: 0;
     }
 }
 
@@ -152,7 +153,7 @@
     @include phones {
         width: 100%;
         justify-content: center;
-        margin-bottom: 12.375rem;
+        margin-bottom: 10.375rem;
     }
 }
 
@@ -163,7 +164,7 @@
     display: flex;
 
     @include phones {
-    width: 360px;
-     height: 382px;
+    width: 260px;
+     height: 280px;
     }
 }
