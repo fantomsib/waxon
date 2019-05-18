@@ -18,17 +18,21 @@
 
 
 
+
         @include tablets {
             content: "";
             right: 0;
             height: 39.6875rem;
             top: -12px;
-            left: 257px;
+            right: 0px;
             display: flex;
             width: 32rem;
             height: 40.5rem;
             max-width: 100%;
         }
+         @include phones {
+            right: -3.75rem;
+         }
     }
 
     &::after {
@@ -40,8 +44,8 @@
         display: flex;
         width: 24.1875rem;
         height: 17.875rem;
-        z-index: 3;
-        max-width: 100%;
+        z-index: 4;
+        
 
         @include tablets {
             content: "";
@@ -50,7 +54,12 @@
             top: 226px;
             left: 199px;
             width: 388px;
+            height: 270px;
         }
+        @include phones {
+            left: 3.3125rem;
+            top: 13.25rem; 
+               }
     }
 }
 
@@ -60,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2% 2%;
+  
 
 }
 
@@ -78,5 +87,9 @@
         background: url("../img/list-welcome-768.png") no-repeat center center;
         top: 195px;
         left: -53px;
+    }
+    @include phones {
+        left: -141px;
+        top: 174px;
     }
 }

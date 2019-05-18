@@ -2,11 +2,11 @@ html {
     font-size: 16px;
 
     @include tablets {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     @include phones {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -87,11 +87,11 @@ h6 {
     margin: 0 auto;
     position: relative;
     flex-direction: column;
-    max-width: 59.375rem;
-    //height: 100%;
+    max-width: 58.75rem;
     width: 95%;
-    justify-content: center;
-    
+
+
+
 
 
 }
@@ -101,7 +101,7 @@ h6 {
     min-height: 100%;
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
+ 
 }
 
 .section {
