@@ -623,9 +623,9 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
   .welcome::before {
     content: "";
     background: url("../img/iz.png") center center no-repeat;
@@ -703,7 +703,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding-top: 0;
+      padding-top: 1%;
       padding-bottom: 0; } }
 
 .welcome__bag {
