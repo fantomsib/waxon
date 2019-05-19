@@ -5,6 +5,8 @@
     top: 0;
     height: 100vh;
     z-index: 3;
+    padding: 0;
+    margin: 0;
 
 
 }
@@ -15,25 +17,46 @@
     height: 100vh;
 
 
+
 }
 
-.menu__items-active,
-.menu__items:active .menu__block {
+.menu__block {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.75;
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu__link-active,
+.menu__link:active .menu__block {
     height: 100vh;
     transition: 0.5s;
-    width: 39.375rem;
-
-    @include tablets {}
+    width: 33.125rem;
 }
 
+
+
+.menu__block-active {
+    width: 33.125rem;
+
+    @include tablets {
+        width: 0;
+    }
+}
 
 .menu__link {
     position: relative;
     display: flex;
-    width: 100px;
+    width: 6.25rem;
     height: 100vh;
     z-index: 2;
-
+    @include phones {
+        width: 5rem;
+    }
 
     &::after {
         position: absolute;
@@ -66,26 +89,6 @@
     background-size: cover;
 }
 
-.menu__block {
-    height: 100vh;
-    background-color: #000000;
-    opacity: 0.75;
-    width: 0;
-    overflow: hidden;
-    display: flex;
-
-
-
-}
-
-.menu__block-active {
-    width: 33.125rem;
-
-    @include tablets {}
-
-}
-
-
 .menu__text {
     display: flex;
     width: 23.5rem;
@@ -95,21 +98,21 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4981rem;
-    padding-top: 3.4375rem;
-    padding-left: 1.875rem;
+    padding: 0.9375rem;
 }
 
 .menu__descrip {
     position: absolute;
     display: flex;
     white-space: nowrap;
-    top: 50.4375rem;
-    left: 1.8125rem;
-    transform: rotate(-90deg);
+    bottom: 0;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateY(-50%);
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: 3rem;
     font-weight: 500;
-    width: 2.5625rem;
+    // width: 2.5625rem;
     z-index: 2;
 }

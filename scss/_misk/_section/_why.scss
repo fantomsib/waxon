@@ -2,9 +2,7 @@
     background-color: $white;
     align-items: center;
 
-    @include tablets {
-       // height: 100%;
-    }
+
 
     @include tablets {
         justify-content: center;

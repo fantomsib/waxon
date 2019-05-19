@@ -4,9 +4,12 @@
     @include tablets {
         justify-content: center;
         align-items: flex-start;
-      
-
     }
+@include phones {
+  
+}
+    
+
 
     &::before {
         content: "";
@@ -80,8 +83,8 @@
 
     @include phones {
         margin: 0;
-        justify-content: center;
-        padding-top: 1%;
+        justify-content: space-between;
+        padding-top: 0;
         padding-bottom: 0;
    
     }
