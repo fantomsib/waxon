@@ -49,9 +49,7 @@
     height: 100%;
     justify-content: center;
 
-    @include tablets {
-        min-height: 72rem;
-    }
+    @include tablets {}
 }
 
 .team--title {
@@ -64,18 +62,35 @@
     flex-direction: row;
     z-index: 3;
     width: 100%;
+    flex-wrap: wrap;
 
 
     @include tablets {
-       // padding: 0 10%;
-       flex-direction: column;
+        width: 80%;
 
 
     }
 
     @include phones {
-        padding: 0;
+        width: 100%;
+        //padding: 0 15%;
     }
+}
+
+.team__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 25%;
+
+
+
+    @include tablets {
+        width: 50%;
+    }
+
+    @include phones {}
 }
 
 .team__items-alla {
@@ -116,18 +131,7 @@
 
 }
 
-.team__items {
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    
 
-    @include tablets {
-        flex: 2;
-    }
-}
 
 .team__photo {
     width: 14rem;
@@ -140,6 +144,11 @@
         width: 11.875rem;
 
         height: 15.625rem;
+    }
+
+    @include phones {
+       // width: 9.375rem;
+      //  height: 12rem;
     }
 
 }
