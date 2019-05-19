@@ -11,8 +11,7 @@
 
     @include tablets {
         flex-direction: column;
-        padding-top: 129px;
-        padding-bottom: 69px;
+        justify-content: center;
 
     }
 }
@@ -135,7 +134,7 @@
 
     @include tablets {
         text-align: center;
-        font-size: 1.875rem;
+        font-size: 1.25rem;
         margin-bottom: 1.25rem;
     }
 }
@@ -217,6 +216,9 @@
         font-weight: 18.75rem;
         margin-right: 1.93rem;
         display: flex;
+        @include tablets {
+            font-size: 1.875rem;
+        }
     }
 
     .bars__price__btn {

@@ -108,10 +108,12 @@ h6 {
     @include tablets {
         min-height: 0;
 
-        @include phones {
-            min-height: 0;
-        }
     }
+
+    @include phones {
+        min-height: 0;
+    }
+
 }
 
 

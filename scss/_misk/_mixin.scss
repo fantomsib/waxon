@@ -33,6 +33,11 @@
         overflow: hidden;
         border: none;
     }
+    @include tablets {
+        width: 7.5rem;
+        height: 3rem;
+        font-size: 0.75rem;
+    }
 }
 
 

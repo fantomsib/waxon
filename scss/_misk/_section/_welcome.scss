@@ -3,13 +3,8 @@
 
     @include tablets {
         justify-content: center;
-        align-items: flex-start;
-    }
-@include phones {
   
-}
-    
-
+    }
 
     &::before {
         content: "";
@@ -52,7 +47,6 @@
         height: 17.875rem;
         z-index: 4;
 
-
         @include tablets {
             content: "";
             background: url("../img/berry__786-welcome.png") no-repeat;
@@ -84,13 +78,9 @@
     @include phones {
         margin: 0;
         justify-content: space-between;
-        padding-top: 0;
-        padding-bottom: 0;
-   
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
-
-
-
 }
 
 .welcome__bag {
