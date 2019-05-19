@@ -3,7 +3,7 @@
 
     @include tablets {
         justify-content: center;
-      
+
     }
 
     &::before {
@@ -17,9 +17,6 @@
         height: 40.5rem;
         max-width: 100%;
 
-
-
-
         @include tablets {
             content: "";
             right: 0;
@@ -31,9 +28,12 @@
             height: 40.5rem;
             max-width: 100%;
         }
-         @include phones {
-            right: -3.75rem;
-         }
+
+        @include phones {
+            background: url("../img/list-welcome-480.png") center center no-repeat;
+            right: 0;
+            top: 0;
+        }
     }
 
     &::after {
@@ -46,7 +46,7 @@
         width: 24.1875rem;
         height: 17.875rem;
         z-index: 4;
-        
+
 
         @include tablets {
             content: "";
@@ -57,11 +57,12 @@
             width: 388px;
             height: 270px;
         }
+
         @include phones {
             left: 3.3125rem;
-            top: 13.25rem; 
-      
-               }
+            top: 13.25rem;
+
+        }
     }
 }
 
@@ -75,8 +76,8 @@
     @include phones {
         margin: 0;
     }
-    
-  
+
+
 
 }
 
@@ -95,6 +96,7 @@
         top: 195px;
         left: -53px;
     }
+
     @include phones {
         left: -141px;
         top: 174px;

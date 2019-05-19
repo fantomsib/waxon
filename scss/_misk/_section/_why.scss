@@ -10,7 +10,7 @@
         justify-content: center;
 
         &::before {
-            top: 13.1875rem;
+            top: 17.1875rem;
         }
 
         &::after {
@@ -168,8 +168,8 @@
         margin-bottom: 1.4925rem;
     }
     @include phones {
-        width: 5.625rem;
-        height: 5.625rem;
+        width: 6.25rem;
+        height: 6.25rem;
     }
 
     .why__img {

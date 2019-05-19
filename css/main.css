@@ -650,7 +650,9 @@ h6 {
         max-width: 100%; } }
     @media screen and (max-width: 30rem) {
       .welcome::before {
-        right: -3.75rem; } }
+        background: url("../img/list-welcome-480.png") center center no-repeat;
+        right: 0;
+        top: 0; } }
   .welcome::after {
     content: "";
     background: url("../img/berry.png");
@@ -843,9 +845,9 @@ h6 {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end;
-      -webkit-box-flex: 0;
-      -ms-flex: 0;
-      flex: 0; } }
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
 
 .content__left {
   display: -webkit-box;
@@ -865,7 +867,10 @@ h6 {
       width: 100%; } }
   @media screen and (max-width: 30rem) {
     .content__left {
-      padding: 0 24%; } }
+      padding: 0 20%;
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2; } }
 
 .content--title {
   font-size: 3.75rem;
@@ -883,7 +888,7 @@ h6 {
       font-size: 2.5rem; } }
   @media screen and (max-width: 30rem) {
     .content--title {
-      font-size: 1.5625rem; } }
+      font-size: 2rem; } }
 
 .content__text {
   color: #ffffff;
@@ -939,10 +944,6 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
-  @media screen and (max-width: 30rem) {
-    .content__list {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; } }
 
 .content__items {
   display: -webkit-box;
@@ -990,7 +991,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 10.375rem; } }
+      margin-bottom: 3.375rem; } }
 
 .content__barre {
   max-width: 100%;
@@ -999,8 +1000,8 @@ h6 {
   display: flex; }
   @media screen and (max-width: 30rem) {
     .content__barre {
-      width: 260px;
-      height: 280px; } }
+      width: 403px;
+      height: 419px; } }
 
 .why {
   background-color: #ffffff;
@@ -1013,7 +1014,7 @@ h6 {
       -ms-flex-pack: center;
       justify-content: center; }
       .why::before {
-        top: 13.1875rem; }
+        top: 17.1875rem; }
       .why::after {
         bottom: -1.4375rem; } }
   .why::before {
@@ -1164,8 +1165,8 @@ h6 {
       margin-bottom: 1.4925rem; } }
   @media screen and (max-width: 30rem) {
     .why__icon {
-      width: 5.625rem;
-      height: 5.625rem; } }
+      width: 6.25rem;
+      height: 6.25rem; } }
   .why__icon .why__img {
     max-width: 100%; }
 
@@ -1267,8 +1268,8 @@ h6 {
     @media screen and (max-width: 48rem) {
       .bars__elips::after {
         background: url("../img/bars-768.png") center center no-repeat;
-        top: -6.18rem;
-        left: -0.8075rem; } }
+        top: -6.5987rem;
+        left: -0.9688rem; } }
   .bars__elips::before {
     position: absolute;
     content: "";
