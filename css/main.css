@@ -682,10 +682,11 @@ h6 {
         height: 19.875rem; } }
     @media screen and (max-width: 480px) {
       .welcome::after {
-        left: 1.3125rem;
-        top: 6.25rem;
+        left: 0.3125rem;
+        top: 5.25rem;
         width: 100%;
-        height: 100%; } }
+        height: 100%;
+        z-index: 0; } }
 
 .welcome--container {
   padding-top: 1.5rem;
@@ -706,8 +707,8 @@ h6 {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
@@ -728,7 +729,8 @@ h6 {
   @media screen and (max-width: 480px) {
     .welcome__bag {
       left: -13.8125rem;
-      top: 5.0625rem; } }
+      top: 6.0625rem;
+      z-index: 0; } }
 
 .header {
   display: -webkit-box;
@@ -911,7 +913,7 @@ h6 {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .content__text {
-      margin-bottom: 0rem; } }
+      margin-bottom: 1rem; } }
 
 .content__btn {
   width: 9.75rem;
@@ -1013,7 +1015,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 0rem; } }
+      margin-bottom: 1rem; } }
 
 .content__barre {
   max-width: 100%;
