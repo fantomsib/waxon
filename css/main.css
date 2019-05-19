@@ -852,12 +852,9 @@ h6 {
   @media screen and (max-width: 480px) {
     .content {
       padding: 0 0;
-      -webkit-box-flex: 0;
-      -ms-flex: 0;
-      flex: 0;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .content__left {
   display: -webkit-box;

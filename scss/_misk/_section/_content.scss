@@ -14,9 +14,8 @@
 
     @include phones {
         padding: 0 0;
-        flex: 0;
-      
-        justify-content:space-between;
+       // flex: 0;
+       justify-content: center;
     }
 }
 
