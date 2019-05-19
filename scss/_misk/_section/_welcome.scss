@@ -3,6 +3,7 @@
 
     @include tablets {
         justify-content: center;
+        align-items: center;
       
 
     }
@@ -79,9 +80,10 @@
 
     @include phones {
         margin: 0;
-        //justify-content: center;
-        padding-top: 2%;
-        padding-bottom: 7%;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+   
     }
 
 

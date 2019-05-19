@@ -622,7 +622,10 @@ h6 {
     .welcome {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   .welcome::before {
     content: "";
     background: url("../img/iz.png") center center no-repeat;
@@ -697,8 +700,11 @@ h6 {
   @media screen and (max-width: 30rem) {
     .welcome--container {
       margin: 0;
-      padding-top: 2%;
-      padding-bottom: 7%; } }
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
