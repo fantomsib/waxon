@@ -854,9 +854,8 @@ h6 {
   @media screen and (max-width: 480px) {
     .content {
       padding: 0 0;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
 
 .content__left {
   display: -webkit-box;
@@ -1015,7 +1014,8 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      z-index: 4; } }
 
 .content__barre {
   max-width: 100%;

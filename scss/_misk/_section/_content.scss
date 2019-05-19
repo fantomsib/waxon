@@ -15,7 +15,7 @@
     @include phones {
         padding: 0 0;
        // flex: 0;
-       justify-content: center;
+       justify-content: space-around;
     }
 }
 
@@ -151,6 +151,7 @@
         width: 100%;
         justify-content: center;
         margin-bottom: 1rem;
+        z-index: 4;
     }
 }
 
