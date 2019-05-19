@@ -622,7 +622,10 @@ h6 {
     .welcome {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   .welcome::before {
     content: "";
     background: url("../img/iz.png") center center no-repeat;
@@ -676,7 +679,7 @@ h6 {
         height: 19.875rem; } }
     @media screen and (max-width: 30rem) {
       .welcome::after {
-        left: 3.3125rem;
+        left: 1.3125rem;
         top: 6.25rem;
         width: 100%;
         height: 100%; } }
@@ -696,7 +699,11 @@ h6 {
   justify-content: space-between; }
   @media screen and (max-width: 30rem) {
     .welcome--container {
-      margin: 0; } }
+      margin: 0;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: 1%; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
@@ -716,7 +723,7 @@ h6 {
       left: -3.3125rem; } }
   @media screen and (max-width: 30rem) {
     .welcome__bag {
-      left: -8.8125rem;
+      left: -13.8125rem;
       top: 5.0625rem; } }
 
 .header {
@@ -844,11 +851,9 @@ h6 {
   @media screen and (max-width: 30rem) {
     .content {
       padding: 0 0;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1; } }
+      -webkit-box-flex: 0;
+      -ms-flex: 0;
+      flex: 0; } }
 
 .content__left {
   display: -webkit-box;
@@ -868,10 +873,8 @@ h6 {
       width: 100%; } }
   @media screen and (max-width: 30rem) {
     .content__left {
-      padding: 0 20%;
-      -webkit-box-flex: 2;
-      -ms-flex: 2;
-      flex: 2; } }
+      padding: 0 17%;
+      margin-bottom: 2rem; } }
 
 .content--title {
   font-size: 3.75rem;
@@ -942,9 +945,17 @@ h6 {
   @media screen and (max-width: 48rem) {
     .content__list {
       width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media screen and (max-width: 30rem) {
+    .content__list {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 .content__items {
   display: -webkit-box;
@@ -992,7 +1003,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 9.375rem; } }
+      margin-bottom: 7.375rem; } }
 
 .content__barre {
   max-width: 100%;
@@ -1030,6 +1041,13 @@ h6 {
     width: 11.93rem;
     height: 19.62rem;
     max-width: 100%; }
+    @media screen and (max-width: 30rem) {
+      .why::before {
+        background: url("../img/bag-why-480.png") center center no-repeat;
+        top: 8.3125rem;
+        left: 0;
+        height: 11.0625rem;
+        width: 18.5625rem; } }
   .why::after {
     content: "";
     display: -webkit-box;
@@ -1062,7 +1080,7 @@ h6 {
       margin-bottom: 0; } }
   @media screen and (max-width: 30rem) {
     .why--title {
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
 
 .why__txt {
   font-family: "Alegreya Sans";
@@ -1076,7 +1094,7 @@ h6 {
   width: 25.375rem; }
   @media screen and (max-width: 48rem) {
     .why__txt {
-      margin-bottom: 1.875rem; } }
+      margin-bottom: 0.5rem; } }
 
 .why__list {
   display: -webkit-box;
@@ -1111,15 +1129,15 @@ h6 {
   align-items: center; }
   @media screen and (max-width: 48rem) {
     .why__items {
-      margin-bottom: 2.125rem; } }
+      margin-bottom: 0.5rem; } }
   .why__items span {
     font-family: 'alegreya_sans_extraboldRg';
     font-size: 1.68rem;
     color: black;
-    margin-bottom: 1.56rem; }
+    margin-bottom: 0.4rem; }
     @media screen and (max-width: 48rem) {
       .why__items span {
-        margin-bottom: 0.9rem; } }
+        margin-bottom: 0.2rem; } }
   .why__items p {
     color: #666666;
     font-family: "Alegreya Sans";
@@ -1163,7 +1181,7 @@ h6 {
   margin-bottom: 2.18rem; }
   @media screen and (max-width: 48rem) {
     .why__icon {
-      margin-bottom: 1.4925rem; } }
+      margin-bottom: 0.8rem; } }
   @media screen and (max-width: 30rem) {
     .why__icon {
       width: 6.25rem;

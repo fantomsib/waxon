@@ -28,6 +28,13 @@
         width: 11.93rem;
         height: 19.62rem;
         max-width: 100%;
+        @include phones {
+            background: url("../img/bag-why-480.png") center center no-repeat;
+            top: 8.3125rem;
+            left: 0;
+            height: 11.0625rem;
+            width: 18.5625rem;
+        }
     }
 
     &::after {
@@ -71,7 +78,7 @@
         margin-bottom: 0;
     }
     @include phones {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
 }
@@ -85,7 +92,7 @@
     width: 25.375rem;
 
     @include tablets {
-        margin-bottom: 1.875rem;
+        margin-bottom: 0.5rem;
     }
 
 }
@@ -108,17 +115,17 @@
     align-items: center;
 
     @include tablets {
-        margin-bottom: 2.125rem;
+        margin-bottom: 0.5rem;
     }
 
     span {
         font-family: 'alegreya_sans_extraboldRg';
         font-size: 1.68rem;
         color: black;
-        margin-bottom: 1.56rem;
+        margin-bottom: 0.4rem;
 
         @include tablets {
-            margin-bottom: 0.9rem;
+            margin-bottom: 0.2rem;
         }
     }
 
@@ -165,7 +172,7 @@
     margin-bottom: 2.18rem;
 
     @include tablets {
-        margin-bottom: 1.4925rem;
+        margin-bottom: 0.8rem;
     }
     @include phones {
         width: 6.25rem;
