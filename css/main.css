@@ -697,11 +697,8 @@ h6 {
   @media screen and (max-width: 30rem) {
     .welcome--container {
       margin: 0;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-      padding-top: 0;
-      padding-bottom: 0; } }
+      padding-top: 2%;
+      padding-bottom: 7%; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
