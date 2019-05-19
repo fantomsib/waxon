@@ -57,10 +57,7 @@
     align-items: center;
     justify-content: center;
 
-    @include phones {
-      
-
-    }
+    @include phones {}
 
 
 }
@@ -102,7 +99,7 @@
         padding: 0;
     }
 
-  
+
 }
 
 .commit__items {
@@ -112,6 +109,14 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+       
+
+    }
+}
+
+.commit__items-1 {
+    @include tablets {
+        display: none;
     }
 }
 
@@ -137,6 +142,8 @@
 .commit__text {
     display: flex;
     flex-direction: column;
+    
+   
 }
 
 .comit__title {
@@ -146,6 +153,9 @@
     font-weight: 500;
     font-size: 1.87rem;
     margin-bottom: 1.81rem;
+    @include tablets {
+        padding: 0 15%
+     }
 }
 
 .comit__descrip {
@@ -156,6 +166,9 @@
     margin-bottom: 2rem;
     width: 27.06rem;
     line-height: 1;
+    @include tablets {
+       padding: 0 3%
+    }
 }
 
 .comit__name {
@@ -166,7 +179,14 @@
     font-weight: 31.25rem;
 }
 
-.commit__items-2,
+.commit__items-2 {
+    display: none;
+    overflow: hidden;
+    @include tablets {
+        display: flex;
+    }
+}
+
 .commit__items-3 {
     display: none;
     overflow: hidden;

@@ -672,12 +672,14 @@ h6 {
         position: absolute;
         top: 226px;
         left: 199px;
-        width: 388px;
-        height: 270px; } }
+        width: 28.1875rem;
+        height: 19.875rem; } }
     @media screen and (max-width: 30rem) {
       .welcome::after {
         left: 3.3125rem;
-        top: 13.25rem; } }
+        top: 6.25rem;
+        width: 100%;
+        height: 100%; } }
 
 .welcome--container {
   padding-top: 1.5rem;
@@ -710,12 +712,12 @@ h6 {
   @media screen and (max-width: 48rem) {
     .welcome__bag {
       background: url("../img/list-welcome-768.png") no-repeat center center;
-      top: 195px;
-      left: -53px; } }
+      top: 12.1875rem;
+      left: -3.3125rem; } }
   @media screen and (max-width: 30rem) {
     .welcome__bag {
-      left: -141px;
-      top: 174px; } }
+      left: -8.8125rem;
+      top: 5.0625rem; } }
 
 .header {
   display: -webkit-box;
@@ -842,9 +844,8 @@ h6 {
   @media screen and (max-width: 30rem) {
     .content {
       padding: 0 0;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
       -webkit-box-flex: 1;
       -ms-flex: 1;
       flex: 1; } }
@@ -991,7 +992,7 @@ h6 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 3.375rem; } }
+      margin-bottom: 9.375rem; } }
 
 .content__barre {
   max-width: 100%;
@@ -1000,8 +1001,8 @@ h6 {
   display: flex; }
   @media screen and (max-width: 30rem) {
     .content__barre {
-      width: 403px;
-      height: 419px; } }
+      width: 200px;
+      height: 216px; } }
 
 .why {
   background-color: #ffffff;
@@ -1903,6 +1904,10 @@ h6 {
       align-items: center;
       text-align: center; } }
 
+@media screen and (max-width: 48rem) {
+  .commit__items-1 {
+    display: none; } }
+
 .commit__personne {
   margin-right: 1.12rem; }
   @media screen and (max-width: 48rem) {
@@ -1934,6 +1939,9 @@ h6 {
   font-weight: 500;
   font-size: 1.87rem;
   margin-bottom: 1.81rem; }
+  @media screen and (max-width: 48rem) {
+    .comit__title {
+      padding: 0 15%; } }
 
 .comit__descrip {
   color: #666666;
@@ -1943,6 +1951,9 @@ h6 {
   margin-bottom: 2rem;
   width: 27.06rem;
   line-height: 1; }
+  @media screen and (max-width: 48rem) {
+    .comit__descrip {
+      padding: 0 3%; } }
 
 .comit__name {
   color: #666666;
@@ -1951,7 +1962,15 @@ h6 {
   font-weight: 400;
   font-weight: 31.25rem; }
 
-.commit__items-2,
+.commit__items-2 {
+  display: none;
+  overflow: hidden; }
+  @media screen and (max-width: 48rem) {
+    .commit__items-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
 .commit__items-3 {
   display: none;
   overflow: hidden; }
