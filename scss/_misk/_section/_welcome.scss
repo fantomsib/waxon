@@ -3,7 +3,7 @@
 
     @include tablets {
         justify-content: center;
-  
+
     }
 
     &::before {
@@ -77,9 +77,9 @@
 
     @include phones {
         margin: 0;
-        justify-content: space-around;
-       // padding-top: 0.4rem;
-      //  padding-bottom: 0.4rem;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
 

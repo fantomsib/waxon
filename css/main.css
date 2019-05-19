@@ -703,8 +703,11 @@ h6 {
   @media screen and (max-width: 480px) {
     .welcome--container {
       margin: 0;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; } }
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
@@ -874,7 +877,7 @@ h6 {
       width: 100%; } }
   @media screen and (max-width: 480px) {
     .content__left {
-      padding: 0 17%;
+      padding: 0 7%;
       margin-bottom: 0rem;
       width: 100%; } }
 
