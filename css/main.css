@@ -388,6 +388,10 @@ template {
   stroke: #000000;
   stroke-width: 0.75;
   stroke-miterlimit: 10; }
+  @media screen and (max-width: 480px) {
+    .why__image {
+      width: 2.125rem;
+      height: 2.3125rem; } }
 
 .content__icons {
   stroke: #b0f7ff;
@@ -716,8 +720,8 @@ h6 {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      padding-top: 2%;
-      padding-bottom: 5%; } }
+      padding-top: 1%;
+      padding-bottom: 4%; } }
 
 .welcome__bag {
   background: url("../img/list.png") center center no-repeat;
@@ -905,7 +909,8 @@ h6 {
   @media screen and (max-width: 480px) {
     .content--title {
       font-size: 2rem;
-      padding: 0 12%; } }
+      padding: 0 12%;
+      z-index: 4; } }
 
 .content__text {
   color: #ffffff;
@@ -1056,6 +1061,11 @@ h6 {
         top: 17.1875rem; }
       .why::after {
         bottom: -1.4375rem; } }
+  @media screen and (max-width: 480px) {
+    .why {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
   .why::before {
     content: "";
     display: -webkit-box;
@@ -1071,10 +1081,10 @@ h6 {
     @media screen and (max-width: 480px) {
       .why::before {
         background: url("../img/bag-why-480.png") center center no-repeat;
-        top: 8.3125rem;
-        left: 0;
-        height: 177px;
-        width: 297px; } }
+        top: 24.3125rem;
+        left: -3rem;
+        height: 11.0625rem;
+        width: 18.5625rem; } }
   .why::after {
     content: "";
     display: -webkit-box;
@@ -1099,6 +1109,23 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .why--container {
+      padding-top: 2%;
+      padding-bottom: 5%; } }
+
+.why__title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 3.5625rem; }
+  @media screen and (max-width: 480px) {
+    .why__title-text {
+      margin-bottom: 0; } }
 
 .why--title {
   margin-bottom: 1.4375rem; }
@@ -1111,17 +1138,16 @@ h6 {
 
 .why__txt {
   font-family: "Alegreya Sans";
-  margin-bottom: 3.56rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
   text-align: center;
-  width: 25.375rem; }
-  @media screen and (max-width: 768px) {
+  width: 40%; }
+  @media screen and (max-width: 480px) {
     .why__txt {
-      margin-bottom: 0.5rem; } }
+      width: 100%; } }
 
 .why__list {
   display: -webkit-box;
@@ -1141,6 +1167,13 @@ h6 {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .why__list {
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
 
 .why__items {
   display: -webkit-box;
@@ -1157,6 +1190,10 @@ h6 {
   @media screen and (max-width: 768px) {
     .why__items {
       margin-bottom: 0.5rem; } }
+  @media screen and (max-width: 480px) {
+    .why__items {
+      width: 100%;
+      margin-bottom: 0rem; } }
   .why__items span {
     font-family: 'alegreya_sans_extraboldRg';
     font-size: 1.68rem;
@@ -1165,6 +1202,10 @@ h6 {
     @media screen and (max-width: 768px) {
       .why__items span {
         margin-bottom: 0.2rem; } }
+    @media screen and (max-width: 480px) {
+      .why__items span {
+        font-size: 12px;
+        margin-bottom: 0; } }
   .why__items p {
     color: #666666;
     font-family: "Alegreya Sans";
@@ -1173,6 +1214,9 @@ h6 {
     font-weight: 18.75rem;
     text-align: center;
     width: 17.25rem; }
+    @media screen and (max-width: 480px) {
+      .why__items p {
+        font-size: 12px; } }
   .why__items::after {
     content: "";
     display: -webkit-box;
@@ -1211,8 +1255,8 @@ h6 {
       margin-bottom: 0.8rem; } }
   @media screen and (max-width: 480px) {
     .why__icon {
-      width: 6.25rem;
-      height: 6.25rem; } }
+      width: 4.5rem;
+      height: 4.5rem; } }
   .why__icon .why__img {
     max-width: 100%; }
 

@@ -55,6 +55,7 @@
     @include phones {
         font-size: 2rem;
         padding:  0 12%;
+        z-index: 4;
     }
 }
 
