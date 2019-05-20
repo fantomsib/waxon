@@ -1682,38 +1682,26 @@ h6 {
     .team__items {
       width: 50%; } }
 
-.team__items-alla {
+.team__items-bottom {
   -ms-flex-item-align: end;
   align-self: flex-end; }
   @media screen and (max-width: 768px) {
-    .team__items-alla {
+    .team__items-bottom {
       -ms-flex-item-align: start;
       align-self: flex-start;
       margin-bottom: 2.25rem; } }
   @media screen and (max-width: 480px) {
-    .team__items-alla {
+    .team__items-bottom {
       margin-bottom: 0rem; } }
 
-.team__items-mila {
-  -ms-flex-item-align: end;
-  align-self: flex-end; }
-  @media screen and (max-width: 768px) {
-    .team__items-mila {
-      -ms-flex-item-align: start;
-      align-self: flex-start; } }
-
-.team__items-active {
-  -ms-flex-item-align: start;
-  align-self: flex-start; }
-
-.team__items-boris {
+.team__items-top {
   -ms-flex-item-align: start;
   align-self: flex-start; }
   @media screen and (max-width: 768px) {
-    .team__items-boris {
+    .team__items-top {
       margin-bottom: 2.25rem; } }
   @media screen and (max-width: 480px) {
-    .team__items-boris {
+    .team__items-top {
       margin-bottom: 0rem; } }
 
 .team__photo {
@@ -1758,13 +1746,13 @@ h6 {
       font-size: 1.1rem;
       font-weight: bold; } }
 
-.team__name-motrsov {
+.team__name--active {
   margin-bottom: 0.81rem; }
   @media screen and (max-width: 480px) {
-    .team__name-motrsov {
+    .team__name--active {
       margin-bottom: 0; } }
 
-.team__name-motrsov::after {
+.team__name--active::after {
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1774,7 +1762,7 @@ h6 {
   height: 0.43rem;
   margin-left: 0.31rem; }
   @media screen and (max-width: 768px) {
-    .team__name-motrsov::after {
+    .team__name--active::after {
       background: url("../img/Polygon.png") center center no-repeat; } }
 
 .team__prof {
@@ -1831,18 +1819,18 @@ h6 {
     .team__items:active .team__descrip {
       height: 6rem; } }
 
-.team__descrip-active {
+.team__descrip--active {
   height: 5rem; }
   @media screen and (max-width: 768px) {
-    .team__descrip-active {
+    .team__descrip--active {
       height: 0; } }
 
 @media screen and (max-width: 768px) {
-  .team__descrip-alla {
+  .team__descrip-tablet--active {
     height: 5rem; } }
 
 @media screen and (max-width: 480px) {
-  .team__descrip-alla {
+  .team__descrip-tablet--active {
     height: 6rem; } }
 
 .menu {

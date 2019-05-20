@@ -63,8 +63,7 @@
     @include tablets {}
 
     @include phones {
-       justify-content: space-around;
-      
+        justify-content: space-around;
     }
 }
 
@@ -75,7 +74,7 @@
     @include phones {
         width: 100%;
         font-size: 1.8rem;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 }
 
@@ -93,7 +92,6 @@
     @include phones {
         width: 100%;
         padding: 0 2%;
-       
     }
 }
 
@@ -111,7 +109,7 @@
     @include phones {}
 }
 
-.team__items-alla {
+.team__items-bottom {
     align-self: flex-end;
 
     @include tablets {
@@ -124,22 +122,7 @@
     }
 }
 
-.team__items-mila {
-    align-self: flex-end;
-
-    @include tablets {
-        align-self: flex-start;
-    }
-}
-
-.team__items-active {
-
-    align-self: flex-start;
-
-    @include tablets {}
-}
-
-.team__items-boris {
+.team__items-top {
     align-self: flex-start;
 
     @include tablets {
@@ -163,10 +146,8 @@
     }
 
     @include phones {
-
         width: 9rem;
         height: 10.5rem;
-
         margin-bottom: 0.2rem;
     }
 }
@@ -196,7 +177,7 @@
     }
 }
 
-.team__name-motrsov {
+.team__name--active {
     margin-bottom: 0.81rem;
 
     @include phones {
@@ -204,7 +185,7 @@
     }
 }
 
-.team__name-motrsov::after {
+.team__name--active::after {
     content: "";
     display: flex;
     background: url("../img/Polygon_top.png") center center no-repeat;
@@ -269,7 +250,7 @@
     }
 }
 
-.team__descrip-active {
+.team__descrip--active {
     height: 5rem;
 
     @include tablets {
@@ -277,7 +258,7 @@
     }
 }
 
-.team__descrip-alla {
+.team__descrip-tablet--active {
     @include tablets {
         height: 5rem;
     }
