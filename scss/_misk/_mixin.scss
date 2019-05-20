@@ -9,7 +9,14 @@
     padding-left: 0.6875rem;
     padding-right: 0.6875rem;
     height: 3.6875rem;
-    @include phones{
+    border: 0;
+    outline: none;
+
+    &:focus {
+        outline: 3px solid #dde3bd;
+    }
+
+    @include phones {
         height: 1.6875rem;
     }
 }
@@ -38,6 +45,7 @@
         border: none;
         cursor: pointer;
     }
+
     @include tablets {
         width: 7.5rem;
         height: 3rem;

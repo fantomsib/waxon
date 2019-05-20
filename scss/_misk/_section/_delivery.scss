@@ -82,7 +82,6 @@
 .form__left {
     display: flex;
     flex-direction: column;
-    // width: 463px;
     width: 48.73684210526316%;
 
     @include tablets {
@@ -102,7 +101,6 @@
     }
 
     .input__top {
-        //width: 220px;
         height: $heightInput;
         background-color: #ffffff;
         @include input;
@@ -113,11 +111,10 @@
 .left__top__phone {
     display: flex;
     flex-direction: column;
-    //flex: 1;
-
     width: 48%;
 
 }
+
 
 
 .input__text {
@@ -186,11 +183,13 @@
 }
 
 .textarea {
+    @include input;
     width: 100%;
     height: 11.25rem;
     background-color: #ffffff;
     resize: none;
-    // @include input;
+    border: 0;
+
 
     @include phones {
         height: 6.25rem;
