@@ -54,6 +54,7 @@
 
     @include phones {
         font-size: 2rem;
+        padding:  0 12%;
     }
 }
 
@@ -92,8 +93,8 @@
     }
 
     @include phones {
-
-        justify-content: space-between;
+    
+      
     }
 }
 
@@ -103,12 +104,14 @@
     width: 23%;
 
     @include tablets {
-        margin-right: 0;
-        // flex-wrap: wrap;
+      flex: 3;
+     justify-content: center;
+       
     }
 
     @include phones {
-        width: 33%;
+   
+     flex:  3;
     }
 }
 
@@ -129,6 +132,9 @@
     @include tablets {
         font-size: 1rem;
         width: 6.25rem;
+    }
+    @include phones {
+        width: 52%;
     }
 }
 

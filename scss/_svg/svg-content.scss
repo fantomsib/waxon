@@ -10,6 +10,10 @@
     width: 2.75rem;
     height: 2.5625rem;
     margin-right: 0.4375rem;
+
+    @include phones {
+        margin-right: 0.20rem;
+    }
 }
 
 .content__icons-truck {
@@ -17,10 +21,18 @@
     height: 2.5rem;
     margin-right: 0.75rem;
 
+    @include phones {
+        margin-right: 0.40rem;
+    }
+
 }
 
 .content__icons-meter {
     width: 2.625rem;
     height: 2.625rem;
     margin-right: 0.5625rem;
+
+    @include phones {
+        margin-right: 0.40rem;
+    }
 }
