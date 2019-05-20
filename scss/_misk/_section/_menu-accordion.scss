@@ -46,6 +46,10 @@
     @include tablets {
         width: 0;
     }
+    @include phones {
+    width: 17.65rem;
+      
+    }
 }
 
 .menu__link {
@@ -55,7 +59,7 @@
     height: 100vh;
     z-index: 2;
     @include phones {
-        width: 5rem;
+        width: 3rem;
     }
 
     &::after {
@@ -115,4 +119,7 @@
     font-weight: 500;
     // width: 2.5625rem;
     z-index: 2;
+    @include phones {
+        font-size: 2rem;
+    }
 }

@@ -15,6 +15,7 @@
 
         @include tablets {
             background: url("../img/delivery-768-berry.png") center center no-repeat;
+            right: -4.875rem;
         }
 
         @include phones {

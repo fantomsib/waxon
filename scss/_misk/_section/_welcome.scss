@@ -51,20 +51,27 @@
             content: "";
             background: url("../img/berry__786-welcome.png") no-repeat;
             position: absolute;
-            top: 226px;
+            top: 314px;
             left: 199px;
             width: 28.1875rem;
             height: 19.875rem;
         }
 
         @include phones {
-            left: 0.3125rem;
-            top: 7.25rem;
+            left: 2.3125rem;
+            top: 12.25rem;
             width: 100%;
             height: 100%;
             z-index: 0;
 
+        }
 
+        @include iphone {
+            left: 0.3125rem;
+            top: 3.25rem;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
         }
     }
 }
@@ -76,12 +83,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+
     @include phones {
-        margin: 0;
-        justify-content: space-between;
-        padding-top: 1%;
-        padding-bottom: 4%;
-     
+        justify-content: center;
+
+        padding-bottom: 1rem;
+        padding-top: 0.4rem;
+
     }
 }
 
@@ -97,13 +105,19 @@
 
     @include tablets {
         background: url("../img/list-welcome-768.png") no-repeat center center;
-        top: 12.1875rem;
-        left: -3.3125rem;
+        top: 21.1875rem;
+        left: 0.6875rem;
+        z-index: 0;
     }
 
     @include phones {
-        left: -14.8125rem;
-        top: 6.0625rem;
+        left: -10.3125rem;
+        top: 15.0625rem;
+    }
+
+    @include iphone {
+        left: -21.3125rem;
+        top: 2.0625rem;
         z-index: 0;
     }
 }

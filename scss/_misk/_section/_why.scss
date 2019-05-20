@@ -28,14 +28,14 @@
         bottom: 15.31rem;
         left: 0;
         width: 11.93rem;
-        height: 19.62rem;
+        height: 23.62rem;
         max-width: 100%;
 
         @include phones {
             background: url("../img/bag-why-480.png") center center no-repeat;
-            top: 24.3125rem;
-            left: -3rem;
-            height: 11.0625rem;
+            top: 6.3125rem;
+            left: -6rem;
+            height: 24.0625rem;
             width: 18.5625rem;
         }
     }
@@ -48,9 +48,14 @@
         bottom: -6.25rem;
         left: 0;
         width: 10.06rem;
-        height: 19.68rem;
+        height: 22.68rem;
         max-width: 100%;
         z-index: 5;
+
+        @include tablets {
+            left: -23px;
+            bottom: -6.25rem;
+        }
 
         @include phones {
             background: url("../img/why-bars-480.png") center center no-repeat;
@@ -109,10 +114,13 @@
     // width: 406px;
     width: 40%;
 
-    @include tablets {}
+    @include tablets {
+        font-size: 1.25rem;
+    }
 
     @include phones {
         width: 100%;
+        font-size: 1rem;
     }
 }
 
@@ -141,7 +149,7 @@
     align-items: center;
 
     @include tablets {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     @include phones {

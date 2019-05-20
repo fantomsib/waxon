@@ -57,6 +57,12 @@
     }
 }
 
+@mixin iphone {
+    @media screen and (max-width: $iphone4) {
+        @content;
+    }
+}
+
 @function rem($px) {
     @return $px / 16px+0rem;
 }

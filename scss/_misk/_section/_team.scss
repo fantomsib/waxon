@@ -3,7 +3,6 @@
     align-items: center;
 
 
-
     &::before {
         content: "";
         display: flex;
@@ -17,9 +16,16 @@
         max-width: 100%;
 
         @include tablets {
-            background: url("../img/teem-after-768.png") center center no-repeat;
-            top: -23.06rem;
-            right: -0.9375rem;
+            top: -17.06rem;
+            right: 0.0625rem;
+            // background: url("../img/teem-after-768.png") center center no-repeat;
+            // top: -23.06rem;
+            // right: -0.9375rem;
+        }
+
+        @include phones {
+            right: -5.9375rem;
+            top: -21.06rem;
         }
     }
 
@@ -40,6 +46,10 @@
             top: -4.18rem;
             right: -1.8125rem;
         }
+
+        @include phones {
+            right: -3.8125rem;
+        }
     }
 }
 
@@ -51,11 +61,22 @@
     justify-content: center;
 
     @include tablets {}
+
+    @include phones {
+       justify-content: space-around;
+      
+    }
 }
 
 .team--title {
     display: flex;
     margin-bottom: 4.25rem;
+
+    @include phones {
+        width: 100%;
+        font-size: 1.8rem;
+        margin-bottom: 0rem;
+    }
 }
 
 .team__list {
@@ -65,16 +86,14 @@
     width: 100%;
     flex-wrap: wrap;
 
-
     @include tablets {
         width: 80%;
-
-
     }
 
     @include phones {
         width: 100%;
-      
+        padding: 0 2%;
+       
     }
 }
 
@@ -84,8 +103,6 @@
     align-items: center;
     cursor: pointer;
     width: 25%;
-
-
 
     @include tablets {
         width: 50%;
@@ -102,6 +119,9 @@
         margin-bottom: 2.25rem;
     }
 
+    @include phones {
+        margin-bottom: 0rem;
+    }
 }
 
 .team__items-mila {
@@ -109,9 +129,7 @@
 
     @include tablets {
         align-self: flex-start;
-
     }
-
 }
 
 .team__items-active {
@@ -119,9 +137,7 @@
     align-self: flex-start;
 
     @include tablets {}
-
 }
-
 
 .team__items-boris {
     align-self: flex-start;
@@ -130,28 +146,29 @@
         margin-bottom: 2.25rem;
     }
 
+    @include phones {
+        margin-bottom: 0rem;
+    }
 }
-
-
 
 .team__photo {
     width: 14rem;
-
     height: 18.06rem;
     margin-bottom: 1.56rem;
     max-width: 100%;
 
     @include tablets {
         width: 11.875rem;
-
         height: 15.625rem;
     }
 
     @include phones {
-       // width: 9.375rem;
-      //  height: 12rem;
-    }
 
+        width: 9rem;
+        height: 10.5rem;
+
+        margin-bottom: 0.2rem;
+    }
 }
 
 .team__name {
@@ -163,7 +180,6 @@
     align-items: center;
     margin-bottom: 0.375rem;
 
-
     &::after {
         content: "";
         display: flex;
@@ -172,11 +188,20 @@
         height: 0.43rem;
         margin-left: 0.31rem;
     }
+
+    @include phones {
+        margin-bottom: 0.1rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
 }
 
 .team__name-motrsov {
     margin-bottom: 0.81rem;
 
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .team__name-motrsov::after {
@@ -199,6 +224,10 @@
     font-weight: 400;
     margin-bottom: 0.37rem;
     display: flex;
+
+    @include phones {
+        margin-bottom: 0rem;
+    }
 }
 
 .team__descrip {
@@ -226,8 +255,6 @@
         width: 0.56rem;
         height: 0.43rem;
         margin-left: 0.31rem;
-
-
     }
 }
 
@@ -237,7 +264,9 @@
     transition: 0.4s;
     width: 14rem;
 
-
+    @include phones {
+        height: 6rem;
+    }
 }
 
 .team__descrip-active {
@@ -245,15 +274,15 @@
 
     @include tablets {
         height: 0;
-
     }
-
 }
 
 .team__descrip-alla {
     @include tablets {
         height: 5rem;
-
     }
 
+    @include phones {
+        height: 6rem;
+    }
 }

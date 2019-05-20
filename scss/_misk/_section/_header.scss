@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
 
-    
+
 }
 
 .header__logo {
@@ -16,6 +16,8 @@
     line-height: 1.3125rem;
     width: 3.3125rem;
     height: 2.375rem;
+
+   
 }
 
 .header__phone {
@@ -63,5 +65,12 @@
 
     @include tablets {
         display: flex;
+    }
+}
+
+.header__chocco {
+    display: flex;
+    @include phones {
+        width: 100%;
     }
 }
