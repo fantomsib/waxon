@@ -985,7 +985,8 @@ h6 {
     color: #0f5a47;
     border-radius: 2.1875rem;
     overflow: hidden;
-    border: none; }
+    border: none;
+    cursor: pointer; }
   @media screen and (max-width: 768px) {
     .content__btn {
       width: 7.5rem;
@@ -1560,7 +1561,8 @@ h6 {
       color: #0f5a47;
       border-radius: 2.1875rem;
       overflow: hidden;
-      border: none; }
+      border: none;
+      cursor: pointer; }
     @media screen and (max-width: 768px) {
       .bars__price .bars__price__btn {
         width: 7.5rem;
@@ -1641,7 +1643,7 @@ h6 {
     .team--title {
       width: 100%;
       font-size: 1.8rem;
-      margin-bottom: 0rem; } }
+      margin-bottom: 0; } }
 
 .team__list {
   display: -webkit-box;
