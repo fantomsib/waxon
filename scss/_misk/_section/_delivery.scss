@@ -3,6 +3,10 @@
     background-size: cover;
     min-height: 41.875rem;
 
+    @include phones {
+        min-height: 0;
+    }
+
 
     &::before {
         content: "";
@@ -13,6 +17,7 @@
         display: flex;
         width: 8.4375rem;
         height: 11.75rem;
+
         @include tablets {
             display: none;
         }
@@ -20,13 +25,14 @@
 
     &::after {
         content: "";
-       background: url("../img/berry__deliv.png") center center no-repeat;
+        background: url("../img/berry__deliv.png") center center no-repeat;
         position: absolute;
         bottom: 3.5625rem;
         left: 0.75rem;
         display: flex;
         width: 3.9375rem;
         height: 3.625rem;
+
         @include tablets {
             display: none;
         }
@@ -46,11 +52,14 @@
 .delivery--title {
     color: #0f5a47;
     margin-bottom: 3.4375rem;
+
     @include tablets {
         margin-bottom: 2.1875rem;
     }
+
     @include phones {
-        font-size: 2.5rem;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -63,9 +72,10 @@
     @include tablets {
         padding: 0 15%;
     }
+
     @include phones {
-     width: 100%;
-     padding: 0;
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -86,6 +96,10 @@
     justify-content: space-between;
     margin-bottom: 1.25rem;
     width: 100%;
+
+    @include phones {
+        margin-bottom: 0.125rem;
+    }
 
     .input__top {
         //width: 220px;
@@ -119,6 +133,10 @@
     flex-direction: column;
     margin-bottom: 1.25rem;
 
+    @include phones {
+        margin-bottom: 0.125rem;
+    }
+
     .input__center {
         height: $heightInput;
         @include input;
@@ -136,10 +154,11 @@
     }
 
     .input__bottom {
-        height: $heightInput;
+
         @include input;
     }
 }
+
 
 .form__right {
     display: flex;
@@ -158,6 +177,10 @@
     margin-bottom: 1.625rem;
     width: 100%;
 
+    @include phones {
+        margin-bottom: 0.9rem;
+    }
+
 
 
 }
@@ -167,7 +190,11 @@
     height: 11.25rem;
     background-color: #ffffff;
     resize: none;
-    @include input;
+    // @include input;
+
+    @include phones {
+        height: 6.25rem;
+    }
 
 }
 
@@ -194,6 +221,10 @@
 
     @include tablets {
         justify-content: center;
+    }
+
+    @include phones {
+        margin-bottom: 0.9rem;
     }
 }
 
@@ -260,9 +291,15 @@
         justify-content: center;
     }
 }
+
 .content__btn-delivery {
     margin-right: 1.875rem;
+
+    @include phones {
+        margin-right: 0.8rem;
+    }
 }
+
 .btn__clear {
     display: flex;
     font-family: "Alegreya Sans";
