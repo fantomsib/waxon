@@ -24,7 +24,8 @@
         }
 
         @include phones {
-            right: -5.9375rem;
+            display: none;
+            right: -8.9375rem;
             top: -21.06rem;
         }
     }
@@ -49,6 +50,8 @@
 
         @include phones {
             right: -3.8125rem;
+            width: 9rem;
+            height: 8rem;
         }
     }
 }
