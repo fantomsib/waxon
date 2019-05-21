@@ -174,7 +174,74 @@
                             <img src="./img/elips_gris.png" alt="" class="elips__gris">
                             <img src="./img/elips.png" alt="" class="elips__bleu">
                             <img src="./img/bars.png" alt="" class="chocolads">
+                        </div>
+                        <div class="bars__info">
+                            <h1 class="title bars--title">
+                                Батончик “Морские
+                                водоросли”
+                            </h1>
+                            <div class="bars__composition">Состав:</div>
+                            <p class="bars__description">Гранола из морских водорослей с овсом,
+                                миндалем и тыквенными семечками. В состав
+                                также входят: сухое молоко, заменитель сахара
+                                и какао бобы.
+                            </p>
+                            <ul class="bars__energy">
+                                <li class="energy__items">
+                                    <span class="energy__title">Калорийность</span>
+                                    <span class="energy__info">120 ккал</span>
+                                </li>
+                                <li class="energy__items">
+                                    <span class="energy__title">Вес</span>
+                                    <span class="energy__info">98 грамм</span>
+                                </li>
+                            </ul>
+                            <div class="bars__price">
+                                <div class="bars__price__rub">140 ₽</div>
+                                <button type="button" class="bars__price__btn">ЗАКАЗАТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__bars-items-2">
 
+                        <div class="bars__elips">
+                            <img src="./img/elips_gris.png" alt="" class="elips__gris">
+                            <img src="./img/elips.png" alt="" class="elips__bleu">
+                            <img src="./img/bars.png" alt="" class="chocolads">
+                        </div>
+                        <div class="bars__info">
+                            <h1 class="title bars--title">
+                                Батончик “Морские
+                                водоросли”
+                            </h1>
+                            <div class="bars__composition">Состав:</div>
+                            <p class="bars__description">Гранола из морских водорослей с овсом,
+                                миндалем и тыквенными семечками. В состав
+                                также входят: сухое молоко, заменитель сахара
+                                и какао бобы.
+                            </p>
+                            <ul class="bars__energy">
+                                <li class="energy__items">
+                                    <span class="energy__title">Калорийность</span>
+                                    <span class="energy__info">120 ккал</span>
+                                </li>
+                                <li class="energy__items">
+                                    <span class="energy__title">Вес</span>
+                                    <span class="energy__info">98 грамм</span>
+                                </li>
+                            </ul>
+                            <div class="bars__price">
+                                <div class="bars__price__rub">140 ₽</div>
+                                <button type="button" class="bars__price__btn">ЗАКАЗАТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider__bars-items-3">
+
+                        <div class="bars__elips">
+                            <img src="./img/elips_gris.png" alt="" class="elips__gris">
+                            <img src="./img/elips.png" alt="" class="elips__bleu">
+                            <img src="./img/bars.png" alt="" class="chocolads">
                         </div>
                         <div class="bars__info">
                             <h1 class="title bars--title">
@@ -408,56 +475,48 @@
         <section class="section delivery">
             <div class="container delivery--coontainer">
                 <h1 class="title delivery--title">ЗАКАЖИТЕ ДОСТАВКУ</h1>
-                <form method="" action="" class="form">
+                <form method="POST" action="" class="form">
                     <div class="form__left">
                         <div class="left__top">
-                            <div class="left__top__name ">
+                            <label class="left__top__name">
                                 <span class="input__text"> Имя</span>
-                                <label for="name"></label>
                                 <input type="text" class="input__top input__top-name" name="name" id="name">
+                            </label>
 
-                            </div>
-                            <div class="left__top__phone left__top__phone--active">
+                            <label class="left__top__phone left__top__phone--active">
                                 <span class="input__text"> Телефон</span>
-                                <label for="phone"> </label>
                                 <input type="text" class="input__top input__top--active" name="phone" id="phone"
                                     placeholder="89022348912">
-                            </div>
+                            </label>
                         </div>
-                        <div class="form__center">
+                        <label class="form__center">
                             <span class="input__text">Улица</span>
-                            <label for="street"> </label>
                             <input type="text" class="input__center" name="street" id="street">
-                        </div>
+                        </label>
                         <div class="form__bottom">
-                            <div class="bottom__items bottom__items-house">
+                            <label class="bottom__items bottom__items-house">
                                 <span class="input__text">Дом</span>
-                                <label for="house"></label>
                                 <input type="text" class="input__bottom" name="house" id="house">
-                            </div>
-                            <div class="bottom__items bottom__items-housing">
+                            </label>
+                            <label class="bottom__items bottom__items-housing">
                                 <span class="input__text">Корпус</span>
-                                <label for="housing"> </label>
                                 <input type="text" class="input__bottom" name="housing" id="housing">
-                            </div>
-                            <div class="bottom__items bottom__items-apartment">
+                            </label>
+                            <label class="bottom__items bottom__items-apartment">
                                 <span class="input__text">Кваритира</span>
-                                <label for="apartment"></label>
                                 <input type="text" class="input__bottom" name="apartment" id="apartment">
-                            </div>
-                            <div class="bottom__items bottom__items-floor">
-                                <span class="input__text">Кваритира</span>
-                                <label for="floor"></label> 
+                            </label>
+                            <label class="bottom__items bottom__items-floor">
+                                <span class="input__text">Этаж</span>
                                 <input type="text" class="input__bottom" name="floor" id="floor">
-                            </div>
+                            </label>
                         </div>
                     </div>
                     <div class="form__right">
-                        <div class="right__texterea">
+                        <label class="right__texterea">
                             <span class="input__text">Комментарий</span>
-                            <label for="commit"></label>
                             <textarea name="text" class="textarea" id="commit" cols="30" rows="10"></textarea>
-                        </div>
+                        </label>
                         <div class="right__checkbox">
                             <label class="checkbox checkbox-1">
                                 <input class="chekbox__input" id="money" type="checkbox" name="pay">

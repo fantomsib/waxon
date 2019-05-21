@@ -1380,6 +1380,9 @@ h6 {
       -ms-flex-direction: column;
       flex-direction: column; } }
 
+.slider__bars-items-2, .slider__bars-items-3 {
+  display: none; }
+
 .flash__slider-left {
   position: absolute;
   left: -1.5rem;
