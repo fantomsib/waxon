@@ -105,15 +105,41 @@
     cursor: pointer;
     width: 25%;
 
+    &:nth-child(2n) {
+        align-self: flex-end;
+
+        @include tablets {
+            align-self: flex-start;
+            margin-bottom: 2.25rem;
+        }
+
+        @include phones {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &:nth-child(2n+1) {
+        align-self: flex-start;
+
+        @include tablets {
+            margin-bottom: 2.25rem;
+        }
+
+        @include phones {
+            margin-bottom: 0rem;
+        }
+    }
+
     @include tablets {
         width: 50%;
     }
 
     @include phones {}
+
 }
 
-.team__items-bottom {
-    align-self: flex-end;
+/*.team__items-bottom {
+    //  align-self: flex-end;
 
     @include tablets {
         align-self: flex-start;
@@ -135,7 +161,7 @@
     @include phones {
         margin-bottom: 0rem;
     }
-}
+}*/
 
 .team__photo {
     width: 14rem;
