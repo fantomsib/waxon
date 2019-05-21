@@ -629,7 +629,7 @@ h6 {
     -o-transition: 0.4s;
     transition: 0.4s; }
 
-.sidebar__items-active .sidebar__link::before,
+.sidebar__items--active .sidebar__link::before,
 .sidebar__link:hover::before {
   width: 1rem;
   height: 1rem;
@@ -1983,7 +1983,7 @@ h6 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.menu__link-active,
+.menu__link--active,
 .menu__link:active .menu__block {
   height: 100vh;
   -webkit-transition: 0.5s;
@@ -1991,13 +1991,13 @@ h6 {
   transition: 0.5s;
   width: 33.125rem; }
 
-.menu__block-active {
+.menu__block--active {
   width: 33.125rem; }
   @media screen and (max-width: 768px) {
-    .menu__block-active {
+    .menu__block--active {
       width: 0; } }
   @media screen and (max-width: 480px) {
-    .menu__block-active {
+    .menu__block--active {
       width: 17.65rem; } }
 
 .menu__link {
@@ -2024,7 +2024,7 @@ h6 {
     left: 0;
     opacity: .40; }
 
-.menu__link-active {
+.menu__link--active {
   background: url("../img/menu__coco.jpg") center center no-repeat;
   background-size: cover; }
 
