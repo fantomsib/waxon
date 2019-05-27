@@ -323,14 +323,14 @@
                 </ul>
             </div>
         </section>
-        <section class="section menu">
+        <section id="menu" class="section menu">
             <h1 class="title menu--title">МЕНЮ</h1>
-            <ul class="menu__list">
-                <li class="menu__items menu__items--active">
-                    <a href="#" class="menu__link menu__link--active">
+            <ul id="acco" class="menu__list">
+                <li id="accoItem" class="menu__items">
+                    <a href="#" class="menu__link">
                         <h1 class="menu__descrip"> Батончики с молоком</h1>
                     </a>
-                    <div class="menu__block menu__block--active">
+                    <div id="block" class="menu__block">
                         <p class="menu__text">
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее,
                             и полезнее.
@@ -341,11 +341,11 @@
                         </p>
                     </div>
                 </li>
-                <li class="menu__items">
+                <li id="accoItem" class="menu__items">
                     <a href="#" class="menu__link menu__link-2">
                         <h1 class="menu__descrip">С мёдом и фруктами</h1>
                     </a>
-                    <div class="menu__block menu__block-2">
+                    <div id="block" class="menu__block">
                         <p class="menu__text">
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее,
                             и полезнее.
@@ -356,11 +356,11 @@
                         </p>
                     </div>
                 </li>
-                <li class="menu__items">
+                <li id="accoItem" class="menu__items">
                     <a href="#" class="menu__link  menu__link-3">
                         <h1 class="menu__descrip">Димкие ягоды</h1>
                     </a>
-                    <div class="menu__block menu__block-3">
+                    <div id="block" class="menu__block">
                         <p class="menu__text">
                             Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
                             вкуснее,
@@ -623,7 +623,7 @@
         </ul>
         <div id="nav" class="navigation__tab">
             <a id="closed" href="#" class="navigation__closed">
-                <svg  class="navigation__croix">
+                <svg class="navigation__croix">
                     <use xlink:href="./sprite/sprite.svg#croix"></use>
                 </svg>
             </a>
@@ -650,8 +650,10 @@
             </li>
         </div>
     </div>
+    <script src="./script/accordion.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/navigation-tab.js"></script>
+
 </body>
 
 

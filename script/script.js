@@ -18,7 +18,7 @@ btnDeliv.addEventListener('click', function (event) {
 
 btnClear.addEventListener('click', function (event) {
     event.preventDefault();
-  
+
 });
 
 
@@ -61,4 +61,3 @@ phone.addEventListener('keydown', function (event) {
 ///////////////
 
 /////////slider
-
