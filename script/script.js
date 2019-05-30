@@ -58,6 +58,3 @@ phone.addEventListener('keydown', function (event) {
 });
 
 
-///////////////
-
-/////////slider
