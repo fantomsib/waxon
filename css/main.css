@@ -2348,35 +2348,11 @@ h6 {
         width: 4.87rem;
         height: 4.87rem; } }
 
-/*.reviews__items--active .reviews__items:active {
-    border: 0.5rem solid #0f5a47;
-    border-radius: 50%;
-    background-color: #0f5a47;
-
-    @include tablets {
-        border: 0;
-
-    }
-}*/
-.active,
-.reviews__items {
+.reviews__items--active {
   border: 0.5rem solid #0f5a47;
   border-radius: 50%;
   background-color: #0f5a47; }
-  @media screen and (max-width: 768px) {
-    .active,
-    .reviews__items {
-      border: 0; } }
 
-/*.reviews__items-768,
-.reviews__items:active {
-    @include tablets {
-
-        border: 0.5rem solid #0f5a47;
-        border-radius: 50%;
-        background-color: #0f5a47;
-    }
-}*/
 .work {
   background-color: #f8faf9;
   min-height: 45.4375rem; }
