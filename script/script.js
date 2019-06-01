@@ -36,6 +36,7 @@ btnDeliv.addEventListener('click', function (e) {
         xhr.addEventListener('load', function () {
             if (xhr.status >= 400) {
                 modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
+                modelTxt.style.textAlign = 'center';
             }
 
             modal.style.display = "flex";
