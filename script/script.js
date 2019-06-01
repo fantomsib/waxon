@@ -10,6 +10,7 @@ const btnClear = document.querySelector('#btnClear');
 //const name = document.querySelector('#form.name');
 var modal = document.querySelector('#modal');
 var span = document.querySelector('.model__btn');
+var modelTxt = document.querySelector('.model__txt');
 btnDeliv.addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -33,6 +34,10 @@ btnDeliv.addEventListener('click', function (e) {
         xhr.send(formData);
 
         xhr.addEventListener('load', function () {
+            if (xhr.status >= 400) {
+                modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
+            }
+
             modal.style.display = "flex";
             form.reset();
 
