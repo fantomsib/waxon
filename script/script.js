@@ -38,6 +38,10 @@ btnDeliv.addEventListener('click', function (e) {
                 modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
                 modelTxt.style.textAlign = 'center';
             }
+            if (xhr.open >= 400) {
+                modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
+                modelTxt.style.textAlign = 'center';
+            }
 
             modal.style.display = "flex";
             form.reset();
