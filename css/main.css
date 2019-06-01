@@ -2890,6 +2890,93 @@ h6 {
   line-height: 1.8781rem;
   color: #0f5a47; }
 
+.error {
+  color: red;
+  font-family: "Alegreya Sans"; }
+
+.model__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #2f3234;
+  opacity: 0.99; }
+
+.modal__content {
+  width: 18.75rem;
+  height: 10.75rem;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.model__btn {
+  width: 9.75rem;
+  height: 3.625rem;
+  background-color: #0f5a47;
+  color: #ffffff;
+  font-family: "alegreya_sans_extraboldRg";
+  font-size: 1.1875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2.1875rem;
+  overflow: hidden;
+  border: none; }
+  .model__btn:hover {
+    background-color: #ffffff;
+    color: #0f5a47;
+    border-radius: 2.1875rem;
+    overflow: hidden;
+    border: none;
+    cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .model__btn {
+      width: 7.5rem;
+      height: 3rem;
+      font-size: 0.75rem; } }
+
+.model__txt {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8781rem;
+  margin-bottom: 20px; }
+
 .map {
   background: url("../img/map.jpg") center center no-repeat;
   background-size: cover;

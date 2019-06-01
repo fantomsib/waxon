@@ -212,31 +212,30 @@
                             <div class="bars__elips">
                                 <img src="./img/elips_gris.png" alt="" class="elips__gris">
                                 <img src="./img/elips.png" alt="" class="elips__bleu">
-                                <img src="./img/bars.png" alt="" class="chocolads">
+                                <img src="./img/bars-slider2.png" alt="" class="chocolads">
                             </div>
                             <div class="bars__info">
                                 <h1 class="title bars--title">
-                                    Батончик “Морские
-                                    водоросли”
+                                    Батончик “Гранола
+                                    виноград”
                                 </h1>
                                 <div class="bars__composition">Состав:</div>
-                                <p class="bars__description">Гранола из морских водорослей с овсом,
-                                    миндалем и тыквенными семечками. В состав
-                                    также входят: сухое молоко, заменитель сахара
-                                    и какао бобы.
+                                <p class="bars__description">Гранола из винограда, грецкого ореха и
+                                    кунжутных семечек. В состав также входят:
+                                    сухое молоко, заменитель сахара и какао бобы.
                                 </p>
                                 <ul class="bars__energy">
                                     <li class="energy__items">
                                         <span class="energy__title">Калорийность</span>
-                                        <span class="energy__info">120 ккал</span>
+                                        <span class="energy__info">110 ккал</span>
                                     </li>
                                     <li class="energy__items">
                                         <span class="energy__title">Вес</span>
-                                        <span class="energy__info">98 грамм</span>
+                                        <span class="energy__info">95 грамм</span>
                                     </li>
                                 </ul>
                                 <div class="bars__price">
-                                    <div class="bars__price__rub">250 ₽</div>
+                                    <div class="bars__price__rub">140 ₽</div>
                                     <button type="button" class="bars__price__btn">ЗАКАЗАТЬ</button>
                                 </div>
                             </div>
@@ -420,19 +419,16 @@
                     </li>
                     <li class="commit__items">
                         <div class="commit__personne">
-                            <img src="./img/reviews__photo.jpg" alt="" class="commit__photo">
+                            <img src="./img/rewievs__photo-3.jpg" alt="" class="commit__photo">
                         </div>
                         <div class="commit__text">
-                            <h1 class="comit__title">Не очень перекус</h1>
+                            <h1 class="comit__title">Идеально подходят для спортсменов</h1>
                             <p class="comit__descrip">
-                                Я ем малыми порциями, но часто. Это повышает мою
-                                продуктивность в разы. В течение дня сижу за компьютером
-                                и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
-                                всегда
-                                под рукой. Это приятно
-                                и удобно.
+                                После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома
+                                ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане.
+                                Спасибо производителю за этот качественный и экологичный продукт.
                             </p>
-                            <span class="comit__name">Алёна Хмельницкая</span>
+                            <span class="comit__name">Вадим Грачев</span>
                         </div>
                     </li>
                 </ul>
@@ -485,57 +481,65 @@
                         <div class="left__top">
                             <label class="left__top__name">
                                 <span class="input__text"> Имя</span>
-                                <input type="text" class="input__top input__top-name" name="name" id="name">
+                                <input type="text" class="input__top input__top-name" name="name" required>
+                                <div class="error"></div>
                             </label>
 
                             <label class="left__top__phone left__top__phone--active">
                                 <span class="input__text"> Телефон</span>
-                                <input type="text" class="input__top input__top--active" name="phone" id="phone"
-                                    placeholder="89022348912">
+                                <input type="text" class="input__top input__top--active" name="mobile" id="phone"
+                                    required placeholder="89022348912">
+                                <div class="error"></div>
                             </label>
                         </div>
                         <label class="form__center">
                             <span class="input__text">Улица</span>
-                            <input type="text" class="input__center" name="street" id="street">
+                            <input type="text" class="input__center" name="street" required>
+                            <div class="error"></div>
                         </label>
                         <div class="form__bottom">
                             <label class="bottom__items bottom__items-house">
                                 <span class="input__text">Дом</span>
-                                <input type="text" class="input__bottom" name="house" id="house">
+                                <input type="text" class="input__bottom" name="house" required>
+                                <div class="error"></div>
                             </label>
                             <label class="bottom__items bottom__items-housing">
                                 <span class="input__text">Корпус</span>
-                                <input type="text" class="input__bottom" name="housing" id="housing">
+                                <input type="text" class="input__bottom" name="housing" required>
+                                <div class="error"></div>
                             </label>
                             <label class="bottom__items bottom__items-apartment">
                                 <span class="input__text">Кваритира</span>
-                                <input type="text" class="input__bottom" name="apartment" id="apartment">
+                                <input type="text" class="input__bottom" name="apartment" required>
+                                <div class="error"></div>
                             </label>
                             <label class="bottom__items bottom__items-floor">
                                 <span class="input__text">Этаж</span>
-                                <input type="text" class="input__bottom" name="floor" id="floor">
+                                <input type="text" class="input__bottom" name="floor" required>
+                                <div class="error"></div>
                             </label>
                         </div>
                     </div>
                     <div class="form__right">
                         <label class="right__texterea">
                             <span class="input__text">Комментарий</span>
-                            <textarea name="text" class="textarea" id="commit" cols="30" rows="10"></textarea>
+                            <textarea name="text" class="textarea" cols="30" rows="10" required></textarea>
+                            <div class="error"></div>
                         </label>
                         <div class="right__checkbox">
                             <label class="checkbox checkbox-1">
-                                <input class="chekbox__input" id="money" type="checkbox" name="pay">
+                                <input class="chekbox__input" id="money" type="checkbox" name="pay" required>
                                 <span class="box"></span>
                                 <span class="input__text"> Потребуется сдача</span>
                             </label>
                             <label class="checkbox">
-                                <input class="chekbox__input" id="carte" type="checkbox" name="change">
+                                <input class="chekbox__input" id="carte" type="checkbox" name="change" required>
                                 <span class="box"></span>
                                 <span class="input__text">Оплата по карте</span>
                             </label>
                         </div>
                         <label class="checkbox">
-                            <input class="chekbox__input chekbox__input-carre" id="rappel" type="checkbox"
+                            <input class="chekbox__input chekbox__input-carre" id="rappel" type="checkbox" required
                                 name="nonrappel">
                             <span class="box box-carre"></span>
                             <span class="input__text">Не перезванивать</span>
@@ -545,7 +549,12 @@
                                 class="content__btn content__btn-delivery">ЗАКАЗАТЬ</button>
                             <a id="btnClear" href="" class="btn__clear">Очистить</a>
                         </div>
-
+                        <div class="model__wrap" id="modal">
+                            <div class="modal__content">
+                                <span class="model__txt">Сообщение отправлено</span>
+                                <button class="model__btn">ЗАКРЫТЬ</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
