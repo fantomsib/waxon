@@ -38,11 +38,6 @@ btnDeliv.addEventListener('click', function (e) {
                 modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
                 modelTxt.style.textAlign = 'center';
             }
-            if ('https://fantomsib.github.io/new_loft/'.status == 405 ) {
-                modelTxt.textContent = 'Не удалось отправить заявку, код ошибки' + xhr.status;
-                modelTxt.style.textAlign = 'center';
-            }
-
             modal.style.display = "flex";
             form.reset();
 

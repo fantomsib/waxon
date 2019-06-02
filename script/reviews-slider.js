@@ -26,15 +26,6 @@ function showSlides(n) {
     dots[slideIndex - 1].classList.add("reviews__items--active");
 }
 
-
-
-
-
-
-
-
-
-
 /*var slideIndex = 1;
 showSlides(slideIndex);
 
