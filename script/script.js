@@ -22,7 +22,6 @@ btnDeliv.addEventListener('click', function (e) {
         formData.append('mobile', form.elements.mobile.value);
         formData.append('street', form.elements.street.value);
         formData.append('house', form.elements.house.value);
-        formData.append('apartement', form.elements.apartment.value);
         formData.append('floor', form.elements.floor.value);
         formData.append('textarea', form.elements.text.value);
         formData.append('to', 'fantomsib@hotmail.com');
@@ -30,7 +29,7 @@ btnDeliv.addEventListener('click', function (e) {
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.setRequestHeader('X-Requestd-With', 'XMLHttpRequest');
+        //xhr.setRequestHeader('X-Requestd-With', 'XMLHttpRequest');
         xhr.send(formData);
 
         xhr.addEventListener('load', function () {
@@ -71,9 +70,7 @@ function validateForm(form) {
     if (!validateField(form.elements.house)) {
         valid = false;
     }
-    if (!validateField(form.elements.apartment)) {
-        valid = false;
-    }
+
     if (!validateField(form.elements.text)) {
         valid = false;
     }
