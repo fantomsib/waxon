@@ -3,7 +3,8 @@ const {
     dest,
     task,
     series,
-    watch
+    watch,
+    parallel
 } = require('gulp');
 const rm = require('gulp-rm');
 const sass = require('gulp-sass');
@@ -57,7 +58,8 @@ task('styles', function () {
         .pipe(concat('main.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('dist'));
+        .pipe(dest('dist'))
+        .pipe(browserSync.stream());
 });
 
 
@@ -72,21 +74,15 @@ task('server', function () {
 });
 
 
+task('watch', function (e) {
+    watch('./src/scss/**/*.scss', series('styles'));
+    watch('./src/*.html', series('copy:html'));
+    watch('./src/fonts/**/*', series('copy:fonts'));
+    watch('./src/img/*', series('copy:img'));
+    watch('./src/scripts/*.js', series('js'));
+    watch('./src/sprite/*.svg', series('copy:sprite'));
+});
 
-
-
-
-
-
-watch('./src/scss/**/*.scss', series('styles'));
-watch('./src/*.html', series('copy:html'));
-watch('./src/fonts/**/*', series('copy:fonts'));
-watch('./src/img/*', series('copy:img'));
-watch('./src/scripts/*.js', series('js'));
-watch('./src/sprite/*.svg', series('copy:sprite'));
-task('default', series('clean', 'copy:html', 'copy:fonts', 'copy:img', 'js', 'copy:sprite', 'styles', 'server'));
-
-
-task('sass:watch', function(){
-    watch('.src/scss/**/*.scss', ['styles']);
-  });
+task('default', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', 'js', 'copy:sprite', 'styles'),
+    parallel('watch', 'server')
+));
