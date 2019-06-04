@@ -82,7 +82,7 @@ task('styles', function () {
         .pipe(gulpif(env === 'prod', gcmq())) //группировка меди запросов НЕ работает с sours maps пока идет разработка отключаем , при заргрузке готового проэктиа включаем и отключаем сорс мап
         .pipe(gulpif(env === 'prod', cleanCSS()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
-        .pipe(dest(DIST_PATCH))
+        .pipe(dest(`${DIST_PATCH}/css`))
         .pipe(reload({
             stream: true
         }));
