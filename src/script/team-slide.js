@@ -1,3 +1,5 @@
+(function(){
+
 const team = document.querySelector('.team');
 const teamItems = document.querySelectorAll('.team__items');
 const teamItemsLegth = teamItems.length;
@@ -25,3 +27,5 @@ for (let i = 0; i < teamItemsLegth; i++) {
         }
     });
 }
+
+})()

@@ -1,3 +1,8 @@
+
+(function(){
+
+
+
 const menu = document.querySelector('.menu');
 const accoItem = document.querySelectorAll('.menu__items');
 const accoItemLength = accoItem.length;
@@ -29,4 +34,4 @@ for (let i = 0; i < accoItemLength; i++) {
     });
 }
 
-
+})()

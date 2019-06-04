@@ -1,10 +1,7 @@
-/*const wrap = document.querySelector('#wrap');
-const flashLeft = document.querySelector('#flash__left');
-const flashRight = document.querySelector('#flash__right');*/
 
-//form
+(function(){
 
-const form = document.querySelector('#form');
+    const form = document.querySelector('#form');
 const btnDeliv = document.querySelector('#buttonDeliv');
 const btnClear = document.querySelector('#btnClear');
 //const name = document.querySelector('#form.name');
@@ -127,3 +124,5 @@ phone.addEventListener('keydown', function (event) {
     }
 
 });
+
+})()
