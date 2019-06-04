@@ -1,4 +1,3 @@
-
 /*
 
 var slideIndex = 1;
@@ -41,12 +40,16 @@ showSl(slideIn);
 function current(n) {
     showSl(slideIn = n);
 }
+sideberItems.addEventListener(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+});
 
 function showSl(n) {
     var i;
 
-   // var slides = document.getElementsByClassName('commit__items');
- //   var dots = document.getElementsByClassName('reviews__items');
+
+
     if (n > section.length) {
         slideIn = 1;
     }
@@ -62,5 +65,3 @@ function showSl(n) {
     section[slideIndex - 1].style.height = "0" + "vh";
     sideberItems[slideIndex - 1].classList.add("reviews__items--active");
 }
-
-
