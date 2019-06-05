@@ -1,3 +1,5 @@
+(function(){
+
 const video = document.querySelector('.work__film');
 const juice = document.querySelector('.control__list-playstatus');
 const point = document.querySelector('.control__point')
@@ -37,7 +39,7 @@ video.addEventListener('timeupdate', function () {
 });
 
 
-
+})()
 
 /*
 function togglePlayPause() {
