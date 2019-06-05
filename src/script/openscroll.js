@@ -39,7 +39,7 @@ video.addEventListener('timeupdate', function () {
 });
 
 
-})()
+})();
 
 /*
 function togglePlayPause() {
