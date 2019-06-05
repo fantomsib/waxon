@@ -57,6 +57,11 @@ task('copy:sprite', function () {
     return src(`${ SRC_PATH}/sprite/*`).pipe(dest(`${DIST_PATCH}/sprite`));
 });
 
+
+task('copy:video', function () {
+    return src(`${ SRC_PATH}/video/*`).pipe(dest(`${DIST_PATCH}/video`));
+});
+
 /*const styles = [
     'node_modules/normalize.css/normalize.css',
     'src/scss/_misk/_font.scss',
@@ -148,10 +153,11 @@ task('watch', function (e) {
     watch(`${ SRC_PATH}/script/*.js`, series('script'));
     watch(`${ SRC_PATH}/sprite/*.svg`, series('copy:sprite'));
     // watch(`${ SRC_PATH}/sprite/*.svg`, series('svg'));
+    watch(`${ SRC_PATH}/video/*`, series('copy:video'));
 
 });
 
-task('default', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', 'copy:sprite', 'styles', /*'svg',*/ 'script'),
+task('default', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', 'copy:video', 'copy:sprite', 'styles', /*'svg',*/ 'script'),
     parallel('watch', 'server')
 ));
 
