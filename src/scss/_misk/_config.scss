@@ -126,3 +126,12 @@ h6 {
     display: flex;
     justify-content: center;
 }
+
+.maincontent {
+    height: 100%;
+    min-height: 650px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    will-change: transform;
+}
