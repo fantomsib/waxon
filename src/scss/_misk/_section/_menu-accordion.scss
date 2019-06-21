@@ -7,6 +7,7 @@
     z-index: 3;
     padding: 0;
     margin: 0;
+   //height: 100%;
 
 
 }
@@ -14,7 +15,7 @@
 .menu__items {
     display: flex;
     position: relative;
-    height: 100vh;
+   // height: 100%;
 
 
 
@@ -50,7 +51,7 @@
     position: relative;
     display: flex;
     width: 6.25rem;
-    height: 100vh;
+    height: 100%;
     z-index: 2;
 
     @include phones {

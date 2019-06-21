@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
+
+
+
     <title>CHOCCO</title>
 </head>
 
 <body>
     <div id="wrap" class="wrapper">
-        <div class="maincontetn">
 
-            <section class="section welcome">
+        <div class="maincontent">
+            <section class="section welcome active">
                 <div class="container welcome--container">
                     <header class="header">
                         <a href="" class="header__logo">
@@ -22,25 +25,25 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">О нас</a>
+                                    <a href="" class="nav__link" data-scroll-to="1">О нас</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Батончики</a>
+                                    <a href="" class="nav__link" data-scroll-to="2">Батончики</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Команда</a>
+                                    <a href="" class="nav__link" data-scroll-to="3">Команда</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Меню</a>
+                                    <a href="" class="nav__link" data-scroll-to="4">Меню</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Отзывы</a>
+                                    <a href="" class="nav__link" data-scroll-to="5">Отзывы</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Как мы работаем</a>
+                                    <a href="" class="nav__link" data-scroll-to="6">Как мы работаем</a>
                                 </li>
                                 <li class="nav__items">
-                                    <a href="" class="nav__link">Контакты</a>
+                                    <a href="" class="nav__link" data-scroll-to="7">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -442,6 +445,7 @@
                     </ul>
                     <ul class="reviews__list">
                         <li class="reviews__items" onclick="currentSlide(1)">
+                            <!--<onclick="currentSlide(1)">-->
                             <span class="reviews__link">
                                 <img src="./img/reviews__icon-1.png" alt="" class="reviews__icon">
                             </span>
@@ -467,7 +471,8 @@
                         <video controls src="./video/VID_20180721_213442.mp4" class="work__film"></video>
                         <ul class="work__control">
                             <li class="control__list control__list-play">
-                                <!--   <img src="./img/Play_gray.png" alt="" class="control__icon">-->
+                                <!-- <img src="./img/Play_gray.png" alt="" class="control__icon">-->
+
                             </li>
                             <li class="control__list control__list-playstatus">
                                 <img src="./img/film__status.png" alt="" class="control__icon">
@@ -565,7 +570,8 @@
                     </form>
                 </div>
             </section>
-            <section class="section map">
+            <section class="section carte">
+                <div class="map" id="map"></div>
                 <footer class="footer">
                     <div class="container map--coontainer">
                         <div class="footer__row footer__row-left">
@@ -606,35 +612,35 @@
                     </div>
                 </footer>
             </section>
-        </div>
 
+        </div>
     </div>
     <ul class="sidebar">
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="0">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="1">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="2">
             <a href="" class=" sidebar__link"></a>
         </li>
-        <li class="sidebar__items>
+        <li class="sidebar__items" data-scroll-to="3">
+            <a href="" class=" sidebar__link"></a>
+        </li>
+        <li class="sidebar__items" data-scroll-to="4">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="5">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="6">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="7">
             <a href="" class="sidebar__link"></a>
         </li>
-        <li class="sidebar__items">
-            <a href="" class="sidebar__link"></a>
-        </li>
-        <li class="sidebar__items">
+        <li class="sidebar__items" data-scroll-to="8">
             <a href="" class="sidebar__link"></a>
         </li>
     </ul>
@@ -645,25 +651,25 @@
             </svg>
         </a>
         <li class="navigation__items">
-            <a href="" class="navigation__link">О нас</a>
+            <a href="" class="navigation__link" data-scroll-to="1">О нас</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Батончики</a>
+            <a href="" class="navigation__link" data-scroll-to="2">Батончики</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Команда</a>
+            <a href="" class="navigation__link" data-scroll-to="3">Команда</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Меню</a>
+            <a href="" class="navigation__link" data-scroll-to="4">Меню</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Отзывы</a>
+            <a href="" class="navigation__link" data-scroll-to="5">Отзывы</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Как мы работаем</a>
+            <a href="" class="navigation__link" data-scroll-to="6">Как мы работаем</a>
         </li>
         <li class="navigation__items">
-            <a href="" class="navigation__link">Контакты</a>
+            <a href="" class="navigation__link" data-scroll-to="7">Контакты</a>
         </li>
     </div>
     <div class="model__wrap" id="modal">
@@ -673,18 +679,23 @@
         </div>
     </div>
 
-    <script src="./script/main.min.js"></script>
-    <!--
-    <script src="./script/accordion.js"></script>
-    <script src="./script/bars-slider.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./script/navigation-tab.js"></script>
-    <script src="./script/openscroll.js"></script>
-    <script src="./script/reviews-slider.js"></script>
-    <script src="./script/script.js"></script>
-    <script src="./script/team-slide.js"></script>
-    <script src="./src/script/scroll.js"></script>
--->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+        type="text/javascript">
+    </script>
+
+    <script src="script/main.min.js"></script>
+
+
+
+
 </body>
+
 
 </html>

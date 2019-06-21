@@ -1,6 +1,6 @@
 .work {
     background-color: #f8faf9;
-    min-height: 45.4375rem;
+
 
     &::before {
         content: "";
@@ -108,9 +108,7 @@
     .control__list-play {
         margin-right: 1.1875rem;
         display: flex;
-        display: flex;
-        background: url('./img/Play_gray.png') center center no-repeat;
-        background-color: #ffffff;
+        background: url('/img/Play_gray.png') center center no-repeat;
         width: 35px;
         height: 35px;
 
@@ -119,44 +117,59 @@
     }
 
     .control__list-play--active {
-        display: flex;
-        background-color: black;
-        width: 50px;
-        height: 50px;
+        background: url('/img/pause.png') center center no-repeat;
+       // width: 35px;
+       // height: 35px;
+        //display: flex;
 
+
+
+
+        /*
+        width: 35px;
+        height: 28px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #626262;
+        border-style: double;
+        border-width: 0px 37px 0px 37px;
+        border-width: 0px 0px 0px 36px;
+        border-color: #626262;
+        */
     }
 
-
-    .control__list-playstatus {
-        display: flex;
-        position: relative;
-
-    }
+}
 
 
+.control__list-playstatus {
+    display: flex;
+    position: relative;
+
+}
 
 
-    .control__point {
-        position: absolute;
-        left: 0;
-        display: flex;
 
 
-    }
+.control__point {
+    position: absolute;
+    left: 0;
+    display: flex;
 
-    .control__list-volum {
-        margin-right: 1.1875rem;
-    }
 
-    .control__list-volumstatus::after {
-        content: "";
-        display: flex;
-        position: absolute;
-        background: url("../img/film__point.png") center center no-repeat;
-        width: 0.8125rem;
-        height: 0.8125rem;
-        margin-left: 2.875rem;
-    }
+}
+
+.control__list-volum {
+    margin-right: 1.1875rem;
+}
+
+.control__list-volumstatus::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background: url("../img/film__point.png") center center no-repeat;
+    width: 0.8125rem;
+    height: 0.8125rem;
+    margin-left: 2.875rem;
 }
 
 .control__icon {

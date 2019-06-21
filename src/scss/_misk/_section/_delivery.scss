@@ -1,7 +1,7 @@
 .delivery {
     background: url("../img/delivery__bag.jpg") center center no-repeat;
     background-size: cover;
-    min-height: 41.875rem;
+ 
 
     @include phones {
         min-height: 0;
