@@ -465,13 +465,29 @@
             </section>
             <section class="section work">
                 <div class="container work--container">
-
                     <h1 class="title work--title">КАК МЫ РАБОТАЕМ</h1>
+                    <div class="player hidden">
+                        <div class="player__wrapper">
+                            <div id="yt-player"></div>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                                <span class="player__duration-completed">0:00</span> :
+                                <span class="player__duration-estimate">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
                     <div class="work__player">
                         <video controls src="./video/VID_20180721_213442.mp4" class="work__film"></video>
                         <ul class="work__control">
                             <li class="control__list control__list-play">
-                                <!-- <img src="./img/Play_gray.png" alt="" class="control__icon">-->
+                              <img src="./img/Play_gray.png" alt="" class="control__icon">
 
                             </li>
                             <li class="control__list control__list-playstatus">
@@ -487,6 +503,7 @@
                             </li>
                         </ul>
                     </div>
+                -->
                 </div>
             </section>
             <section class="section delivery">
@@ -686,9 +703,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
-        type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <script src="script/main.min.js"></script>
 
