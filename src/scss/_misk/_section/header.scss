@@ -1,0 +1,74 @@
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @include phones {
+            justify-content: space-between;
+        }
+    }
+    
+    .header__logo {
+        display: flex;
+        width: 34%;
+        align-items: center;
+        @include tablets {
+            width: 27%;
+        }
+    }
+    
+    .header__img {
+        margin-right: 0.125rem;
+        width: 4rem;
+        height: 3.5rem;
+    }
+    
+    .header__name {
+        display: flex;
+        color: #ffffff;
+        font-family: 'ralewayregular';
+        font-size: 2.125rem;
+        font-weight: 400;
+        letter-spacing: -0.085rem;
+        @include tablets {}
+    }
+    
+    .header__list {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        @include notebook {
+            width: 65%;
+        }
+        @include tablets {
+            width: 60%;
+        }
+        @include phones {
+            display: none;
+        }
+    }
+    
+    .header__link {
+        color: #ffffff;
+        font-family: 'montserrat_alternatesregular';
+        font-size: 0.875rem;
+        font-weight: 300;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+    
+    .header__list-2 {
+        display: flex;
+        width: 11%;
+        justify-content: flex-end;
+    }
+    
+    .header__items-2 {
+        margin-right: 18%;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            opacity: 0.4;
+        }
+    }

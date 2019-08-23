@@ -1,0 +1,240 @@
+        .realization {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .container-ideas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include phones {}
+        }
+        
+        .realization__skill {
+            display: flex;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            @include phones {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+        
+        .container--realization__skill {
+            display: flex;
+            flex-grow: 1;
+            @include notebook {
+                padding-bottom: 5rem;
+                padding-top: 5rem;
+            }
+            @include phones {
+                padding-top: 0.6rem;
+                padding-bottom: 0;
+            }
+        }
+        
+        .skill__list {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            @include phones {
+                justify-content: center;
+            }
+        }
+        
+        .skill__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            cursor: pointer;
+            &::after {
+                content: ("");
+                width: 4.375rem;
+                height: 0.1875rem;
+                background-color: #f1eee9;
+                display: flex;
+                margin-top: 1.875rem;
+                @include phones {
+                    display: none;
+                }
+            }
+            @include phones {
+                width: 40%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        .skill__icon {
+            max-width: 100%;
+            margin-bottom: 1.8125rem;
+            height: 2.75rem;
+            width: 2.75rem;
+            //height: 2.75rem;
+            @include phones {
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        .skill__title {
+            color: #555555;
+            font-family: 'ralewayregular';
+            font-size: 1.375rem;
+            font-weight: 400;
+            margin-bottom: 1.1875rem;
+            @include phones {
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        .skill__txt {
+            text-align: center;
+            color: #8c8c8c;
+            font-family: 'montserrat_alternatesregular';
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+        
+        .realizationt__ideas {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: #fbfaf8;
+            align-items: center;
+            padding-top: 2.1875rem;
+            @include phones {
+                padding-top: 0;
+            }
+        }
+        
+        .container-ideas {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .ideas__title {
+            color: #555555;
+            font-family: 'ralewaysemibold';
+            font-size: 1.875rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .ideas__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include phones {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+        
+        .ideas__txt {
+            color: #8c8c8c;
+            font-family: 'montserrat_alternatesregular';
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+            text-align: center;
+            width: 64%;
+        }
+        
+        .ideas__example {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            @include phones {
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                flex: 0;
+            }
+        }
+        
+        .ideas__example-icon {
+            //  width: 674px;
+            //  height: 336px;
+            width: 57%;
+            // height: 21rem;
+            @include phones {
+                width: 60%;
+                height: 100px;
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        
+        .ideas__example-icon-absolut {
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            left: 12.1875rem;
+            // width: 770px;
+            width: 65%;
+            height: 25rem;
+            @include phones {
+                display: none;
+            }
+        }
+        
+        .realization__purchase {
+            // height: 9.375rem;
+            background-color: #f4f5f8;
+            background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+            display: flex;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .container--purchase {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .realization__purchase-button {
+            @include button;
+            @include phones {
+                font-size: 1rem;
+            }
+        }
+        
+        .realization__purchase-title {
+            color: #ffffff;
+            font-family: 'ralewayregular';
+            font-size: 1.75rem;
+            font-weight: 400;
+            .waxon {
+                color: #c7b299;
+            }
+            @include phones {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .realization__purchase-info {
+            color: #615855;
+            font-family: 'montserrat_alternatesregular';
+            font-size: 1.125rem;
+            font-weight: 300;
+            @include phones {
+                width: 70%;
+            }
+        }
+        
+        .realizationt__ideas {
+            display: flex;
+            justify-content: center;
+        }
