@@ -5,6 +5,10 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     flex-shrink: 0;
+    @include phones {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
 
 .footer__blocks {
@@ -13,11 +17,18 @@
     width: 100%;
     height: 100%;
     align-items: center;
+    @include phones {
+        flex-direction: column-reverse;
+    }
 }
 
 .footer__left {
     display: flex;
     width: 50%;
+    @include phones {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .footer__waxon-color {
@@ -47,6 +58,10 @@
     display: flex;
     width: 50%;
     justify-content: flex-end;
+    @include phones {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .footer__items {
@@ -60,6 +75,9 @@
         height: 70%;
         background-color: #252525;
         margin-left: 0.625rem;
+        @include phones {
+            display: none;
+        }
     }
     &:last-child::after {
         display: none;

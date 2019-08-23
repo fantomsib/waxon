@@ -67,6 +67,9 @@
     &:hover .posts__slider__items_img::after {
         display: flex;
     }
+    @include phones {
+        width: 32.33%;
+    }
 }
 
 .posts__slider__items--active .posts__slider__items_img::after {
