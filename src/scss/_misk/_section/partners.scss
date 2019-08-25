@@ -54,6 +54,9 @@
     // padding-top: 2.125rem;
     // padding-bottom: 2rem;
     flex-grow: 2;
+    @include phones {
+        padding-top: 0.6rem;
+    }
 }
 
 .container--developements__main {
@@ -286,6 +289,9 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.1);
+    }
+    @include phones {
+        width: 100%;
     }
 }
 

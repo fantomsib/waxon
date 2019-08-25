@@ -39,6 +39,9 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .posts__slider__items {
@@ -68,7 +71,13 @@
         display: flex;
     }
     @include phones {
-        width: 32.33%;
+        // width: 32.33%;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -207,6 +216,7 @@
     padding-right: 10%;
     padding-top: 0.9375rem;
     padding-bottom: 1.125rem;
+    @include phones {}
 }
 
 .posts__slider__buttons {

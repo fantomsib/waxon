@@ -11,6 +11,12 @@
     height: 100%;
 }
 
+.slider__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .welcome__slider {
     display: flex;
     flex-direction: column;
@@ -28,6 +34,9 @@
     font-size: 2.25rem;
     font-weight: 500;
     margin-bottom: 0.875rem;
+    @include phones {
+        text-align: center;
+    }
 }
 
 .slider-items__txt__2 {
@@ -56,6 +65,9 @@
     display: flex;
     width: 9%;
     justify-content: space-between;
+    @include phones {
+        width: 50%;
+    }
 }
 
 .slider__button {
@@ -88,11 +100,15 @@
 }
 
 .flash-left {
-    position: absolute;
-    left: 0;
-    top: 26.25rem;
+    display: flex;
+    // position: absolute;
+    //   left: 0;
+    //   top: 26.25rem;
     &:hover {
         opacity: 0.4;
+    }
+    @include phones {
+        //   top: 42.25rem;
     }
 }
 
@@ -104,10 +120,12 @@
 }
 
 .flash-right {
-    position: absolute;
-    right: 0;
-    top: 26.25rem;
+    display: flex;
+    // position: absolute;
+    //  right: 0;
+    //top: 26.25rem;
     &:hover {
         opacity: 0.4;
     }
+    @include phones {}
 }
