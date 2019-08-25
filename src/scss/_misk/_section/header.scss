@@ -22,7 +22,7 @@
         height: 3.5rem;
     }
     
-    .header__name {
+    .header__logo_name {
         display: flex;
         color: #ffffff;
         font-family: 'ralewayregular';
@@ -32,7 +32,8 @@
         @include tablets {}
     }
     
-    .header__list {
+    //header navigation name section
+    .nav__list {
         display: flex;
         width: 55%;
         justify-content: space-between;
@@ -47,7 +48,7 @@
         }
     }
     
-    .header__link {
+    .nav__link {
         color: #ffffff;
         font-family: 'montserrat_alternatesregular';
         font-size: 0.875rem;
@@ -57,13 +58,14 @@
         }
     }
     
-    .header__list-2 {
+    //header navigation search and shopping
+    .nav__list_search {
         display: flex;
         width: 11%;
         justify-content: flex-end;
     }
     
-    .header__items-2 {
+    .nav__items_search {
         margin-right: 18%;
         &:last-child {
             margin-right: 0;

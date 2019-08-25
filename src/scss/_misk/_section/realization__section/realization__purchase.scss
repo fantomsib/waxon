@@ -1,0 +1,46 @@
+//realization footer section
+.realization__purchase {
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container--purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.realization__purchase_title {
+    color: #ffffff;
+    font-family: 'ralewayregular';
+    font-size: 1.75rem;
+    font-weight: 400;
+    .waxon {
+        color: #c7b299;
+    }
+    @include phones {
+        font-size: 1.1rem;
+    }
+}
+
+.realization__purchase_info {
+    color: #615855;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 1.125rem;
+    font-weight: 300;
+    @include phones {
+        width: 70%;
+    }
+}
+
+.realization__purchase-button {
+    @include button;
+    @include phones {
+        font-size: 1rem;
+    }
+}

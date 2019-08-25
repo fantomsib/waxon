@@ -1,34 +1,45 @@
-.welcome {
-    background: url("../img/photo.png") center center no-repeat;
-    background-size: cover;
-    padding-top: 2.5rem;
-    padding-bottom: 2.625rem;
-}
-
-.container--welcome {
+//container sliders welcome
+.welcome__main {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.slider__wrapper {
+//slider potfolio
+.slider__portfolio {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.welcome__slider {
+.slider__falsh {
+    display: flex;
+    &:hover {
+        opacity: 0.4;
+    }
+}
+
+.flash__icon {
+    @include tablets {
+        height: 3rem;
+        width: 1.8rem;
+    }
+}
+
+.portfolio__list {
     display: flex;
     flex-direction: column;
 }
 
-.welcome__slider-items {
+.portfolio__list_items {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slider-items__txt__1 {
+.portfoli__title {
     color: #ffffff;
     font-family: 'ralewayregular';
     font-size: 2.25rem;
@@ -39,7 +50,7 @@
     }
 }
 
-.slider-items__txt__2 {
+.portfolio__psd {
     color: #ffffff;
     font-family: "ralewayextrabold";
     font-size: 3.25rem;
@@ -50,7 +61,7 @@
     }
 }
 
-.slider-items__txt__3 {
+.portfolio__descrip {
     color: #ffffff;
     font-family: 'montserrat_alternatesregular';
     font-size: 1rem;
@@ -61,16 +72,8 @@
     text-align: center;
 }
 
-.slider__navigation {
-    display: flex;
-    width: 9%;
-    justify-content: space-between;
-    @include phones {
-        width: 50%;
-    }
-}
-
-.slider__button {
+//button slider potfolio in section welcome
+.portfolio__btn {
     cursor: pointer;
     width: 10.625rem;
     height: 3.3125rem;
@@ -84,48 +87,4 @@
     &:hover {
         background-color: #241509;
     }
-}
-
-.slider__nav {
-    width: 0.6875rem;
-    height: 0.6875rem;
-    background-color: #ffffff;
-    background-color: #ffffff;
-    opacity: 0.5;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.4;
-    }
-}
-
-.flash-left {
-    display: flex;
-    // position: absolute;
-    //   left: 0;
-    //   top: 26.25rem;
-    &:hover {
-        opacity: 0.4;
-    }
-    @include phones {
-        //   top: 42.25rem;
-    }
-}
-
-.flash__icon {
-    @include tablets {
-        height: 3rem;
-        width: 1.8rem;
-    }
-}
-
-.flash-right {
-    display: flex;
-    // position: absolute;
-    //  right: 0;
-    //top: 26.25rem;
-    &:hover {
-        opacity: 0.4;
-    }
-    @include phones {}
 }

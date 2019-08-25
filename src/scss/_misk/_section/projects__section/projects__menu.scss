@@ -1,0 +1,33 @@
+.projects__menu {
+    display: flex;
+    width: 52%;
+    justify-content: space-between;
+    margin-bottom: 1.5625rem;
+    @include phones {
+        width: 90%;
+    }
+}
+
+.projects__menu_title {
+    width: 19%;
+    height: 2rem;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    color: #8c8c8c;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 0.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    &:hover {
+        background-color: #998675;
+        color: #ebebeb;
+        cursor: pointer;
+    }
+    @include phones {
+        text-align: center;
+    }
+}

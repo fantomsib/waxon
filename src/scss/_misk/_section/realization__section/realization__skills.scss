@@ -1,0 +1,97 @@
+.realization {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container--realization_skill {
+    display: flex;
+    flex-grow: 1;
+    @include notebook {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+    @include phones {
+        padding-top: 0;
+        padding-bottom: 0;
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+//block realization skills
+.realization__skills {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include phones {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+//list skills waxon
+.skills__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.skills__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    &::after {
+        content: ("");
+        width: 4.375rem;
+        height: 0.1875rem;
+        background-color: #f1eee9;
+        display: flex;
+        margin-top: 1.875rem;
+        @include phones {
+            display: none;
+        }
+    }
+    @include phones {
+        width: 40%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.skill__icon {
+    max-width: 100%;
+    margin-bottom: 1.8125rem;
+    height: 2.75rem;
+    width: 2.75rem;
+    //height: 2.75rem;
+    @include phones {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.skills__title {
+    color: #555555;
+    font-family: 'ralewayregular';
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 1.1875rem;
+    @include phones {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.skills__txt {
+    text-align: center;
+    color: #8c8c8c;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}

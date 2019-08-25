@@ -1,0 +1,32 @@
+.projects {
+    height: 100vh;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__title {
+    color: #555555;
+    font-family: 'ralewaysemibold';
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-bottom: 0.9375rem;
+}
+
+.projects__info {
+    color: #8c8c8c;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    text-align: center;
+    margin-bottom: 1.625rem;
+    width: 70%;
+}
