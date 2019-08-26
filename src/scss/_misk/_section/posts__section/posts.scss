@@ -1,0 +1,34 @@
+.posts {
+    height: 100vh;
+}
+
+.container--posts {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.posts__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.posts__title {
+    color: #555555;
+    font-family: 'ralewaysemibold';
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+}
+
+.posts__txt {
+    color: #8c8c8c;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+}

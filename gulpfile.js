@@ -19,8 +19,8 @@ const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-//const svgo = require('gulp-svgo');
-//const svgSprite = require('gulp-svg-sprite');
+const svgo = require('gulp-svgo');
+const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 
 const env = process.env.NODE_ENV;
@@ -53,8 +53,8 @@ task('copy:img', function() {
     return src(`${ SRC_PATH}/img/*`).pipe(dest(`${DIST_PATCH}/img`));
 });
 
-//task('copy:sprite', function () {
-//    return src(`${ SRC_PATH}/sprite/*`).pipe(dest(`${DIST_PATCH}/sprite`));
+//task('copy:sprite', function() {
+//   return src(`${ SRC_PATH}/sprite/*`).pipe(dest(`${DIST_PATCH}/sprite`));
 //});
 
 
@@ -120,21 +120,23 @@ task('script', function() {
         }));
 });
 
-/*
-task('svg', function () {
-    return src(`${DIST_PATCH}/sprite/*.svg`)
+
+task('svg', () => {
+    return src(`${SRC_PATH}/sprite/*.svg`)
         .pipe(svgo({
             plugins: [{
-                removeAttrs: {attrs: "(fill|stroke|style|width|height|data.*)"}
+                removeAttrs: { attrs: "(fill|stroke|style|width|height|data.*)" }
             }]
         }))
         .pipe(svgSprite({
-            symbol:{
-                sprite: `${DIST_PATCH}/svg/sprite.svg`
+            mode: {
+                symbol: {
+                    sprite: '../sprite.svg'
+                }
             }
         }))
-        .pipe(dest(`${DIST_PATCH}/sprite/`));
-});*/
+        .pipe(dest(`${DIST_PATCH}/sprite`));
+});
 
 task('server', function() {
     browserSync.init({
@@ -151,15 +153,16 @@ task('watch', function(e) {
     watch(`${ SRC_PATH}/fonts/**/*`, series('copy:fonts'));
     watch(`${ SRC_PATH}/img/*`, series('copy:img'));
     watch(`${ SRC_PATH}/script/*.js`, series('script'));
+    watch(`${ SRC_PATH}/sprite/*.svg`, series('svg'));
     // watch(`${ SRC_PATH}/sprite/*.svg`, series('copy:sprite'));
-    // watch(`${ SRC_PATH}/sprite/*.svg`, series('svg'));
+
     //watch(`${ SRC_PATH}/video/*`, series('copy:video'));
 
 });
 
-task('default', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', /*'copy:video',*/ /*'copy:sprite',*/ 'styles', /*'svg',*/ 'script'),
+task('default', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', 'svg', 'styles', 'script'),
     parallel('watch', 'server')
 ));
 
 
-task('build', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', /*'copy:sprite',*/ 'styles', /*'svg',*/ 'script')));
+task('build', series('clean', parallel('copy:html', 'copy:fonts', 'copy:img', 'svg', 'styles', 'script')));

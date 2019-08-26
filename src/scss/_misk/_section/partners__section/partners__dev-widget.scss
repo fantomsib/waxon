@@ -1,0 +1,38 @@
+//DRIBBBLE WIDGET
+.dribbble__widget {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.widget__title {
+    color: #ffffff;
+    font-family: 'ralewayregular';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2.0625rem;
+}
+
+.widget__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // width: 100%;
+}
+
+.widget__items {
+    display: flex;
+    width: 47%;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @include phones {
+        width: 100%;
+    }
+}
+
+.widget__icons {
+    max-width: 100%;
+}

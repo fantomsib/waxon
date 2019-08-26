@@ -16,12 +16,15 @@
 
 .slider__falsh {
     display: flex;
-    &:hover {
-        opacity: 0.4;
-    }
 }
 
 .flash__icon {
+    fill: rgb(243, 243, 243);
+    width: 50px;
+    height: 40px;
+    &:hover {
+        fill: rgb(95, 40, 40);
+    }
     @include tablets {
         height: 3rem;
         width: 1.8rem;

@@ -58,7 +58,9 @@
                     </header>
                     <div class="slider__portfolio">
                         <a href="" class="slider__falsh">
-                            <img src="./img/flash__left.png" alt="" class="flash__icon">
+                            <svg class="flash__icon">
+                               <use xlink:href='../sprite/sprite.svg#back'></use>
+                           </svg>
                         </a>
                         <ul class="portfolio__list">
                             <li class="portfolio__list_items">
@@ -69,7 +71,9 @@
                             </li>
                         </ul>
                         <a href="" class="slider__falsh">
-                            <img src="./img/flash__right.png" alt="" class="flash__icon">
+                            <svg class="flash__icon">
+                               <use xlink:href='../sprite/sprite.svg#next'></use>
+                           </svg>
                         </a>
                     </div>
                     <ul class="slider__navigation">
@@ -284,56 +288,60 @@
                     <div class="posts__txt">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
                 </div>
                 <ul class="posts__slider">
-                    <li class="posts__slider__items">
-                        <div class="posts__slider__items_img">
-                            <div class="posts__slider__photo">
-                                <img src="./img/posts__slider_pieds.png" alt="" class="posts__slider__items_icon">
-
-                            </div>
-
-                            <div class="posts__slider__items_date">
-                                <div class="posts__slider__number">30</div>
-                                <div class="posts__slider__mouth">Sep.</div>
+                    <li class="posts__slider_items">
+                        <div class="posts__slider_items-img">
+                            <img src="./img/posts__slider_pieds.png" alt="" class="posts__slider_items-icon">
+                            <div class="posts__slider_items-date">
+                                <div class="posts__slider_number">30</div>
+                                <div class="posts__slider_mouth">Sep.</div>
                             </div>
                         </div>
-                        <div class="posts__slider__info">
-                            <div class="posts__slider__items_title">Lorem ipsum dolor sit amet</div>
-                            <div class="posts__slider__items_text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                            <a href="" class="posts__slider__items_link">Read More</a>
+                        <div class="posts__slider_info">
+                            <div class="posts__slider_items-title">Lorem ipsum dolor sit amet</div>
+                            <div class="posts__slider_items-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <a href="" class="posts__slider_items-link">Read More</a>
                         </div>
                     </li>
-                    <li class="posts__slider__items">
-                        <div class="posts__slider__items_img">
-                            <img src="./img/posts__slider__clavier.png" alt="" class="posts__slider__items_icon">
-                            <div class="posts__slider__items_date">
-                                <div class="posts__slider__number">30</div>
-                                <div class="posts__slider__mouth">Sep.</div>
+                    <li class="posts__slider_items">
+                        <div class="posts__slider_items-img">
+                            <img src="./img/posts__slider__clavier.png" alt="" class="posts__slider_items-icon">
+                            <div class="posts__slider_items-date">
+                                <div class="posts__slider_number">30</div>
+                                <div class="posts__slider_mouth">Sep.</div>
                             </div>
                         </div>
-                        <div class="posts__slider__info">
-                            <div class="posts__slider__items_title">Lorem ipsum dolor sit amet</div>
-                            <div class="posts__slider__items_text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                            <a href="" class="posts__slider__items_link">Read More</a>
+                        <div class="posts__slider_info">
+                            <div class="posts__slider_items-title">Lorem ipsum dolor sit amet</div>
+                            <div class="posts__slider_items-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <a href="" class="posts__slider_items-link">Read More</a>
                         </div>
                     </li>
-                    <li class="posts__slider__items">
-                        <div class="posts__slider__items_img">
-                            <img src="./img/posts__slider__bateua.png" alt="" class="posts__slider__items_icon">
-                            <div class="posts__slider__items_date">
-                                <div class="posts__slider__number">30</div>
-                                <div class="posts__slider__mouth">Sep.</div>
+                    <li class="posts__slider_items">
+                        <div class="posts__slider_items-img">
+                            <img src="./img/posts__slider__bateua.png" alt="" class="posts__slider_items-icon">
+                            <div class="posts__slider_items-date">
+                                <div class="posts__slider_number">30</div>
+                                <div class="posts__slider_mouth">Sep.</div>
                             </div>
                         </div>
-                        <div class="posts__slider__info">
-                            <div class="posts__slider__items_title">Lorem ipsum dolor sit amet</div>
-                            <div class="posts__slider__items_text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                            <a href="" class="posts__slider__items_link">Read More</a>
+                        <div class="posts__slider_info">
+                            <div class="posts__slider_items-title">Lorem ipsum dolor sit amet</div>
+                            <div class="posts__slider_items-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                            <a href="" class="posts__slider_items-link">Read More</a>
                         </div>
                     </li>
                 </ul>
-                <div class="posts__slider__buttons">
-                    <img src="./img/left.png" alt="" class="posts__slider__button posts__slider__button_left"></img>
-                    <img src="./img/right.png" alt="" class=" posts__slider__button posts__slider__button_right"></img>
+                <div class="posts__slider_buttons">
+                    <a href="#" class="button__link button__link-left ">
+                        <svg class="posts__slider_button-icon">
+                            <use xlink:href='../sprite/sprite.svg#back-flash'></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="button__link">
+                        <svg class="posts__slider_button-icon">
+                            <use xlink:href='../sprite/sprite.svg#next__slider-post'></use>
+                       </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -366,8 +374,6 @@
                     </div>
                 </div>
                 <div class="partners__developments">
-
-
                     <div class="container container--developements__main">
                         <div class="developements__main">
                             <div class="waxom__info">

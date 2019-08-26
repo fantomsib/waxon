@@ -1,0 +1,55 @@
+//WAXON INFO
+.waxom__info {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.waxom__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.8125rem;
+    flex-wrap: wrap;
+}
+
+.waxom__icon {
+    max-width: 100%;
+}
+
+.waxon__name {
+    color: #ffffff;
+    font-family: 'ralewayregular';
+    font-size: 2.125rem;
+    font-weight: 400;
+    letter-spacing: -0.085rem;
+}
+
+.waxon__description {
+    color: #555555;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 2.0625rem;
+}
+
+.waxon__link-readmore {
+    color: #d1d1d1;
+    font-family: 'montserrat_alternatesregular';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    &::after {
+        content: "";
+        display: flex;
+        background: url('/img/waxon__link-arrow.png') center center no-repeat;
+        width: 0.3125rem;
+        height: 0.5rem;
+        margin-left: 0.625rem;
+    }
+    &:hover {
+        opacity: 0.55;
+    }
+}

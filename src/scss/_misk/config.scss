@@ -14,7 +14,7 @@ html {
 html,
 body {
     height: 100%;
-    // overflow:hidden
+    // overflow: hidden
 }
 
 body {
@@ -52,6 +52,13 @@ ul li {
     list-style: none;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
 ul {
     -webkit-margin-before: 0;
     margin-block-start: 0;
@@ -64,11 +71,7 @@ ul {
     -webkit-padding-start: 0px;
     padding-inline-start: 0px;
 }
-
-p {
-    padding: 0;
-    margin: 0;
-}
+*/
 
 h1,
 h2,
@@ -88,7 +91,6 @@ h6 {
     max-width: 73.4375rem;
     width: 95%;
     align-items: center;
-    // height: 100%;
 }
 
 .wrapper {
@@ -100,7 +102,7 @@ h6 {
     flex: 1 0 auto;
 }
 
-section {
+.section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -116,21 +118,3 @@ section {
         min-height: 0;
     }
 }
-
-
-/*
-.section {
-    height: 100vh;
-    display: flex;
-    position: relative;
-    width: 100%;
-    min-height: 56.25rem;
-    // height: 100%;
-    //  min-height: 40.625rem;
-    @include tablets {
-        min-height: 0;
-    }
-    @include phones {
-        min-height: 0;
-    }
-}*/
